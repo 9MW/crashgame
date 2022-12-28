@@ -1,0 +1,11 @@
+
+{
+ "fogwar": {
+"MaxSOLnum":2000,
+"mxselect":2000,
+"maxcullnum":5000,
+"maxinstancenum":15000,
+"MaxTypenum":1000,
+"testunitnum":1000
+    }
+}

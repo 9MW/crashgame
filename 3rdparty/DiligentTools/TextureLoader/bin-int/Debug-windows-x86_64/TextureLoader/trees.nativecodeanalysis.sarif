@@ -1,0 +1,1561 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6385",
+          "message": {
+            "text": "Reading invalid data from 's->bl_count'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                },
+                "region": {
+                  "startLine": 536,
+                  "startColumn": 16,
+                  "endLine": 536,
+                  "endColumn": 37
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "gen_bitlen",
+                  "decoratedName": "gen_bitlen",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 492,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 493,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 494,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 495,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 496,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 497,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 498,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 499,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 499,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 500,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 501,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 502,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 503,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 505,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 505,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 505,
+                            "startColumn": 64
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 505,
+                            "startColumn": 42
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 505,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 505,
+                            "startColumn": 64
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 505,
+                            "startColumn": 42
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 505,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 510,
+                            "startColumn": 36
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 512,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 512,
+                            "startColumn": 31
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume 'h<((2*((256+1+29))+1))')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 513,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 514,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 515,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'bits>max_length')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 515,
+                            "startColumn": 37
+                          }
+                        },
+                        "message": {
+                          "text": "(alias) 'bits' receives the value of 'max_length'"
+                        }
+                      },
+                      "kinds": [
+                        "alias"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 515,
+                            "startColumn": 59
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 516,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 519,
+                            "startColumn": 15
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'n>max_code' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 521,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 522,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 523,
+                            "startColumn": 15
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'n>=base' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 524,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 525,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 526,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'stree' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 512,
+                            "startColumn": 45
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 512,
+                            "startColumn": 31
+                          }
+                        },
+                        "message": {
+                          "text": "Exit this loop, ('h<((2*((256+1+29))+1))' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 528,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'overflow==0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 535,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 536,
+                            "startColumn": 34
+                          }
+                        },
+                        "message": {
+                          "text": "Invalid read from 's->bl_count[-1]', (readable range is 0 to 15)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6385",
+          "message": {
+            "text": "Reading invalid data from 's->bl_count'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                },
+                "region": {
+                  "startLine": 552,
+                  "startColumn": 9,
+                  "endLine": 552,
+                  "endColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "gen_bitlen",
+                  "decoratedName": "gen_bitlen",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 492,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 493,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 494,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 495,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 496,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 497,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 498,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 499,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 499,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 500,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 501,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 502,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 503,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 505,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 505,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 505,
+                            "startColumn": 64
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 505,
+                            "startColumn": 42
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 505,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 505,
+                            "startColumn": 64
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 505,
+                            "startColumn": 42
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 505,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 510,
+                            "startColumn": 36
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 512,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 512,
+                            "startColumn": 31
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume 'h<((2*((256+1+29))+1))')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 513,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 514,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 515,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'bits>max_length')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 515,
+                            "startColumn": 37
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 515,
+                            "startColumn": 59
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 516,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 519,
+                            "startColumn": 15
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'n>max_code' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 521,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 522,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 523,
+                            "startColumn": 15
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'n>=base' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 524,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 525,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 526,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'stree' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 512,
+                            "startColumn": 45
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 512,
+                            "startColumn": 31
+                          }
+                        },
+                        "message": {
+                          "text": "Exit this loop, ('h<((2*((256+1+29))+1))' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 528,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'overflow==0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 535,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 536,
+                            "startColumn": 34
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this loop, (assume 's->bl_count[bits]==0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 537,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 538,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 539,
+                            "startColumn": 32
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 543,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 544,
+                            "startColumn": 23
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this loop, (assume 'overflow>0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 551,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 551,
+                            "startColumn": 34
+                          }
+                        },
+                        "message": {
+                          "text": "'bits' may be NULL (Enter this loop)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+                          },
+                          "region": {
+                            "startLine": 552,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "Invalid read from 's->bl_count[-1]', (readable range is 0 to 15)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.33.31629.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/zlib-1.2.8/trees.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "09b3f7234e5b7241379853dac3fcf29d08b1714e9a68dd4f1880844e1930a140"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/zlib-1.2.8/deflate.h"
+          },
+          "hashes": {
+            "sha-256": "bebfbbca6f4f533b38ebfd448ccee848aa2d9098fb59ec330ff3654499ed32cc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/zlib-1.2.8/zutil.h"
+          },
+          "hashes": {
+            "sha-256": "f3250880ecaebe1c4971527aff465a4ae5c6889a4f44437eb6f9b2015782cdf4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/zlib-1.2.8/zlib.h"
+          },
+          "hashes": {
+            "sha-256": "730562db847f07242943019760733ac65e01d2885143399f67f48c42a1730d65"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/zlib-1.2.8/zconf.h"
+          },
+          "hashes": {
+            "sha-256": "5327366dd8be4bc12108997ad8bef658d54f32507b2ffcdf2613c07fd9b44507"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/zlib-1.2.8/trees.h"
+          },
+          "hashes": {
+            "sha-256": "ef4025453d5e62f39da4f7d0a04cd256e9091c8d2aff5aada59c31c22491e4dc"
+          }
+        }
+      ]
+    }
+  ]
+}

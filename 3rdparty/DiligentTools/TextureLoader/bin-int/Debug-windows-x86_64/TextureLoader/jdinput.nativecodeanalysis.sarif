@@ -1,0 +1,945 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C28183",
+          "message": {
+            "text": "'qtbl' could be '0', and is a copy of the value found in 'compptr->quant_table'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                },
+                "region": {
+                  "startLine": 507,
+                  "startColumn": 5,
+                  "endLine": 507,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "latch_quant_tables",
+                  "decoratedName": "latch_quant_tables",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 489,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 489,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 490,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 491,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 493,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 493,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 494,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 496,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 499,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 500,
+                            "startColumn": 48
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 504,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 507,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 508,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 493,
+                            "startColumn": 45
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 493,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 494,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 496,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 499,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 500,
+                            "startColumn": 48
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 504,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 507,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6385",
+          "message": {
+            "text": "Reading invalid data from 'cinfo->quant_tbl_ptrs'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                },
+                "region": {
+                  "startLine": 507,
+                  "startColumn": 5,
+                  "endLine": 507,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "latch_quant_tables",
+                  "decoratedName": "latch_quant_tables",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 489,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 489,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 490,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 491,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 493,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 493,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume 'ci<cinfo->comps_in_scan')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 494,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 496,
+                            "startColumn": 30
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 499,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 500,
+                            "startColumn": 48
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume '<branch condition>')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 502,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 504,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 507,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "'quant_tbl_ptrs' is an Input to 'memcpy' (declared at d:\\program files\\microsoft visual studio\\2022\\preview\\vc\\tools\\msvc\\14.33.31629\\include\\vcruntime_string.h:43)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 507,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Invalid read from 'cinfo->quant_tbl_ptrs[4]', (readable range is 0 to 3)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'cinfo->quant_tbl_ptrs[qtblno]' could be '0'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                },
+                "region": {
+                  "startLine": 507,
+                  "startColumn": 5,
+                  "endLine": 507,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "latch_quant_tables",
+                  "decoratedName": "latch_quant_tables",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 489,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 489,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 490,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 491,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 493,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 493,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume 'ci<cinfo->comps_in_scan')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 494,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 496,
+                            "startColumn": 30
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 499,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 500,
+                            "startColumn": 48
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume '<branch condition>')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 502,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 504,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 507,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "'quant_tbl_ptrs' is an Input to 'memcpy' (declared at d:\\program files\\microsoft visual studio\\2022\\preview\\vc\\tools\\msvc\\14.33.31629\\include\\vcruntime_string.h:43)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+                          },
+                          "region": {
+                            "startLine": 507,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "'cinfo->quant_tbl_ptrs[qtblno]' should not be NULL, because this is not consistent with the SAL annotation on 'memcpy'"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.33.31629.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdinput.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "1e574c1d0fffaad1596ab6c810f02b353540229d71eeacf03b6e05b79e6c65eb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jinclude.h"
+          },
+          "hashes": {
+            "sha-256": "a41e645742864969b4cac5df68a0ebd54fa34e1988d7d889fb7ce1501cab7285"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jconfig.h"
+          },
+          "hashes": {
+            "sha-256": "02da58b120fd121009fde30f9f2bb34ce6584c4062c5f03570bf3fdadd06310e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jpeglib.h"
+          },
+          "hashes": {
+            "sha-256": "7dfff1e1f499f1d2a72dacb691e6c405c49d3bceec17703b8fc68c802df7ba7e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jmorecfg.h"
+          },
+          "hashes": {
+            "sha-256": "295042cc18628158d7fcaa3eda25f955735b3f435c1a8a2302d521d815b2398e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jpegint.h"
+          },
+          "hashes": {
+            "sha-256": "3a7d02a62b1ed8858d12f868dd9adf10dfdb3f1e5f484030aaee6214d8f4a3e2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jerror.h"
+          },
+          "hashes": {
+            "sha-256": "ec82aced6ae77feaa2feaf6bc197d51a49f20a7b6d5e32bffaa215046363afca"
+          }
+        }
+      ]
+    }
+  ]
+}

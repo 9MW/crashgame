@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="3rdparty">
+      <UniqueIdentifier>{3E7DA5C5-2A4A-00D1-5363-EE783F8F355F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty\ImGuizmo">
+      <UniqueIdentifier>{5EB5FA48-CACB-F8DE-1343-84007F98C966}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include">
+      <UniqueIdentifier>{A0AF70A7-0C65-E99C-9559-E373010EE0A0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\AI">
+      <UniqueIdentifier>{39DCBE11-25AA-B217-0E3E-233EFAAA8E7C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\AssetLoader">
+      <UniqueIdentifier>{C65AE7B0-3292-2F48-3B9C-936BA7525641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\AssetLoader\ThirdParty">
+      <UniqueIdentifier>{C02B329D-AC67-3507-157A-4DFE01D5DD21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\Common">
+      <UniqueIdentifier>{D8E86B59-C4CC-2CAF-2D2D-270219301731}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\Common\Win32">
+      <UniqueIdentifier>{BA62E1AB-A687-302C-CFD2-15BCBB562F4A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\Graphic">
+      <UniqueIdentifier>{CDD1F9C0-3933-D7CE-C2A0-1D812E010E8E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\Log">
+      <UniqueIdentifier>{71979A49-DD22-080E-E633-8B02523E640E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\Render">
+      <UniqueIdentifier>{0FBAB47B-FB9D-75D1-64FE-6F2450016053}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\editortool">
+      <UniqueIdentifier>{D43ACD7E-C034-F6D0-A9A1-8CE1953A5C3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\entitys">
+      <UniqueIdentifier>{FF7D4CBE-6BDF-29CC-F44C-707E60AD608B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\include">
+      <UniqueIdentifier>{137703F1-7FD8-E0FE-0846-27B174A617BE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\io">
+      <UniqueIdentifier>{87E1BE11-73AF-B217-5C43-233E48B08E7C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\os">
+      <UniqueIdentifier>{51E2BE11-3DB0-B217-2644-233E12B18E7C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\out">
+      <UniqueIdentifier>{272D9B49-93B8-080E-9CC9-8B0208D4640E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\out\build">
+      <UniqueIdentifier>{A6FA79FD-1267-35F8-DB5A-CD5547865760}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\out\build\x64-Debug">
+      <UniqueIdentifier>{8B97D42A-F77A-E36A-007E-11A76CE0A9BB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\out\build\x64-Debug\CMakeFiles">
+      <UniqueIdentifier>{EE5F1395-DAC7-D962-4333-EE782FBAF04E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\out\build\x64-Debug\CMakeFiles\3.20.21032501-MSVC_2">
+      <UniqueIdentifier>{73FA686B-DF8D-CA19-E874-3AD0548761E1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\out\build\x64-Debug\CMakeFiles\3.20.21032501-MSVC_2\CompilerIdCXX">
+      <UniqueIdentifier>{BD34CCA9-2955-1554-F257-50525E3791C3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\out\build\x64-Debug\CMakeFiles\ShowIncludes">
+      <UniqueIdentifier>{F5299BCD-6111-86C3-6AFF-873FD6652986}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\shaders">
+      <UniqueIdentifier>{990CA2E4-056E-7FF2-8EDB-C5A4FA3BB6B1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\include\AI\Config.h">
+      <Filter>src\include\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\AI\EvulatAction.h">
+      <Filter>src\include\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\AI\Flocking.h">
+      <Filter>src\include\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\AI\Header.h">
+      <Filter>src\include\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\AI\PlayerUnitAi.h">
+      <Filter>src\include\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\AI\algorithm0.h">
+      <Filter>src\include\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\AI\imp3.h">
+      <Filter>src\include\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\AI\imp4.h">
+      <Filter>src\include\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\AI\imps0.h">
+      <Filter>src\include\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\AI\imps1.hpp">
+      <Filter>src\include\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\AllType.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\AssetLoader\GlTFLD.h">
+      <Filter>src\include\AssetLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\AssetLoader\RenderStr0.h">
+      <Filter>src\include\AssetLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\AssetLoader\ThirdParty\GLTFLoader.hpp">
+      <Filter>src\include\AssetLoader\ThirdParty</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\CSBinary_generated.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Common\CSP2CPP.h">
+      <Filter>src\include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Common\Config.h">
+      <Filter>src\include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Common\FirstPersonCamera.hpp">
+      <Filter>src\include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Common\FixMath.h">
+      <Filter>src\include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Common\InputController.hpp">
+      <Filter>src\include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Common\InputUtil.h">
+      <Filter>src\include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Common\Math1.h">
+      <Filter>src\include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Common\Sort.h">
+      <Filter>src\include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Common\Switchs.h">
+      <Filter>src\include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Common\Task.h">
+      <Filter>src\include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Common\UtilMT.h">
+      <Filter>src\include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Common\Utility.h">
+      <Filter>src\include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Common\UtilityGeo.h">
+      <Filter>src\include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Common\aqdefs.h">
+      <Filter>src\include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Common\components.h">
+      <Filter>src\include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Common\ecs.hpp">
+      <Filter>src\include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Common\math0.h">
+      <Filter>src\include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Common\mathext.h">
+      <Filter>src\include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Common\mathtable.h">
+      <Filter>src\include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Common\span.hpp">
+      <Filter>src\include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Common\syss.hpp">
+      <Filter>src\include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Common\thObser.h">
+      <Filter>src\include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\GObjs0.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\GProps.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Gameprops0.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\GpropExt.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Graphic\modelcom.h">
+      <Filter>src\include\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Log\log.h">
+      <Filter>src\include\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Macros.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\PCH.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Render\CHeader.h">
+      <Filter>src\include\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Render\DrawTool.h">
+      <Filter>src\include\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Render\LineRender.h">
+      <Filter>src\include\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Render\Mesh.h">
+      <Filter>src\include\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Render\ModuleHead.h">
+      <Filter>src\include\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Render\RenderCommon.h">
+      <Filter>src\include\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Render\RenderUtil.h">
+      <Filter>src\include\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Render\Renders0.h">
+      <Filter>src\include\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Render\Renders1.h">
+      <Filter>src\include\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Render\ShaderStructs.h">
+      <Filter>src\include\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Render\defArgs.h">
+      <Filter>src\include\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Render\drawer.h">
+      <Filter>src\include\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Render\fogRender.h">
+      <Filter>src\include\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Render\geomatrys.h">
+      <Filter>src\include\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Render\structs.h">
+      <Filter>src\include\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Test.hpp">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\audio.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cfgparser.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\editor.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\editortool\animationeditor.h">
+      <Filter>src\include\editortool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\editortool\modeleditor.h">
+      <Filter>src\include\editortool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\entitys\Ammos.h">
+      <Filter>src\include\entitys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\entitys\Commander.h">
+      <Filter>src\include\entitys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\entitys\Comps1.h">
+      <Filter>src\include\entitys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\entitys\Comps2.h">
+      <Filter>src\include\entitys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\entitys\comm.h">
+      <Filter>src\include\entitys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\entitys\fermions.h">
+      <Filter>src\include\entitys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\entitys\unit.h">
+      <Filter>src\include\entitys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\entitys\units0.h">
+      <Filter>src\include\entitys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\include\enum.h">
+      <Filter>src\include\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\io\AudioManager.h">
+      <Filter>src\include\io</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\io\BSeri.h">
+      <Filter>src\include\io</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\io\ObjSeri0.h">
+      <Filter>src\include\io</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\io\Ser1.h">
+      <Filter>src\include\io</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\io\Seri0.h">
+      <Filter>src\include\io</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\io\audio_vorbis.h">
+      <Filter>src\include\io</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\io\commandin.h">
+      <Filter>src\include\io</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\io\config.h">
+      <Filter>src\include\io</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\io\iodef.h">
+      <Filter>src\include\io</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\io\knames.h">
+      <Filter>src\include\io</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\io\loader.h">
+      <Filter>src\include\io</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\main.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\os\input.h">
+      <Filter>src\include\os</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\out\build\x64-Debug\CMakeFiles\ShowIncludes\foo.h">
+      <Filter>src\include\out\build\x64-Debug\CMakeFiles\ShowIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\shaders\csSort.h">
+      <Filter>src\include\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\shaders\cvstructs.h">
+      <Filter>src\include\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\shpso.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="3rdparty\ImGuizmo\ImGuizmo.cpp">
+      <Filter>3rdparty\ImGuizmo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\APP0.CPP">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\AI\EvulatAction.cpp">
+      <Filter>src\include\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\AI\algorithm0.cpp">
+      <Filter>src\include\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\AI\imp4.cpp">
+      <Filter>src\include\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\AssetLoader\GlTFLD.cpp">
+      <Filter>src\include\AssetLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\AssetLoader\ImpColl.cpp">
+      <Filter>src\include\AssetLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\AssetLoader\ThirdParty\GLTFLoader.cpp">
+      <Filter>src\include\AssetLoader\ThirdParty</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\Common\FirstPersonCamera.cpp">
+      <Filter>src\include\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\Common\Utility.cpp">
+      <Filter>src\include\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\Common\Win32\InputControllerWin32.cpp">
+      <Filter>src\include\Common\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\Common\Win32\kwin.cpp">
+      <Filter>src\include\Common\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\Gameprops0.cpp">
+      <Filter>src\include</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\GpropExt.cpp">
+      <Filter>src\include</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\PCH.cpp">
+      <Filter>src\include</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\Render\DrawTool.cpp">
+      <Filter>src\include\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\Render\EffekseerRendererDE.cpp">
+      <Filter>src\include\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\Render\LineRender.cpp">
+      <Filter>src\include\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\Render\RenderUtil.cpp">
+      <Filter>src\include\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\Render\Renders0.cpp">
+      <Filter>src\include\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\Render\Renders1.cpp">
+      <Filter>src\include\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\Render\drawer.cpp">
+      <Filter>src\include\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\Render\fogRender.cpp">
+      <Filter>src\include\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\Render\geomatrys.cpp">
+      <Filter>src\include\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\Render\structs.cpp">
+      <Filter>src\include\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\cfgparser.cpp">
+      <Filter>src\include</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\editortool\animationeditor.cpp">
+      <Filter>src\include\editortool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\entitys\Ammos.cpp">
+      <Filter>src\include\entitys</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\entitys\Comps1.cpp">
+      <Filter>src\include\entitys</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\entitys\comm.cpp">
+      <Filter>src\include\entitys</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\entitys\units0.cpp">
+      <Filter>src\include\entitys</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\g_prop0.cpp">
+      <Filter>src\include</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\io\AudioManager.cpp">
+      <Filter>src\include\io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\io\ObjSeri0.cpp">
+      <Filter>src\include\io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\io\audio_vorbis.cpp">
+      <Filter>src\include\io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\io\cmdlis.cpp">
+      <Filter>src\include\io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\io\config.cpp">
+      <Filter>src\include\io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\io\loader.cpp">
+      <Filter>src\include\io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\out\build\x64-Debug\CMakeFiles\3.20.21032501-MSVC_2\CompilerIdCXX\CMakeCXXCompilerId.cpp">
+      <Filter>src\include\out\build\x64-Debug\CMakeFiles\3.20.21032501-MSVC_2\CompilerIdCXX</Filter>
+    </ClCompile>
+    <ClCompile Include="src\include\shpso.cpp">
+      <Filter>src\include</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\turnsys.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\include\Consol.cpp0">
+      <Filter>src\include</Filter>
+    </None>
+  </ItemGroup>
+</Project>

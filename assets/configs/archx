@@ -1,0 +1,428 @@
+{
+    "BH-0": {
+     "RenderEntity": [
+      {
+       "BBox": [
+        [
+         1.0,
+         0.0,
+         0.0,
+         -431602080.0
+        ],
+        [
+         1.0,
+         1.0,
+         1.0,
+         -431602080.0
+        ],
+        [
+         0.0,
+         0.0,
+         0.0,
+         1.0
+        ]
+       ],
+       "BBox_half": [
+        0.5,
+        0.5,
+        0.800000011920929,
+        0.5
+       ],
+       "animap": {
+        "attack": "shot",
+        "attackmove": "move",
+        "count": "",
+        "dieing ": "",
+        "idle": "",
+        "move": "move",
+        "pick": "",
+        "put": "",
+        "reload": ""
+       },
+       "audio": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       "model": "soldierclipedbp.glb",
+       "render": ""
+      }
+     ],
+     "prefabs": [
+      {
+       "Desc": "unito",
+       "equpment": [
+        [
+         0,
+         "gun0 x0"
+        ],
+        [
+         1,
+         "null x0"
+        ],
+        [
+         2,
+         "null x0"
+        ],
+        [
+         3,
+         "null x0"
+        ],
+        [
+         4,
+         "null x0"
+        ],
+        [
+         5,
+         "null x0"
+        ],
+        [
+         6,
+         "null x0"
+        ],
+        [
+         7,
+         "null x0"
+        ],
+        [
+         8,
+         "null x0"
+        ],
+        [
+         9,
+         "null x0"
+        ],
+        [
+         10,
+         "null x0"
+        ],
+        [
+         11,
+         "null x0"
+        ],
+        [
+         12,
+         "null x0"
+        ],
+        [
+         13,
+         "null x0"
+        ],
+        [
+         14,
+         "null x0"
+        ],
+        [
+         15,
+         "null x0"
+        ]
+       ],
+       "phyprop": {
+        "MaxAngularVeocity": 6.0,
+        "MaxVelocity": 3.0,
+        "mass": 100.0,
+        "radius": 0.5
+       },
+       "props": [
+        3.000000238418579,
+        0.30000001192092896,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+       ],
+       "weaponstate": {
+        "cd_rem": 0.0,
+        "projectile": "bullet0",
+        "projnum": 100
+       }
+      }
+     ]
+    },
+    "BH-1": {
+     "RenderEntity": [
+      {
+       "BBox": [
+        [
+         1.0,
+         0.0,
+         0.0,
+         -431602080.0
+        ],
+        [
+         1.0,
+         1.0,
+         1.0,
+         -431602080.0
+        ],
+        [
+         0.0,
+         0.0,
+         0.0,
+         1.0
+        ]
+       ],
+       "BBox_half": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+       ],
+       "audio": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       "model": "",
+       "render": ""
+      }
+     ],
+     "prefabs": [
+      {
+       "Desc": "bullet0",
+       "defs": [
+        "convex_radius activei,inverse_mass,max speed",
+        "effect from: speed, feq, energy, hp, visiableRange, attackrange, damage, Armor, Actionrange",
+        "bitset, activeCounter ,CrSum ,energy ,property_variation "
+       ],
+       "property": {
+        "VC": [
+         0.5,
+         0,
+         10.0,
+         50.0
+        ],
+        "affect": [
+         -20.0,
+         0.0,
+         0.0
+        ],
+        "atpmark":  [
+           1,
+           3,
+           0,
+           0
+          ],
+        "radius": 0.30000001192092896
+       }
+      }
+     ]
+    },
+    "BH-2": {
+     "RenderEntity": [
+      {
+       "BBox": [
+        [
+         1.0,
+         0.0,
+         0.0,
+         -431602080.0
+        ],
+        [
+         1.0,
+         1.0,
+         1.0,
+         -431602080.0
+        ],
+        [
+         0.0,
+         0.0,
+         0.0,
+         1.0
+        ]
+       ],
+       "BBox_half": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+       ],
+       "audio": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       "model": "",
+       "render": ""
+      },
+      {
+       "BBox": [
+        [
+         1.0,
+         0.0,
+         0.0,
+         -431602080.0
+        ],
+        [
+         1.0,
+         1.0,
+         1.0,
+         -431602080.0
+        ],
+        [
+         0.0,
+         0.0,
+         0.0,
+         1.0
+        ]
+       ],
+       "BBox_half": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+       ],
+       "audio": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       "model": "",
+       "render": ""
+      }
+     ],
+     "prefabs": [
+      {
+       "Desc": "",
+       "equpment": "null x0",
+       "equpmentNum": 1,
+       "half_ext": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "props": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+       ],
+       "radius": 0.0
+      },
+      {
+       "Desc": "equpiment box",
+       "equpment": "null x0",
+       "equpmentNum": 1,
+       "half_ext": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "props": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+       ],
+       "radius": 1.0
+      }
+     ]
+    },
+    "BH-3": {
+     "prefabs": [
+      {
+       "desc": "",
+       "projectiledesc": {
+        "attackvel": 1,
+        "bullet id": 0,
+        "capacity": 0,
+        "descption": "",
+        "finishloadaud": "",
+        "gun_name": "",
+        "reload_time": 0.0,
+        "reloadaud": "",
+        "shotAudio": ""
+       }
+      },
+      {
+       "desc": "gun0",
+       "projectiledesc": {
+        "attackvel": 1,
+        "bullet id": -1,
+        "capacity": 50,
+        "descption": "weapon0",
+        "finishloadaud": "",
+        "gun_name": "",
+        "reload_time": 3,
+        "reloadaud": "",
+        "shotAudio": "AR10-7.wav"
+       }
+      }
+     ]
+    }
+   }
+   

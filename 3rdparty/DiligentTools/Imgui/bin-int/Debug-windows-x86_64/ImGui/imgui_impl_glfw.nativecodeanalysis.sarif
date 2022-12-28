@@ -1,0 +1,133 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/imgui/backends/imgui_impl_glfw.cpp"
+                },
+                "region": {
+                  "startLine": 417,
+                  "startColumn": 47,
+                  "endLine": 417,
+                  "endColumn": 79
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui_ImplGlfw_UpdateMousePosAndButtons",
+                  "decoratedName": "?ImGui_ImplGlfw_UpdateMousePosAndButtons@@YAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/imgui/backends/imgui_impl_glfw.cpp"
+                },
+                "region": {
+                  "startLine": 417,
+                  "startColumn": 93,
+                  "endLine": 417,
+                  "endColumn": 125
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui_ImplGlfw_UpdateMousePosAndButtons",
+                  "decoratedName": "?ImGui_ImplGlfw_UpdateMousePosAndButtons@@YAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.33.31629.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/imgui/backends/imgui_impl_glfw.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "9536df2aeebb02f2e455de2d1c6c786fcce68a1b6533c8cd3df57e9486f0c11e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/imgui/imgui.h"
+          },
+          "hashes": {
+            "sha-256": "8e32ec9166d906cd53c57a6961ebba88dff0e5e464afed91feea71c8aa5b2059"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/imgui/imconfig.h"
+          },
+          "hashes": {
+            "sha-256": "3de00daa35087bdf39e7d917b5ffa7affec457cfa961d09a175064f67e64a810"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/imgui/backends/imgui_impl_glfw.h"
+          },
+          "hashes": {
+            "sha-256": "355e3fd22c6146d23e51c4b5d0a7aeff56f56208105c616201f9589074156315"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/glfw/glfw3.h"
+          },
+          "hashes": {
+            "sha-256": "e523af37428a30dd82102fac4d9b1d54c6adb78d9a8716e34636d90f3d0dc664"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/glfw/glfw3native.h"
+          },
+          "hashes": {
+            "sha-256": "839aa13a532c15f8b064638aa775de9ad442320a1d15e4f8655ce5ffe9c415de"
+          }
+        }
+      ]
+    }
+  ]
+}

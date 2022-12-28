@@ -1,0 +1,3335 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6385",
+          "message": {
+            "text": "Reading invalid data from 'mem->small_list'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                },
+                "region": {
+                  "startLine": 279,
+                  "startColumn": 3,
+                  "endLine": 279,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "alloc_small",
+                  "decoratedName": "alloc_small",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 261,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 262,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 262,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 263,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 264,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 264,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 264,
+                            "startColumn": 34
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 267,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 271,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 272,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'odd_bytes>0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 276,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'pool_id<0||pool_id>=2')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 277,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 278,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 279,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "Invalid read from 'mem->small_list[2]', (readable range is 0 to 1)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6385",
+          "message": {
+            "text": "Reading invalid data from 'first_pool_slop'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                },
+                "region": {
+                  "startLine": 292,
+                  "startColumn": 7,
+                  "endLine": 292,
+                  "endColumn": 30
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "alloc_small",
+                  "decoratedName": "alloc_small",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 261,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 262,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 262,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 263,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 264,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 264,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 264,
+                            "startColumn": 34
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 267,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 271,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 272,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'odd_bytes>0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 276,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'pool_id<0||pool_id>=2')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 277,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 278,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 279,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 280,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this loop, (assume 'hdr_ptr!=(((void *)0))' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 288,
+                            "startColumn": 15
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'hdr_ptr==(((void *)0))')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 290,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 291,
+                            "startColumn": 22
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'prev_hdr_ptr==(((void *)0))')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 292,
+                            "startColumn": 12
+                          }
+                        },
+                        "message": {
+                          "text": "Invalid read from 'first_pool_slop[2]', (readable range is 0 to 1)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6385",
+          "message": {
+            "text": "Reading invalid data from 'extra_pool_slop'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                },
+                "region": {
+                  "startLine": 294,
+                  "startColumn": 7,
+                  "endLine": 294,
+                  "endColumn": 30
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "alloc_small",
+                  "decoratedName": "alloc_small",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 261,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 262,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 262,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 263,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 264,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 264,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 264,
+                            "startColumn": 34
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 267,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 271,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 272,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'odd_bytes>0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 276,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'pool_id<0||pool_id>=2')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 277,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 278,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 279,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 280,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume 'hdr_ptr!=(((void *)0))')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 281,
+                            "startColumn": 33
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 283,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 284,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 280,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "Exit this loop, ('hdr_ptr!=(((void *)0))' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 288,
+                            "startColumn": 15
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'hdr_ptr==(((void *)0))')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 290,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 291,
+                            "startColumn": 22
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'prev_hdr_ptr==(((void *)0))' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 294,
+                            "startColumn": 12
+                          }
+                        },
+                        "message": {
+                          "text": "Invalid read from 'extra_pool_slop[2]', (readable range is 0 to 1)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6386",
+          "message": {
+            "text": "Buffer overrun while writing to 'mem->small_list'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                },
+                "region": {
+                  "startLine": 313,
+                  "startColumn": 7,
+                  "endLine": 313,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "alloc_small",
+                  "decoratedName": "alloc_small",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 261,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 262,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 262,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 263,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 264,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 264,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 264,
+                            "startColumn": 34
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 267,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 271,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 272,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'odd_bytes>0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 276,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'pool_id<0||pool_id>=2')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 277,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 278,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 279,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 280,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this loop, (assume 'hdr_ptr!=(((void *)0))' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 288,
+                            "startColumn": 15
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'hdr_ptr==(((void *)0))')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 290,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 291,
+                            "startColumn": 22
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'prev_hdr_ptr==(((void *)0))')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 292,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 296,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 299,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume '1')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 300,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 301,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'hdr_ptr!=(((void *)0))')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 307,
+                            "startColumn": 32
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 309,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 310,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 311,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 312,
+                            "startColumn": 22
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'prev_hdr_ptr==(((void *)0))')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 313,
+                            "startColumn": 32
+                          }
+                        },
+                        "message": {
+                          "text": "Invalid write to 'mem->small_list[2]', (writable range is 0 to 1)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Dereferencing NULL pointer 'hdr_ptr'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                },
+                "region": {
+                  "startLine": 370,
+                  "startColumn": 3,
+                  "endLine": 370,
+                  "endColumn": 39
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "alloc_large",
+                  "decoratedName": "alloc_large",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 346,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 347,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 348,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 351,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 355,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 356,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 360,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 363,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 365,
+                            "startColumn": 15
+                          }
+                        },
+                        "message": {
+                          "text": "'hdr_ptr' may be NULL (Enter this branch)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 366,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 367,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 370,
+                            "startColumn": 21
+                          }
+                        },
+                        "message": {
+                          "text": "'hdr_ptr' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6385",
+          "message": {
+            "text": "Reading invalid data from 'mem->large_list'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                },
+                "region": {
+                  "startLine": 370,
+                  "startColumn": 3,
+                  "endLine": 370,
+                  "endColumn": 39
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "alloc_large",
+                  "decoratedName": "alloc_large",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 346,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 347,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 348,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 351,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 355,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 356,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'odd_bytes>0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 360,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'pool_id<0||pool_id>=2')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 361,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 363,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 365,
+                            "startColumn": 15
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'hdr_ptr==(((void *)0))' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 367,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 370,
+                            "startColumn": 21
+                          }
+                        },
+                        "message": {
+                          "text": "Invalid read from 'mem->large_list[2]', (readable range is 0 to 1)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6386",
+          "message": {
+            "text": "Buffer overrun while writing to 'mem->large_list'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                },
+                "region": {
+                  "startLine": 376,
+                  "startColumn": 3,
+                  "endLine": 376,
+                  "endColumn": 30
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "alloc_large",
+                  "decoratedName": "alloc_large",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 346,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 347,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 348,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 351,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 355,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 356,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'odd_bytes>0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 360,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'pool_id<0||pool_id>=2')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 361,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 363,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 365,
+                            "startColumn": 15
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'hdr_ptr==(((void *)0))' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 367,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 370,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 374,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 375,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 376,
+                            "startColumn": 28
+                          }
+                        },
+                        "message": {
+                          "text": "Invalid write to 'mem->large_list[2]', (writable range is 0 to 1)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                },
+                "region": {
+                  "startLine": 601,
+                  "startColumn": 53
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "realize_virt_arrays",
+                  "decoratedName": "realize_virt_arrays",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                },
+                "region": {
+                  "startLine": 603,
+                  "startColumn": 51
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "realize_virt_arrays",
+                  "decoratedName": "realize_virt_arrays",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                },
+                "region": {
+                  "startLine": 609,
+                  "startColumn": 53
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "realize_virt_arrays",
+                  "decoratedName": "realize_virt_arrays",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                },
+                "region": {
+                  "startLine": 611,
+                  "startColumn": 51
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "realize_virt_arrays",
+                  "decoratedName": "realize_virt_arrays",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Dereferencing NULL pointer 'ptr->mem_buffer'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                },
+                "region": {
+                  "startLine": 825,
+                  "startColumn": 2,
+                  "endLine": 825,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "access_virt_sarray",
+                  "decoratedName": "access_virt_sarray",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 764,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 765,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 768,
+                            "startColumn": 65
+                          }
+                        },
+                        "message": {
+                          "text": "'ptr->mem_buffer' may be NULL (Enter this branch)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 770,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 773,
+                            "startColumn": 38
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 810,
+                            "startColumn": 28
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'ptr->first_undef_row<end_row')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 811,
+                            "startColumn": 30
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'ptr->first_undef_row<start_row')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 812,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'writable' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 814,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 818,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'writable' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 820,
+                            "startColumn": 12
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'ptr->pre_zero')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 821,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 822,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 823,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 824,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume 'undef_row<end_row')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 825,
+                            "startColumn": 2
+                          }
+                        },
+                        "message": {
+                          "text": "'ptr->mem_buffer' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Dereferencing NULL pointer 'ptr->mem_buffer'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                },
+                "region": {
+                  "startLine": 910,
+                  "startColumn": 2,
+                  "endLine": 910,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "access_virt_barray",
+                  "decoratedName": "access_virt_barray",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 849,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 850,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 853,
+                            "startColumn": 65
+                          }
+                        },
+                        "message": {
+                          "text": "'ptr->mem_buffer' may be NULL (Enter this branch)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 855,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 858,
+                            "startColumn": 38
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 895,
+                            "startColumn": 28
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'ptr->first_undef_row<end_row')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 896,
+                            "startColumn": 30
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'ptr->first_undef_row<start_row')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 897,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'writable' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 899,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 903,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'writable' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 905,
+                            "startColumn": 12
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'ptr->pre_zero')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 906,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 907,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 908,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 909,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume 'undef_row<end_row')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 910,
+                            "startColumn": 2
+                          }
+                        },
+                        "message": {
+                          "text": "'ptr->mem_buffer' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Dereferencing NULL pointer 'mem'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                },
+                "region": {
+                  "startLine": 1068,
+                  "startColumn": 3,
+                  "endLine": 1068,
+                  "endColumn": 26
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "jinit_memory_mgr",
+                  "decoratedName": "jinit_memory_mgr",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 1031,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 1032,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 1033,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 1034,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 1036,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 1045,
+                            "startColumn": 53
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 1052,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 1053,
+                            "startColumn": 42
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 1057,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 1060,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 1062,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "'mem' may be NULL (Enter this branch)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 1063,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 1064,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+                          },
+                          "region": {
+                            "startLine": 1068,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "'mem' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.33.31629.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jmemmgr.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "7f7361d4938893299d9754453b5aee6927897d32b71664feafd3c6b1c89606a5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jinclude.h"
+          },
+          "hashes": {
+            "sha-256": "a41e645742864969b4cac5df68a0ebd54fa34e1988d7d889fb7ce1501cab7285"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jconfig.h"
+          },
+          "hashes": {
+            "sha-256": "02da58b120fd121009fde30f9f2bb34ce6584c4062c5f03570bf3fdadd06310e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jpeglib.h"
+          },
+          "hashes": {
+            "sha-256": "7dfff1e1f499f1d2a72dacb691e6c405c49d3bceec17703b8fc68c802df7ba7e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jmorecfg.h"
+          },
+          "hashes": {
+            "sha-256": "295042cc18628158d7fcaa3eda25f955735b3f435c1a8a2302d521d815b2398e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jpegint.h"
+          },
+          "hashes": {
+            "sha-256": "3a7d02a62b1ed8858d12f868dd9adf10dfdb3f1e5f484030aaee6214d8f4a3e2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jerror.h"
+          },
+          "hashes": {
+            "sha-256": "ec82aced6ae77feaa2feaf6bc197d51a49f20a7b6d5e32bffaa215046363afca"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jmemsys.h"
+          },
+          "hashes": {
+            "sha-256": "8bd96ad37e97ad83f5b5331fa2abd23ebb2d3c78da6935bb8343d212b7a3ad1f"
+          }
+        }
+      ]
+    }
+  ]
+}

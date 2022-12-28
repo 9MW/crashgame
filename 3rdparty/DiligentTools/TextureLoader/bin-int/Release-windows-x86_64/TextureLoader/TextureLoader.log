@@ -1,0 +1,163 @@
+﻿cl : command line  warning D9025: overriding '/MT' with '/MD'
+cl : command line  warning D9025: overriding '/MT' with '/MD'
+  DDSLoader.cpp
+cl : command line  warning D9025: overriding '/MT' with '/MD'
+cl : command line  warning D9025: overriding '/MT' with '/MD'
+  Image.cpp
+  KTXLoader.cpp
+cl : command line  warning D9025: overriding '/MT' with '/MD'
+  TextureLoader.cpp
+D:\projects\pj2\pj2\3rdparty\DiligentTools\TextureLoader\src\TextureLoader.cpp(232,89): warning C4244: 'argument': conversion from 'Diligent::Uint64' to 'Diligent::Uint32', possible loss of data
+D:\projects\pj2\pj2\3rdparty\DiligentTools\TextureLoader\src\TextureLoader.cpp(239,90): warning C4244: 'argument': conversion from 'Diligent::Uint64' to 'Diligent::Uint32', possible loss of data
+  TextureUtilities.cpp
+  tif_stream.cxx
+cl : command line  warning D9025: overriding '/MT' with '/MD'
+cl : command line  warning D9025: overriding '/MT' with '/MD'
+  JPEGCodec.c
+cl : command line  warning D9025: overriding '/MT' with '/MD'
+  PNGCodec.c
+cl : command line  warning D9025: overriding '/MT' with '/MD'
+  jaricom.c
+cl : command line  warning D9025: overriding '/MT' with '/MD'
+  jcapimin.c
+  jcapistd.c
+  jcarith.c
+  jccoefct.c
+  jccolor.c
+  jcdctmgr.c
+  jchuff.c
+  jcinit.c
+  jcmainct.c
+  jcmarker.c
+  jcmaster.c
+  jcomapi.c
+  jcparam.c
+  jcprepct.c
+  jcsample.c
+  jctrans.c
+  jdapimin.c
+  jdapistd.c
+  jdarith.c
+  jdatadst.c
+  jdatasrc.c
+  jdcoefct.c
+  jdcolor.c
+  jddctmgr.c
+  jdhuff.c
+  jdinput.c
+  jdmainct.c
+  jdmarker.c
+D:\projects\pj2\pj2\3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jdmarker.c(331,5): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\projects\pj2\pj2\3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jdmarker.c(655,5): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  jdmaster.c
+  jdmerge.c
+  jdpostct.c
+  jdsample.c
+  jdtrans.c
+  jerror.c
+  jfdctflt.c
+D:\projects\pj2\pj2\3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jerror.c(194,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\projects\pj2\pj2\3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jerror.c(196,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  jfdctfst.c
+  jfdctint.c
+  jidctflt.c
+  jidctfst.c
+  jidctint.c
+  jmemmgr.c
+D:\projects\pj2\pj2\3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jmemmgr.c(1107,19): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\projects\pj2\pj2\3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jmemmgr.c(1110,11): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  jmemnobs.c
+  jquant1.c
+  jquant2.c
+  jutils.c
+  tif_aux.c
+  tif_close.c
+  tif_codec.c
+  tif_color.c
+  tif_compress.c
+  tif_dir.c
+  tif_dirinfo.c
+  tif_dirread.c
+  tif_dirwrite.c
+  tif_dumpmode.c
+  tif_error.c
+  tif_extension.c
+  tif_fax3.c
+  tif_fax3sm.c
+  tif_flush.c
+  tif_getimage.c
+  tif_jbig.c
+  tif_jpeg.c
+  tif_jpeg_12.c
+  tif_luv.c
+  tif_lzma.c
+  tif_lzw.c
+  tif_next.c
+  tif_ojpeg.c
+  tif_open.c
+  tif_packbits.c
+  tif_pixarlog.c
+  tif_predict.c
+  tif_print.c
+  tif_read.c
+  tif_strip.c
+  tif_swab.c
+  tif_thunder.c
+  tif_tile.c
+  tif_version.c
+  tif_warning.c
+  tif_win32.c
+  tif_write.c
+  tif_zip.c
+  png.c
+  pngerror.c
+  pngget.c
+  pngmem.c
+  pngpread.c
+  pngread.c
+  pngrio.c
+  pngrtran.c
+  pngrutil.c
+D:\projects\pj2\pj2\3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\pngread.c(1480,21): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\projects\pj2\pj2\3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\pngread.c(1496,43): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  pngset.c
+  pngtrans.c
+  pngwio.c
+  pngwrite.c
+  pngwtran.c
+  pngwutil.c
+  adler32.c
+D:\projects\pj2\pj2\3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\pngwrite.c(474,11): warning C4996: 'gmtime': This function or variable may be unsafe. Consider using gmtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\projects\pj2\pj2\3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\pngwrite.c(2401,21): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\projects\pj2\pj2\3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\pngwrite.c(2429,46): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\projects\pj2\pj2\3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\pngwrite.c(2442,43): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  compress.c
+  crc32.c
+  deflate.c
+  gzclose.c
+  gzlib.c
+  gzread.c
+D:\projects\pj2\pj2\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzlib.c(193,15): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\projects\pj2\pj2\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzlib.c(208,13): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\projects\pj2\pj2\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzlib.c(214,9): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\projects\pj2\pj2\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzlib.c(243,20): warning C4996: '_wopen': This function or variable may be unsafe. Consider using _wsopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\projects\pj2\pj2\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzlib.c(245,9): warning C4996: 'open': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _open. See online help for details.
+D:\projects\pj2\pj2\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzlib.c(294,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\projects\pj2\pj2\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzlib.c(607,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\projects\pj2\pj2\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzread.c(30,15): warning C4996: 'read': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _read. See online help for details.
+D:\projects\pj2\pj2\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzread.c(36,34): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\projects\pj2\pj2\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzread.c(591,11): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
+  gzwrite.c
+  infback.c
+D:\projects\pj2\pj2\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzwrite.c(84,15): warning C4996: 'write': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _write. See online help for details.
+D:\projects\pj2\pj2\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzwrite.c(86,38): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\projects\pj2\pj2\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzwrite.c(101,33): warning C4996: 'write': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _write. See online help for details.
+D:\projects\pj2\pj2\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzwrite.c(103,42): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\projects\pj2\pj2\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzwrite.c(573,9): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
+  inffast.c
+  inflate.c
+  inftrees.c
+  trees.c
+  uncompr.c
+  zutil.c
+  TextureLoader.vcxproj -> D:\projects\pj2\pj2\3rdparty\DiligentTools\TextureLoader\bin\Release-windows-x86_64\TextureLoader\TextureLoader.lib

@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dist|x64">
+      <Configuration>Dist</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4D05AFAA-B9C5-2AE1-8200-745EEE7F6FBD}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TextureLoader</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>3rdparty\DiligentTools\TextureLoader\bin\Debug-windows-x86_64\TextureLoader\</OutDir>
+    <IntDir>3rdparty\DiligentTools\TextureLoader\bin-int\Debug-windows-x86_64\TextureLoader\</IntDir>
+    <TargetName>TextureLoader</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>3rdparty\DiligentTools\TextureLoader\bin\Release-windows-x86_64\TextureLoader\</OutDir>
+    <IntDir>3rdparty\DiligentTools\TextureLoader\bin-int\Release-windows-x86_64\TextureLoader\</IntDir>
+    <TargetName>TextureLoader</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <OutDir>3rdparty\DiligentTools\TextureLoader\bin\Dist-windows-x86_64\TextureLoader\</OutDir>
+    <IntDir>3rdparty\DiligentTools\TextureLoader\bin-int\Dist-windows-x86_64\TextureLoader\</IntDir>
+    <TargetName>TextureLoader</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>PLATFORM_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>3rdparty\DiligentTools\TextureLoader\include;3rdparty\DiligentTools\TextureLoader\interface;3rdparty\DiligentTools\ThirdParty\libtiff;3rdparty\DiligentTools\ThirdParty\lpng-1.6.17;3rdparty\DiligentTools\ThirdParty\libjpeg-9a;3rdparty\DiligentTools\ThirdParty\zlib-1.2.8;3rdparty\DiligentTools\ThirdParty\libjpeg-9a;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Common\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Platforms\Win32\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Platforms\Basic\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Primitives\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Platforms\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Graphics\GraphicsEngine\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Graphics\GraphicsAccessories\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Graphics\GraphicsTools\interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/MDd %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>PLATFORM_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>3rdparty\DiligentTools\TextureLoader\include;3rdparty\DiligentTools\TextureLoader\interface;3rdparty\DiligentTools\ThirdParty\libtiff;3rdparty\DiligentTools\ThirdParty\lpng-1.6.17;3rdparty\DiligentTools\ThirdParty\libjpeg-9a;3rdparty\DiligentTools\ThirdParty\zlib-1.2.8;3rdparty\DiligentTools\ThirdParty\libjpeg-9a;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Common\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Platforms\Win32\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Platforms\Basic\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Primitives\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Platforms\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Graphics\GraphicsEngine\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Graphics\GraphicsAccessories\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Graphics\GraphicsTools\interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/MD %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>PLATFORM_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>3rdparty\DiligentTools\TextureLoader\include;3rdparty\DiligentTools\TextureLoader\interface;3rdparty\DiligentTools\ThirdParty\libtiff;3rdparty\DiligentTools\ThirdParty\lpng-1.6.17;3rdparty\DiligentTools\ThirdParty\libjpeg-9a;3rdparty\DiligentTools\ThirdParty\zlib-1.2.8;3rdparty\DiligentTools\ThirdParty\libjpeg-9a;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Common\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Platforms\Win32\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Platforms\Basic\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Primitives\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Platforms\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Graphics\GraphicsEngine\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Graphics\GraphicsAccessories\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Graphics\GraphicsTools\interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="3rdparty\DiligentTools\TextureLoader\include\DDSLoader.h" />
+    <ClInclude Include="3rdparty\DiligentTools\TextureLoader\include\JPEGCodec.h" />
+    <ClInclude Include="3rdparty\DiligentTools\TextureLoader\include\PNGCodec.h" />
+    <ClInclude Include="3rdparty\DiligentTools\TextureLoader\include\dxgiformat.h" />
+    <ClInclude Include="3rdparty\DiligentTools\TextureLoader\include\pch.h" />
+    <ClInclude Include="3rdparty\DiligentTools\TextureLoader\interface\Image.h" />
+    <ClInclude Include="3rdparty\DiligentTools\TextureLoader\interface\TextureLoader.h" />
+    <ClInclude Include="3rdparty\DiligentTools\TextureLoader\interface\TextureUtilities.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="3rdparty\DiligentTools\TextureLoader\src\DDSLoader.cpp" />
+    <ClCompile Include="3rdparty\DiligentTools\TextureLoader\src\Image.cpp" />
+    <ClCompile Include="3rdparty\DiligentTools\TextureLoader\src\JPEGCodec.c" />
+    <ClCompile Include="3rdparty\DiligentTools\TextureLoader\src\KTXLoader.cpp" />
+    <ClCompile Include="3rdparty\DiligentTools\TextureLoader\src\PNGCodec.c" />
+    <ClCompile Include="3rdparty\DiligentTools\TextureLoader\src\TextureLoader.cpp" />
+    <ClCompile Include="3rdparty\DiligentTools\TextureLoader\src\TextureUtilities.cpp" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jaricom.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jcapimin.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jcapistd.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jcarith.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jccoefct.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jccolor.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jcdctmgr.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jchuff.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jcinit.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jcmainct.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jcmarker.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jcmaster.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jcomapi.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jcparam.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jcprepct.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jcsample.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jctrans.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jdapimin.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jdapistd.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jdarith.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jdatadst.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jdatasrc.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jdcoefct.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jdcolor.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jddctmgr.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jdhuff.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jdinput.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jdmainct.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jdmarker.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jdmaster.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jdmerge.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jdpostct.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jdsample.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jdtrans.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jerror.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jfdctflt.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jfdctfst.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jfdctint.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jidctflt.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jidctfst.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jidctint.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jmemmgr.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jmemnobs.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jquant1.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jquant2.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jutils.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_aux.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_close.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_codec.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_color.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_compress.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_dir.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_dirinfo.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_dirread.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_dirwrite.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_dumpmode.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_error.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_extension.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_fax3.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_fax3sm.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_flush.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_getimage.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_jbig.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_jpeg.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_jpeg_12.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_luv.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_lzma.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_lzw.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_next.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_ojpeg.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_open.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_packbits.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_pixarlog.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_predict.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_print.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_read.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_stream.cxx" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_strip.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_swab.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_thunder.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_tile.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_version.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_warning.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_win32.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_write.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\libtiff\tif_zip.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\png.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\pngerror.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\pngget.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\pngmem.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\pngpread.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\pngread.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\pngrio.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\pngrtran.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\pngrutil.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\pngset.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\pngtrans.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\pngwio.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\pngwrite.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\pngwtran.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\pngwutil.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\adler32.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\compress.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\crc32.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\deflate.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzclose.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzlib.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzread.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzwrite.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\infback.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\inffast.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\inflate.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\inftrees.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\trees.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\uncompr.c" />
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\zutil.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dist|x64">
+      <Configuration>Dist</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5503957C-413A-960D-EA26-7C10D63C120F}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>cage</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>bin\Debug-windows-x86_64\cage\</OutDir>
+    <IntDir>bin-int\Debug-windows-x86_64\cage\</IntDir>
+    <TargetName>cage</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>bin\Release-windows-x86_64\cage\</OutDir>
+    <IntDir>bin-int\Release-windows-x86_64\cage\</IntDir>
+    <TargetName>cage</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>bin\Dist-windows-x86_64\cage\</OutDir>
+    <IntDir>bin-int\Dist-windows-x86_64\cage\</IntDir>
+    <TargetName>cage</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;PLATFORM_WIN32;DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src\include\Common;src\include\Modules;src\include;3rdparty\DiligentTools\ThirdParty\imgui;3rdparty\spdlog\include;3rdparty\Eigen;3rdparty\DiligentTools\imgui\interface;3rdparty\DiligentTools\TextureLoader\interface;.;3rdparty;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Common\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Platforms\Win32\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Platforms\Basic\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Primitives\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Platforms\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Graphics\GraphicsEngine\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Graphics\GraphicsAccessories\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Graphics\GraphicsTools\interface;D:\CPPLib\EffekseerRuntime152m\src\include\Effekseer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/bigobj /MDd %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glfw3.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Graphics\GraphicsTools\Debug\Diligent-GraphicsTools.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Graphics\GraphicsEngineD3DBase\Debug\Diligent-GraphicsEngineD3DBase.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Graphics\ShaderTools\Debug\Diligent-ShaderTools.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Graphics\HLSL2GLSLConverterLib\Debug\Diligent-HLSL2GLSLConverterLib.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\ThirdParty\SPIRV-Tools\source\opt\Debug\SPIRV-Tools-opt.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\ThirdParty\SPIRV-Tools\source\Debug\SPIRV-Tools.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Graphics\GraphicsEngine\Debug\Diligent-GraphicsEngine.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Graphics\GraphicsEngineVulkan\Debug\Diligent-GraphicsEngineVk-static.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Graphics\GraphicsAccessories\Debug\Diligent-GraphicsAccessories.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Common\Debug\Diligent-Common.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Platforms\Win32\Debug\Diligent-Win32Platform.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Platforms\Basic\Debug\Diligent-BasicPlatform.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Primitives\Debug\Diligent-Primitives.lib;libcds-x64-dbg.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Graphics\GraphicsEngineVulkan\Debug\GraphicsEngineVk_64d.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\ThirdParty\SPIRV-Cross\Debug\spirv-cross-cored.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\ThirdParty\glslang\glslang\Debug\glslangd.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\ThirdParty\glslang\SPIRV\Debug\SPIRVd.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\ThirdParty\glslang\glslang\Debug\MachineIndependentd.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\ThirdParty\glslang\OGLCompilersDLL\Debug\OGLCompilerd.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\ThirdParty\glslang\glslang\OSDependent\Windows\Debug\OSDependentd.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\ThirdParty\glslang\glslang\Debug\GenericCodeGend.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>libs\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <EntryPointSymbol>WinMainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;PLATFORM_WIN32;RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src\include\Common;src\include\Modules;src\include;3rdparty\DiligentTools\ThirdParty\imgui;3rdparty\spdlog\include;3rdparty\Eigen;3rdparty\DiligentTools\imgui\interface;3rdparty\DiligentTools\TextureLoader\interface;.;3rdparty;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Common\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Platforms\Win32\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Platforms\Basic\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Primitives\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Platforms\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Graphics\GraphicsEngine\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Graphics\GraphicsAccessories\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Graphics\GraphicsTools\interface;D:\CPPLib\EffekseerRuntime152m\src\include\Effekseer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/bigobj /MD %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glfw3.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Graphics\GraphicsTools\Release\Diligent-GraphicsTools.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Graphics\GraphicsEngineD3DBase\Release\Diligent-GraphicsEngineD3DBase.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Graphics\ShaderTools\Release\Diligent-ShaderTools.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Graphics\HLSL2GLSLConverterLib\Release\Diligent-HLSL2GLSLConverterLib.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\ThirdParty\SPIRV-Tools\source\opt\Release\SPIRV-Tools-opt.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\ThirdParty\SPIRV-Tools\source\Release\SPIRV-Tools.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Graphics\GraphicsEngine\Release\Diligent-GraphicsEngine.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Graphics\GraphicsEngineVulkan\Release\Diligent-GraphicsEngineVk-static.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Graphics\GraphicsAccessories\Release\Diligent-GraphicsAccessories.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Common\Release\Diligent-Common.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Platforms\Win32\Release\Diligent-Win32Platform.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Platforms\Basic\Release\Diligent-BasicPlatform.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Primitives\Release\Diligent-Primitives.lib;libcds-x64.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Graphics\GraphicsEngineVulkan\Release\GraphicsEngineVk_64r.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\ThirdParty\SPIRV-Cross\Release\spirv-cross-core.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\ThirdParty\glslang\glslang\Release\glslang.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\ThirdParty\glslang\SPIRV\Release\SPIRV.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\ThirdParty\glslang\glslang\Release\MachineIndependent.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\ThirdParty\glslang\OGLCompilersDLL\Release\OGLCompiler.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\ThirdParty\glslang\glslang\OSDependent\Windows\Release\OSDependent.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\ThirdParty\glslang\glslang\Release\GenericCodeGen.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>libs\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <EntryPointSymbol>WinMainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;PLATFORM_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src\include\Common;src\include\Modules;src\include;3rdparty\DiligentTools\ThirdParty\imgui;3rdparty\spdlog\include;3rdparty\Eigen;3rdparty\DiligentTools\imgui\interface;3rdparty\DiligentTools\TextureLoader\interface;.;3rdparty;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Common\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Platforms\Win32\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Platforms\Basic\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Primitives\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Platforms\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Graphics\GraphicsEngine\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Graphics\GraphicsAccessories\interface;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\DiligentCore\Graphics\GraphicsTools\interface;D:\CPPLib\EffekseerRuntime152m\src\include\Effekseer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>glfw3.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Graphics\GraphicsTools\Dist\Diligent-GraphicsTools.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Graphics\GraphicsEngineD3DBase\Dist\Diligent-GraphicsEngineD3DBase.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Graphics\ShaderTools\Dist\Diligent-ShaderTools.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Graphics\HLSL2GLSLConverterLib\Dist\Diligent-HLSL2GLSLConverterLib.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\ThirdParty\SPIRV-Tools\source\opt\Dist\SPIRV-Tools-opt.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\ThirdParty\SPIRV-Tools\source\Dist\SPIRV-Tools.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Graphics\GraphicsEngine\Dist\Diligent-GraphicsEngine.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Graphics\GraphicsEngineVulkan\Dist\Diligent-GraphicsEngineVk-static.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Graphics\GraphicsAccessories\Dist\Diligent-GraphicsAccessories.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Common\Dist\Diligent-Common.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Platforms\Win32\Dist\Diligent-Win32Platform.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Platforms\Basic\Dist\Diligent-BasicPlatform.lib;D:\CPPLib\DiligentEngine_v2.5.2\DiligentEngine_v2.5.2\build\Win64\DiligentCore\Primitives\Dist\Diligent-Primitives.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>libs\Dist;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <EntryPointSymbol>WinMainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\include\AI\Config.h" />
+    <ClInclude Include="src\include\AI\EvulatAction.h" />
+    <ClInclude Include="src\include\AI\Flocking.h" />
+    <ClInclude Include="src\include\AI\Header.h" />
+    <ClInclude Include="src\include\AI\PlayerUnitAi.h" />
+    <ClInclude Include="src\include\AI\algorithm0.h" />
+    <ClInclude Include="src\include\AI\imp3.h" />
+    <ClInclude Include="src\include\AI\imp4.h" />
+    <ClInclude Include="src\include\AI\imps0.h" />
+    <ClInclude Include="src\include\AI\imps1.hpp" />
+    <ClInclude Include="src\include\AllType.h" />
+    <ClInclude Include="src\include\AssetLoader\GlTFLD.h" />
+    <ClInclude Include="src\include\AssetLoader\RenderStr0.h" />
+    <ClInclude Include="src\include\AssetLoader\ThirdParty\GLTFLoader.hpp" />
+    <ClInclude Include="src\include\CSBinary_generated.h" />
+    <ClInclude Include="src\include\Common\CSP2CPP.h" />
+    <ClInclude Include="src\include\Common\Config.h" />
+    <ClInclude Include="src\include\Common\FirstPersonCamera.hpp" />
+    <ClInclude Include="src\include\Common\FixMath.h" />
+    <ClInclude Include="src\include\Common\InputController.hpp" />
+    <ClInclude Include="src\include\Common\InputUtil.h" />
+    <ClInclude Include="src\include\Common\Math1.h" />
+    <ClInclude Include="src\include\Common\Sort.h" />
+    <ClInclude Include="src\include\Common\Switchs.h" />
+    <ClInclude Include="src\include\Common\Task.h" />
+    <ClInclude Include="src\include\Common\UtilMT.h" />
+    <ClInclude Include="src\include\Common\Utility.h" />
+    <ClInclude Include="src\include\Common\UtilityGeo.h" />
+    <ClInclude Include="src\include\Common\aqdefs.h" />
+    <ClInclude Include="src\include\Common\components.h" />
+    <ClInclude Include="src\include\Common\ecs.hpp" />
+    <ClInclude Include="src\include\Common\math0.h" />
+    <ClInclude Include="src\include\Common\mathext.h" />
+    <ClInclude Include="src\include\Common\mathtable.h" />
+    <ClInclude Include="src\include\Common\span.hpp" />
+    <ClInclude Include="src\include\Common\syss.hpp" />
+    <ClInclude Include="src\include\Common\thObser.h" />
+    <ClInclude Include="src\include\GObjs0.h" />
+    <ClInclude Include="src\include\GProps.h" />
+    <ClInclude Include="src\include\Gameprops0.h" />
+    <ClInclude Include="src\include\GpropExt.h" />
+    <ClInclude Include="src\include\Graphic\modelcom.h" />
+    <ClInclude Include="src\include\Log\log.h" />
+    <ClInclude Include="src\include\Macros.h" />
+    <ClInclude Include="src\include\PCH.h" />
+    <ClInclude Include="src\include\Render\CHeader.h" />
+    <ClInclude Include="src\include\Render\DrawTool.h" />
+    <ClInclude Include="src\include\Render\LineRender.h" />
+    <ClInclude Include="src\include\Render\Mesh.h" />
+    <ClInclude Include="src\include\Render\ModuleHead.h" />
+    <ClInclude Include="src\include\Render\RenderCommon.h" />
+    <ClInclude Include="src\include\Render\RenderUtil.h" />
+    <ClInclude Include="src\include\Render\Renders0.h" />
+    <ClInclude Include="src\include\Render\Renders1.h" />
+    <ClInclude Include="src\include\Render\ShaderStructs.h" />
+    <ClInclude Include="src\include\Render\defArgs.h" />
+    <ClInclude Include="src\include\Render\drawer.h" />
+    <ClInclude Include="src\include\Render\fogRender.h" />
+    <ClInclude Include="src\include\Render\geomatrys.h" />
+    <ClInclude Include="src\include\Render\structs.h" />
+    <ClInclude Include="src\include\Test.hpp" />
+    <ClInclude Include="src\include\audio.h" />
+    <ClInclude Include="src\include\cfgparser.h" />
+    <ClInclude Include="src\include\editor.h" />
+    <ClInclude Include="src\include\editortool\animationeditor.h" />
+    <ClInclude Include="src\include\editortool\modeleditor.h" />
+    <ClInclude Include="src\include\entitys\Ammos.h" />
+    <ClInclude Include="src\include\entitys\Commander.h" />
+    <ClInclude Include="src\include\entitys\Comps1.h" />
+    <ClInclude Include="src\include\entitys\Comps2.h" />
+    <ClInclude Include="src\include\entitys\comm.h" />
+    <ClInclude Include="src\include\entitys\fermions.h" />
+    <ClInclude Include="src\include\entitys\unit.h" />
+    <ClInclude Include="src\include\entitys\units0.h" />
+    <ClInclude Include="src\include\include\enum.h" />
+    <ClInclude Include="src\include\io\AudioManager.h" />
+    <ClInclude Include="src\include\io\BSeri.h" />
+    <ClInclude Include="src\include\io\ObjSeri0.h" />
+    <ClInclude Include="src\include\io\Ser1.h" />
+    <ClInclude Include="src\include\io\Seri0.h" />
+    <ClInclude Include="src\include\io\audio_vorbis.h" />
+    <ClInclude Include="src\include\io\commandin.h" />
+    <ClInclude Include="src\include\io\config.h" />
+    <ClInclude Include="src\include\io\iodef.h" />
+    <ClInclude Include="src\include\io\knames.h" />
+    <ClInclude Include="src\include\io\loader.h" />
+    <ClInclude Include="src\include\main.h" />
+    <ClInclude Include="src\include\os\input.h" />
+    <ClInclude Include="src\include\out\build\x64-Debug\CMakeFiles\ShowIncludes\foo.h" />
+    <ClInclude Include="src\include\shaders\csSort.h" />
+    <ClInclude Include="src\include\shaders\cvstructs.h" />
+    <ClInclude Include="src\include\shpso.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="3rdparty\ImGuizmo\ImGuizmo.cpp" />
+    <ClCompile Include="src\APP0.CPP" />
+    <ClCompile Include="src\include\AI\EvulatAction.cpp" />
+    <ClCompile Include="src\include\AI\algorithm0.cpp" />
+    <ClCompile Include="src\include\AI\imp4.cpp" />
+    <ClCompile Include="src\include\AssetLoader\GlTFLD.cpp" />
+    <ClCompile Include="src\include\AssetLoader\ImpColl.cpp" />
+    <ClCompile Include="src\include\AssetLoader\ThirdParty\GLTFLoader.cpp" />
+    <ClCompile Include="src\include\Common\FirstPersonCamera.cpp" />
+    <ClCompile Include="src\include\Common\Utility.cpp" />
+    <ClCompile Include="src\include\Common\Win32\InputControllerWin32.cpp" />
+    <ClCompile Include="src\include\Common\Win32\kwin.cpp" />
+    <ClCompile Include="src\include\Gameprops0.cpp" />
+    <ClCompile Include="src\include\GpropExt.cpp" />
+    <ClCompile Include="src\include\PCH.cpp" />
+    <ClCompile Include="src\include\Render\DrawTool.cpp" />
+    <ClCompile Include="src\include\Render\EffekseerRendererDE.cpp" />
+    <ClCompile Include="src\include\Render\LineRender.cpp" />
+    <ClCompile Include="src\include\Render\RenderUtil.cpp" />
+    <ClCompile Include="src\include\Render\Renders0.cpp" />
+    <ClCompile Include="src\include\Render\Renders1.cpp" />
+    <ClCompile Include="src\include\Render\drawer.cpp" />
+    <ClCompile Include="src\include\Render\fogRender.cpp" />
+    <ClCompile Include="src\include\Render\geomatrys.cpp" />
+    <ClCompile Include="src\include\Render\structs.cpp" />
+    <ClCompile Include="src\include\cfgparser.cpp" />
+    <ClCompile Include="src\include\editortool\animationeditor.cpp" />
+    <ClCompile Include="src\include\entitys\Ammos.cpp" />
+    <ClCompile Include="src\include\entitys\Comps1.cpp" />
+    <ClCompile Include="src\include\entitys\comm.cpp" />
+    <ClCompile Include="src\include\entitys\units0.cpp" />
+    <ClCompile Include="src\include\g_prop0.cpp" />
+    <ClCompile Include="src\include\io\AudioManager.cpp" />
+    <ClCompile Include="src\include\io\ObjSeri0.cpp" />
+    <ClCompile Include="src\include\io\audio_vorbis.cpp">
+      <ObjectFileName>$(IntDir)\audio_vorbis1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\include\io\cmdlis.cpp" />
+    <ClCompile Include="src\include\io\config.cpp" />
+    <ClCompile Include="src\include\io\loader.cpp" />
+    <ClCompile Include="src\include\out\build\x64-Debug\CMakeFiles\3.20.21032501-MSVC_2\CompilerIdCXX\CMakeCXXCompilerId.cpp" />
+    <ClCompile Include="src\include\shpso.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\turnsys.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\include\Consol.cpp0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="TextureLoader.vcxproj">
+      <Project>{4D05AFAA-B9C5-2AE1-8200-745EEE7F6FBD}</Project>
+    </ProjectReference>
+    <ProjectReference Include="ImGui.vcxproj">
+      <Project>{C0FF640D-2C14-8DBE-F595-301E616989EF}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

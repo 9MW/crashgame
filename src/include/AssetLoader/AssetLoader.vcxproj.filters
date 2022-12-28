@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ThirdParty">
+      <UniqueIdentifier>{107145F9-FC28-8746-6530-60A251072237}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bin">
+      <UniqueIdentifier>{BE61880B-2A6B-887C-B3E6-9E7C1FEF937C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bin\Debug-windows-x86_64">
+      <UniqueIdentifier>{28EF3B9B-1414-8B1B-3D5F-70AB29E38939}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bin\Debug-windows-x86_64\AssetLoader">
+      <UniqueIdentifier>{4E26063B-3A0D-C832-E35D-2E50CF234199}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bin\Release-windows-x86_64">
+      <UniqueIdentifier>{22F816D0-0E08-C3A0-77C1-27BF63F0B139}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bin\Release-windows-x86_64\AssetLoader">
+      <UniqueIdentifier>{48767C0B-34C8-53FB-1DE7-900B09D86CE4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bin-int">
+      <UniqueIdentifier>{168B5978-826A-D813-8B82-63EAF7E03E75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bin-int\Debug-windows-x86_64">
+      <UniqueIdentifier>{805FDA77-6C1A-CA23-15D2-426E016C14B4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bin-int\Debug-windows-x86_64\AssetLoader">
+      <UniqueIdentifier>{A6DA77D1-9257-6B14-BBD4-6B28A7B007A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.tlog">
+      <UniqueIdentifier>{903B16C0-FCAD-58DC-4542-8E60B1F322D5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader_MD.tlog">
+      <UniqueIdentifier>{60389C0D-4CA3-5C19-F5BE-C17EE10820FC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bin-int\Release-windows-x86_64">
+      <UniqueIdentifier>{7ADE124E-6604-DDB4-4F4A-62803B0F0281}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bin-int\Release-windows-x86_64\AssetLoader">
+      <UniqueIdentifier>{A0A02C05-8C08-F3D2-F573-07E9E1FA09BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.tlog">
+      <UniqueIdentifier>{CAF42ADC-36B2-D312-BF7C-BF7A2B394667}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RenderStr0.h" />
+    <ClInclude Include="ThirdParty\GLTFLoader.hpp">
+      <Filter>ThirdParty</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ThirdParty\GLTFLoader.cpp">
+      <Filter>ThirdParty</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AssetLoader.vcxproj" />
+    <None Include="AssetLoader.vcxproj.filters" />
+    <None Include="AssetLoader.vcxproj.user" />
+    <None Include="GFloader.ixx" />
+    <None Include="GLTFDer.ixx" />
+    <None Include="Makefile" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.Build.CppClean.log">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.lib.recipe">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.log">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.tlog\AssetLoader.lastbuildstate">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.tlog</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.tlog\CL.command.1.tlog">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.tlog</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.tlog\CL.read.1.tlog">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.tlog</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.tlog\CL.write.1.tlog">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.tlog</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.tlog\Lib-link.read.1.tlog">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.tlog</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.tlog\Lib-link.write.1.tlog">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.tlog</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.tlog\Lib.command.1.tlog">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.tlog</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.vcxproj.FileListAbsolute.txt">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader_MD.tlog\CL.command.1.tlog">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader_MD.tlog</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader_MD.tlog\Microsoft.Build.CPPTasks.CL.read.1.tlog">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader_MD.tlog</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader_MD.tlog\Microsoft.Build.CPPTasks.CL.write.1.tlog">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader_MD.tlog</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\CodeAnalysisResultManifest.txt">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GFloader.ixx.ifc">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GFloader.ixx.ifc.d.json">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GFloader.ixx.ifc.dt">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GFloader.ixx.ifc.dt.command">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GFloader.ixx.ifc.dt.d.json">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GFloader.ixx.ifc.dt.md.json">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GFloader.ixx.ifc.dt.md.json.command">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GFloader.ixx.obj">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFDer.ixx.ifc">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFDer.ixx.ifc.d.json">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFDer.ixx.ifc.dt">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFDer.ixx.ifc.dt.command">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFDer.ixx.ifc.dt.d.json">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFDer.ixx.ifc.dt.md.json">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFDer.ixx.ifc.dt.md.json.command">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFDer.ixx.obj">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFLoader.hpp.ifc.dt">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFLoader.hpp.ifc.dt.command">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFLoader.hpp.ifc.dt.d.json">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFLoader.hpp.ifc.dt.md.json">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFLoader.hpp.ifc.dt.md.json.command">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFLoader.hpp_Z5BYDQO459SN0CM7.module.json">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFLoader.nativecodeanalysis.sarif">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFLoader.obj">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\gfloader.ixx.module.json">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\gltfder.ixx.module.json">
+      <Filter>bin-int\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.Build.CppClean.log">
+      <Filter>bin-int\Release-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.lib.recipe">
+      <Filter>bin-int\Release-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.log">
+      <Filter>bin-int\Release-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.tlog\AssetLoader.lastbuildstate">
+      <Filter>bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.tlog</Filter>
+    </None>
+    <None Include="bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.tlog\CL.command.1.tlog">
+      <Filter>bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.tlog</Filter>
+    </None>
+    <None Include="bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.tlog\CL.read.1.tlog">
+      <Filter>bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.tlog</Filter>
+    </None>
+    <None Include="bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.tlog\CL.write.1.tlog">
+      <Filter>bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.tlog</Filter>
+    </None>
+    <None Include="bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.tlog\Lib-link.read.1.tlog">
+      <Filter>bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.tlog</Filter>
+    </None>
+    <None Include="bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.tlog\Lib-link.write.1.tlog">
+      <Filter>bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.tlog</Filter>
+    </None>
+    <None Include="bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.tlog\Lib.command.1.tlog">
+      <Filter>bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.tlog</Filter>
+    </None>
+    <None Include="bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.vcxproj.FileListAbsolute.txt">
+      <Filter>bin-int\Release-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Release-windows-x86_64\AssetLoader\CodeAnalysisResultManifest.txt">
+      <Filter>bin-int\Release-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Release-windows-x86_64\AssetLoader\GLTFLoader.nativecodeanalysis.sarif">
+      <Filter>bin-int\Release-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin-int\Release-windows-x86_64\AssetLoader\GLTFLoader.obj">
+      <Filter>bin-int\Release-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin\Debug-windows-x86_64\AssetLoader\AssetLoader.lib">
+      <Filter>bin\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin\Debug-windows-x86_64\AssetLoader\AssetLoader.pdb">
+      <Filter>bin\Debug-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin\Release-windows-x86_64\AssetLoader\AssetLoader.lib">
+      <Filter>bin\Release-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="bin\Release-windows-x86_64\AssetLoader\AssetLoader.pdb">
+      <Filter>bin\Release-windows-x86_64\AssetLoader</Filter>
+    </None>
+    <None Include="premake5.lua" />
+  </ItemGroup>
+</Project>

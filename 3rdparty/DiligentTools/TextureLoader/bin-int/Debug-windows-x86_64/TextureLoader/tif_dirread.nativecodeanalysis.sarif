@@ -1,0 +1,753 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libtiff/tif_dirread.c"
+                },
+                "region": {
+                  "startLine": 1347,
+                  "startColumn": 28,
+                  "endLine": 1347,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TIFFReadDirEntryShortArray",
+                  "decoratedName": "TIFFReadDirEntryShortArray",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libtiff/tif_dirread.c"
+                },
+                "region": {
+                  "startLine": 1519,
+                  "startColumn": 27,
+                  "endLine": 1519,
+                  "endColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TIFFReadDirEntrySshortArray",
+                  "decoratedName": "TIFFReadDirEntrySshortArray",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libtiff/tif_dirread.c"
+                },
+                "region": {
+                  "startLine": 1686,
+                  "startColumn": 28,
+                  "endLine": 1686,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TIFFReadDirEntryLongArray",
+                  "decoratedName": "TIFFReadDirEntryLongArray",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libtiff/tif_dirread.c"
+                },
+                "region": {
+                  "startLine": 1855,
+                  "startColumn": 27,
+                  "endLine": 1855,
+                  "endColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TIFFReadDirEntrySlongArray",
+                  "decoratedName": "TIFFReadDirEntrySlongArray",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libtiff/tif_dirread.c"
+                },
+                "region": {
+                  "startLine": 2017,
+                  "startColumn": 28,
+                  "endLine": 2017,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TIFFReadDirEntryLong8ArrayWithLimit",
+                  "decoratedName": "TIFFReadDirEntryLong8ArrayWithLimit",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libtiff/tif_dirread.c"
+                },
+                "region": {
+                  "startLine": 2188,
+                  "startColumn": 27,
+                  "endLine": 2188,
+                  "endColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TIFFReadDirEntrySlong8Array",
+                  "decoratedName": "TIFFReadDirEntrySlong8Array",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libtiff/tif_dirread.c"
+                },
+                "region": {
+                  "startLine": 2797,
+                  "startColumn": 28,
+                  "endLine": 2797,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TIFFReadDirEntryIfd8Array",
+                  "decoratedName": "TIFFReadDirEntryIfd8Array",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libtiff/tif_dirread.c"
+                },
+                "region": {
+                  "startLine": 3973,
+                  "startColumn": 74,
+                  "endLine": 3973,
+                  "endColumn": 76
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TIFFReadDirectory",
+                  "decoratedName": "TIFFReadDirectory",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libtiff/tif_dirread.c"
+                },
+                "region": {
+                  "startLine": 4541,
+                  "startColumn": 34,
+                  "endLine": 4541,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EstimateStripByteCounts",
+                  "decoratedName": "EstimateStripByteCounts",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libtiff/tif_dirread.c"
+                },
+                "region": {
+                  "startLine": 4539,
+                  "startColumn": 38,
+                  "endLine": 4539,
+                  "endColumn": 47
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EstimateStripByteCounts",
+                  "decoratedName": "EstimateStripByteCounts",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libtiff/tif_dirread.c"
+                },
+                "region": {
+                  "startLine": 4862,
+                  "startColumn": 9,
+                  "endLine": 4862,
+                  "endColumn": 20
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TIFFFetchDirectory",
+                  "decoratedName": "TIFFFetchDirectory",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libtiff/tif_dirread.c"
+                },
+                "region": {
+                  "startLine": 4863,
+                  "startColumn": 30,
+                  "endLine": 4863,
+                  "endColumn": 41
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TIFFFetchDirectory",
+                  "decoratedName": "TIFFFetchDirectory",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libtiff/tif_dirread.c"
+                },
+                "region": {
+                  "startLine": 4870,
+                  "startColumn": 9,
+                  "endLine": 4870,
+                  "endColumn": 22
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TIFFFetchDirectory",
+                  "decoratedName": "TIFFFetchDirectory",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libtiff/tif_dirread.c"
+                },
+                "region": {
+                  "startLine": 4873,
+                  "startColumn": 11,
+                  "endLine": 4873,
+                  "endColumn": 24
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TIFFFetchDirectory",
+                  "decoratedName": "TIFFFetchDirectory",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libtiff/tif_dirread.c"
+                },
+                "region": {
+                  "startLine": 4759,
+                  "startColumn": 8,
+                  "endLine": 4759,
+                  "endColumn": 8
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TIFFFetchDirectory",
+                  "decoratedName": "TIFFFetchDirectory",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libtiff/tif_dirread.c"
+                },
+                "region": {
+                  "startLine": 4759,
+                  "startColumn": 8,
+                  "endLine": 4759,
+                  "endColumn": 8
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TIFFFetchDirectory",
+                  "decoratedName": "TIFFFetchDirectory",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libtiff/tif_dirread.c"
+                },
+                "region": {
+                  "startLine": 4999,
+                  "startColumn": 11,
+                  "endLine": 4999,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TIFFFetchNormalTag",
+                  "decoratedName": "TIFFFetchNormalTag",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libtiff/tif_dirread.c"
+                },
+                "region": {
+                  "startLine": 5002,
+                  "startColumn": 22,
+                  "endLine": 5002,
+                  "endColumn": 45
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TIFFFetchNormalTag",
+                  "decoratedName": "TIFFFetchNormalTag",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libtiff/tif_dirread.c"
+                },
+                "region": {
+                  "startLine": 6064,
+                  "startColumn": 31,
+                  "endLine": 6064,
+                  "endColumn": 40
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "_TIFFPartialReadStripArray",
+                  "decoratedName": "_TIFFPartialReadStripArray",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libtiff/tif_dirread.c"
+                },
+                "region": {
+                  "startLine": 6064,
+                  "startColumn": 31,
+                  "endLine": 6064,
+                  "endColumn": 35
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "_TIFFPartialReadStripArray",
+                  "decoratedName": "_TIFFPartialReadStripArray",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libtiff/tif_dirread.c"
+                },
+                "region": {
+                  "startLine": 6071,
+                  "startColumn": 60,
+                  "endLine": 6071,
+                  "endColumn": 64
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "_TIFFPartialReadStripArray",
+                  "decoratedName": "_TIFFPartialReadStripArray",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libtiff/tif_dirread.c"
+                },
+                "region": {
+                  "startLine": 6081,
+                  "startColumn": 60,
+                  "endLine": 6081,
+                  "endColumn": 64
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "_TIFFPartialReadStripArray",
+                  "decoratedName": "_TIFFPartialReadStripArray",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libtiff/tif_dirread.c"
+                },
+                "region": {
+                  "startLine": 6091,
+                  "startColumn": 60,
+                  "endLine": 6091,
+                  "endColumn": 64
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "_TIFFPartialReadStripArray",
+                  "decoratedName": "_TIFFPartialReadStripArray",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.33.31629.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libtiff/tif_dirread.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "426b401407c03534e7b072bdfa2780e0fd45eb98fe0fb2d4ab1d40067f00a9eb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libtiff/tiffiop.h"
+          },
+          "hashes": {
+            "sha-256": "d77cb23b0bb48bdbdb6e3cf5c837da807bf44bb5240186c7a15f744803f48633"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libtiff/tif_config.h"
+          },
+          "hashes": {
+            "sha-256": "df13f462ba8bf026497ba2dcfd1e501808696893eb31c1506e5a1922dbeb0455"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libtiff/tif_config.vc.h"
+          },
+          "hashes": {
+            "sha-256": "08a2fe64011b25c4b080d422885831b28e9eb878d5fe0764628781e661715e69"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libtiff/tiffio.h"
+          },
+          "hashes": {
+            "sha-256": "ee8a5ac12f4c142054ecfeaf4f5578f0c746e4fbc9bc58a93d40d9bf287e4c65"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libtiff/tiff.h"
+          },
+          "hashes": {
+            "sha-256": "bff874219168b6a1e26027ae16f4a54b34a7f3cfa16af6cc1defe285dfc08431"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libtiff/tiffconf.h"
+          },
+          "hashes": {
+            "sha-256": "230401f06475afafd3b5e7b57289bfeafa0c41dadb842e60413b2b5f02324b5f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libtiff/tiffconf.vc.h"
+          },
+          "hashes": {
+            "sha-256": "38d89580c2f33568916dfb7f0aac4729d4aa579326fa170fa96c2f07b6ed2ca8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libtiff/tiffvers.h"
+          },
+          "hashes": {
+            "sha-256": "58c0731cfec9250dcf643509c6f2e84c0ff7e4432b7131174d96d309d6215304"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libtiff/tif_dir.h"
+          },
+          "hashes": {
+            "sha-256": "cac5b2d23de872475835eb10df1159f392bb9280cc3aa67bb55e6cf81bbeecca"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,489 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C28182",
+          "message": {
+            "text": "Dereferencing NULL pointer. 'qtbl' contains the same NULL value as 'cinfo->quant_tbl_ptrs[qtblno]' did. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcdctmgr.c"
+                },
+                "region": {
+                  "startLine": 373,
+                  "startColumn": 10
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "start_pass_fdctmgr",
+                  "decoratedName": "start_pass_fdctmgr",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcdctmgr.c"
+                          },
+                          "region": {
+                            "startLine": 191,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcdctmgr.c"
+                          },
+                          "region": {
+                            "startLine": 192,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcdctmgr.c"
+                          },
+                          "region": {
+                            "startLine": 192,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcdctmgr.c"
+                          },
+                          "region": {
+                            "startLine": 192,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcdctmgr.c"
+                          },
+                          "region": {
+                            "startLine": 193,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcdctmgr.c"
+                          },
+                          "region": {
+                            "startLine": 194,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcdctmgr.c"
+                          },
+                          "region": {
+                            "startLine": 195,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcdctmgr.c"
+                          },
+                          "region": {
+                            "startLine": 196,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcdctmgr.c"
+                          },
+                          "region": {
+                            "startLine": 198,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcdctmgr.c"
+                          },
+                          "region": {
+                            "startLine": 198,
+                            "startColumn": 47
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcdctmgr.c"
+                          },
+                          "region": {
+                            "startLine": 201,
+                            "startColumn": 47
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcdctmgr.c"
+                          },
+                          "region": {
+                            "startLine": 203,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcdctmgr.c"
+                          },
+                          "region": {
+                            "startLine": 204,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcdctmgr.c"
+                          },
+                          "region": {
+                            "startLine": 205,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcdctmgr.c"
+                          },
+                          "region": {
+                            "startLine": 358,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcdctmgr.c"
+                          },
+                          "region": {
+                            "startLine": 360,
+                            "startColumn": 48
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcdctmgr.c"
+                          },
+                          "region": {
+                            "startLine": 362,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcdctmgr.c"
+                          },
+                          "region": {
+                            "startLine": 363,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "'qtbl' may be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcdctmgr.c"
+                          },
+                          "region": {
+                            "startLine": 365,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "Assume switch ( 'method' ) resolves to case JDCT_ISLOW: "
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcdctmgr.c"
+                          },
+                          "region": {
+                            "startLine": 367,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcdctmgr.c"
+                          },
+                          "region": {
+                            "startLine": 371,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcdctmgr.c"
+                          },
+                          "region": {
+                            "startLine": 372,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcdctmgr.c"
+                          },
+                          "region": {
+                            "startLine": 372,
+                            "startColumn": 21
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume 'i<64')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcdctmgr.c"
+                          },
+                          "region": {
+                            "startLine": 373,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "'qtbl' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.33.31629.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcdctmgr.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "788273cfc9a60a509231db3972610cc7d566a96a8367c4df74702f59a59401a0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jinclude.h"
+          },
+          "hashes": {
+            "sha-256": "a41e645742864969b4cac5df68a0ebd54fa34e1988d7d889fb7ce1501cab7285"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jconfig.h"
+          },
+          "hashes": {
+            "sha-256": "02da58b120fd121009fde30f9f2bb34ce6584c4062c5f03570bf3fdadd06310e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jpeglib.h"
+          },
+          "hashes": {
+            "sha-256": "7dfff1e1f499f1d2a72dacb691e6c405c49d3bceec17703b8fc68c802df7ba7e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jmorecfg.h"
+          },
+          "hashes": {
+            "sha-256": "295042cc18628158d7fcaa3eda25f955735b3f435c1a8a2302d521d815b2398e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jpegint.h"
+          },
+          "hashes": {
+            "sha-256": "3a7d02a62b1ed8858d12f868dd9adf10dfdb3f1e5f484030aaee6214d8f4a3e2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jerror.h"
+          },
+          "hashes": {
+            "sha-256": "ec82aced6ae77feaa2feaf6bc197d51a49f20a7b6d5e32bffaa215046363afca"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jdct.h"
+          },
+          "hashes": {
+            "sha-256": "4d17fad16985ba89c4dc7b529bc16c7cf48bca727201453bef54959051aea180"
+          }
+        }
+      ]
+    }
+  ]
+}

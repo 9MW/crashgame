@@ -1,0 +1,2553 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                },
+                "region": {
+                  "startLine": 496,
+                  "startColumn": 35,
+                  "endLine": 496,
+                  "endColumn": 39
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "encode_mcu_AC_first",
+                  "decoratedName": "encode_mcu_AC_first",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                },
+                "region": {
+                  "startLine": 543,
+                  "startColumn": 35,
+                  "endLine": 543,
+                  "endColumn": 39
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "encode_mcu_AC_first",
+                  "decoratedName": "encode_mcu_AC_first",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                },
+                "region": {
+                  "startLine": 647,
+                  "startColumn": 35,
+                  "endLine": 647,
+                  "endColumn": 39
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "encode_mcu_AC_refine",
+                  "decoratedName": "encode_mcu_AC_refine",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                },
+                "region": {
+                  "startLine": 679,
+                  "startColumn": 35,
+                  "endLine": 679,
+                  "endColumn": 39
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "encode_mcu_AC_refine",
+                  "decoratedName": "encode_mcu_AC_refine",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                },
+                "region": {
+                  "startLine": 785,
+                  "startColumn": 37,
+                  "endLine": 785,
+                  "endColumn": 41
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "encode_mcu",
+                  "decoratedName": "encode_mcu",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                },
+                "region": {
+                  "startLine": 827,
+                  "startColumn": 37,
+                  "endLine": 827,
+                  "endColumn": 41
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "encode_mcu",
+                  "decoratedName": "encode_mcu",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6385",
+          "message": {
+            "text": "Reading invalid data from 'entropy->dc_stats'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                },
+                "region": {
+                  "startLine": 880,
+                  "startColumn": 11,
+                  "endLine": 880,
+                  "endColumn": 37
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "start_pass",
+                  "decoratedName": "start_pass",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 843,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 844,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 844,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 845,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 847,
+                            "startColumn": 7
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'gather_statistics' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 857,
+                            "startColumn": 12
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'cinfo->progressive_mode' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 870,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 873,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 873,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume 'ci<cinfo->comps_in_scan')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 874,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 876,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'cinfo->Ss==0&&cinfo->Ah==0')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 877,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 878,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'tbl<0||tbl>=16')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 879,
+                            "startColumn": 2
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 880,
+                            "startColumn": 34
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 880,
+                            "startColumn": 34
+                          }
+                        },
+                        "message": {
+                          "text": "Invalid read from 'entropy->dc_stats[16]', (readable range is 0 to 15)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6386",
+          "message": {
+            "text": "Buffer overrun while writing to 'entropy->dc_stats'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                },
+                "region": {
+                  "startLine": 881,
+                  "startColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "start_pass",
+                  "decoratedName": "start_pass",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 843,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 844,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 844,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 845,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 847,
+                            "startColumn": 7
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'gather_statistics' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 857,
+                            "startColumn": 12
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'cinfo->progressive_mode' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 870,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 873,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 873,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume 'ci<cinfo->comps_in_scan')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 874,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 876,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'cinfo->Ss==0&&cinfo->Ah==0')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 877,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 878,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'tbl<0||tbl>=16')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 879,
+                            "startColumn": 2
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 880,
+                            "startColumn": 34
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume '<branch condition>')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 881,
+                            "startColumn": 25
+                          }
+                        },
+                        "message": {
+                          "text": "Invalid write to 'entropy->dc_stats[16]', (writable range is 0 to 15)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'entropy->dc_stats[tbl]' could be '0'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                },
+                "region": {
+                  "startLine": 883,
+                  "startColumn": 7,
+                  "endLine": 883,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "start_pass",
+                  "decoratedName": "start_pass",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 843,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 844,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 844,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 845,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 847,
+                            "startColumn": 7
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'gather_statistics' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 857,
+                            "startColumn": 12
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'cinfo->progressive_mode' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 870,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 873,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 873,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume 'ci<cinfo->comps_in_scan')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 874,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 876,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'cinfo->Ss==0&&cinfo->Ah==0')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 877,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 878,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'tbl<0||tbl>=16' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 880,
+                            "startColumn": 34
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume '<branch condition>')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 881,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 883,
+                            "startColumn": 7
+                          }
+                        },
+                        "message": {
+                          "text": "'dc_stats' is an In/Out argument to 'memset' (declared at d:\\program files\\microsoft visual studio\\2022\\preview\\vc\\tools\\msvc\\14.33.31629\\include\\vcruntime_string.h:63)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 885,
+                            "startColumn": 32
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 886,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 889,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'cinfo->Se' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 873,
+                            "startColumn": 45
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 873,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Continue this loop, (assume 'ci<cinfo->comps_in_scan')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 874,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 876,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'cinfo->Ss==0&&cinfo->Ah==0')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 877,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 878,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'tbl<0||tbl>=16' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 880,
+                            "startColumn": 34
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume '<branch condition>')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 881,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 883,
+                            "startColumn": 7
+                          }
+                        },
+                        "message": {
+                          "text": "'dc_stats' is an In/Out argument to 'memset' (declared at d:\\program files\\microsoft visual studio\\2022\\preview\\vc\\tools\\msvc\\14.33.31629\\include\\vcruntime_string.h:63)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 883,
+                            "startColumn": 7
+                          }
+                        },
+                        "message": {
+                          "text": "'entropy->dc_stats[tbl]' should not be NULL, because this is not consistent with the SAL annotation on 'memset'"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6385",
+          "message": {
+            "text": "Reading invalid data from 'entropy->ac_stats'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                },
+                "region": {
+                  "startLine": 893,
+                  "startColumn": 11,
+                  "endLine": 893,
+                  "endColumn": 37
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "start_pass",
+                  "decoratedName": "start_pass",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 843,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 844,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 844,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 845,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 847,
+                            "startColumn": 7
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'gather_statistics' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 857,
+                            "startColumn": 12
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'cinfo->progressive_mode' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 870,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 873,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 873,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume 'ci<cinfo->comps_in_scan')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 874,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 876,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'cinfo->Ss==0&&cinfo->Ah==0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 889,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'cinfo->Se')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 890,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 891,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'tbl<0||tbl>=16')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 892,
+                            "startColumn": 2
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 893,
+                            "startColumn": 34
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 893,
+                            "startColumn": 34
+                          }
+                        },
+                        "message": {
+                          "text": "Invalid read from 'entropy->ac_stats[16]', (readable range is 0 to 15)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6386",
+          "message": {
+            "text": "Buffer overrun while writing to 'entropy->ac_stats'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                },
+                "region": {
+                  "startLine": 894,
+                  "startColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "start_pass",
+                  "decoratedName": "start_pass",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 843,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 844,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 844,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 845,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 847,
+                            "startColumn": 7
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'gather_statistics' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 857,
+                            "startColumn": 12
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'cinfo->progressive_mode' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 870,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 873,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 873,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume 'ci<cinfo->comps_in_scan')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 874,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 876,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'cinfo->Ss==0&&cinfo->Ah==0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 889,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'cinfo->Se')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 890,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 891,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'tbl<0||tbl>=16')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 892,
+                            "startColumn": 2
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 893,
+                            "startColumn": 34
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume '<branch condition>')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 894,
+                            "startColumn": 25
+                          }
+                        },
+                        "message": {
+                          "text": "Invalid write to 'entropy->ac_stats[16]', (writable range is 0 to 15)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'entropy->ac_stats[tbl]' could be '0'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                },
+                "region": {
+                  "startLine": 896,
+                  "startColumn": 7,
+                  "endLine": 896,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "start_pass",
+                  "decoratedName": "start_pass",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 843,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 844,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 844,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 845,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 847,
+                            "startColumn": 7
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'gather_statistics' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 857,
+                            "startColumn": 12
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'cinfo->progressive_mode' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 870,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 873,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 873,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume 'ci<cinfo->comps_in_scan')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 874,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 876,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'cinfo->Ss==0&&cinfo->Ah==0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 889,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'cinfo->Se')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 890,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 891,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'tbl<0||tbl>=16' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 893,
+                            "startColumn": 34
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume '<branch condition>')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 894,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 896,
+                            "startColumn": 7
+                          }
+                        },
+                        "message": {
+                          "text": "'ac_stats' is an In/Out argument to 'memset' (declared at d:\\program files\\microsoft visual studio\\2022\\preview\\vc\\tools\\msvc\\14.33.31629\\include\\vcruntime_string.h:63)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 873,
+                            "startColumn": 45
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 873,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Continue this loop, (assume 'ci<cinfo->comps_in_scan')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 874,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 876,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'cinfo->Ss==0&&cinfo->Ah==0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 889,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'cinfo->Se')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 890,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 891,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'tbl<0||tbl>=16' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 893,
+                            "startColumn": 34
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume '<branch condition>')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 894,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 896,
+                            "startColumn": 7
+                          }
+                        },
+                        "message": {
+                          "text": "'ac_stats' is an In/Out argument to 'memset' (declared at d:\\program files\\microsoft visual studio\\2022\\preview\\vc\\tools\\msvc\\14.33.31629\\include\\vcruntime_string.h:63)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+                          },
+                          "region": {
+                            "startLine": 896,
+                            "startColumn": 7
+                          }
+                        },
+                        "message": {
+                          "text": "'entropy->ac_stats[tbl]' should not be NULL, because this is not consistent with the SAL annotation on 'memset'"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.33.31629.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jcarith.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "85b284a5721529e0a282fe270109d7f1faddcae6dec4811b0a5430f02438facd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jinclude.h"
+          },
+          "hashes": {
+            "sha-256": "a41e645742864969b4cac5df68a0ebd54fa34e1988d7d889fb7ce1501cab7285"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jconfig.h"
+          },
+          "hashes": {
+            "sha-256": "02da58b120fd121009fde30f9f2bb34ce6584c4062c5f03570bf3fdadd06310e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jpeglib.h"
+          },
+          "hashes": {
+            "sha-256": "7dfff1e1f499f1d2a72dacb691e6c405c49d3bceec17703b8fc68c802df7ba7e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jmorecfg.h"
+          },
+          "hashes": {
+            "sha-256": "295042cc18628158d7fcaa3eda25f955735b3f435c1a8a2302d521d815b2398e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jpegint.h"
+          },
+          "hashes": {
+            "sha-256": "3a7d02a62b1ed8858d12f868dd9adf10dfdb3f1e5f484030aaee6214d8f4a3e2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jerror.h"
+          },
+          "hashes": {
+            "sha-256": "ec82aced6ae77feaa2feaf6bc197d51a49f20a7b6d5e32bffaa215046363afca"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tiffos_data::stream' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libtiff/tif_stream.cxx"
+                },
+                "region": {
+                  "startLine": 105,
+                  "startColumn": 1,
+                  "endLine": 105,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "tiffos_data::{ctor}",
+                  "decoratedName": "??0tiffos_data@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "tiffos_data::stream"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tiffis_data::stream' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libtiff/tif_stream.cxx"
+                },
+                "region": {
+                  "startLine": 99,
+                  "startColumn": 1,
+                  "endLine": 99,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "tiffis_data::{ctor}",
+                  "decoratedName": "??0tiffis_data@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "tiffis_data::stream"
+          }
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.33.31629.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libtiff/tif_stream.cxx"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "6b71f2ac3503431173bda15a5d20d6652c8d82c812e593b6e0f03e8dd18fcb9c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libtiff/tiffiop.h"
+          },
+          "hashes": {
+            "sha-256": "d77cb23b0bb48bdbdb6e3cf5c837da807bf44bb5240186c7a15f744803f48633"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libtiff/tif_config.h"
+          },
+          "hashes": {
+            "sha-256": "df13f462ba8bf026497ba2dcfd1e501808696893eb31c1506e5a1922dbeb0455"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libtiff/tif_config.vc.h"
+          },
+          "hashes": {
+            "sha-256": "08a2fe64011b25c4b080d422885831b28e9eb878d5fe0764628781e661715e69"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libtiff/tiffio.h"
+          },
+          "hashes": {
+            "sha-256": "ee8a5ac12f4c142054ecfeaf4f5578f0c746e4fbc9bc58a93d40d9bf287e4c65"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libtiff/tiff.h"
+          },
+          "hashes": {
+            "sha-256": "bff874219168b6a1e26027ae16f4a54b34a7f3cfa16af6cc1defe285dfc08431"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libtiff/tiffconf.h"
+          },
+          "hashes": {
+            "sha-256": "230401f06475afafd3b5e7b57289bfeafa0c41dadb842e60413b2b5f02324b5f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libtiff/tiffconf.vc.h"
+          },
+          "hashes": {
+            "sha-256": "38d89580c2f33568916dfb7f0aac4729d4aa579326fa170fa96c2f07b6ed2ca8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libtiff/tiffvers.h"
+          },
+          "hashes": {
+            "sha-256": "58c0731cfec9250dcf643509c6f2e84c0ff7e4432b7131174d96d309d6215304"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libtiff/tif_dir.h"
+          },
+          "hashes": {
+            "sha-256": "cac5b2d23de872475835eb10df1159f392bb9280cc3aa67bb55e6cf81bbeecca"
+          }
+        }
+      ]
+    }
+  ]
+}

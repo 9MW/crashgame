@@ -1,0 +1,12 @@
+
+/.vs
+/bin
+/bin-int
+/build
+src/AssetLoader/bin-int
+src/AssetLoader/bin
+/src/include/AssetLoader/bin-int
+/libs/Debug/zlib-1.2.8
+/libs/Debug/lpng-1.6.17
+/libs/Debug/libtiff
+/libs/Debug/libjpeg-9a

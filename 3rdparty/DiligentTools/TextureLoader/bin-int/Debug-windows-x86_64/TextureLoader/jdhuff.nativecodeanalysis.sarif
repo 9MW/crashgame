@@ -1,0 +1,1149 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6385",
+          "message": {
+            "text": "Reading invalid data from 'huffcode'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                },
+                "region": {
+                  "startLine": 397,
+                  "startColumn": 7,
+                  "endLine": 397,
+                  "endColumn": 37
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "jpeg_make_d_derived_tbl",
+                  "decoratedName": "jpeg_make_d_derived_tbl",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 326,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 327,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 328,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 328,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 328,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 328,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 328,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 329,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 329,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 330,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 331,
+                            "startColumn": 16
+                          }
+                        },
+                        "message": {
+                          "text": "'huffcode' is an array of 257 elements (1028 bytes)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 332,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 339,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'tblno<0||tblno>=4' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 341,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 343,
+                            "startColumn": 12
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'htbl==(((void *)0))' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 347,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '*pdtbl==(((void *)0))' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 351,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 352,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 356,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 357,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 357,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume 'l<=16')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 358,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 359,
+                            "startColumn": 15
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'i<0||p+i>256')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 360,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 361,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this loop, (assume 'i--' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 362,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 361,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this loop, (assume 'i--' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 362,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 361,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 357,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 357,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume 'l<=16')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 358,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 359,
+                            "startColumn": 15
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'i<0||p+i>256')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 360,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 361,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 357,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 357,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "Continue this loop, (assume 'l<=16')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 364,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 365,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 370,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 371,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 372,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 373,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume 'huffsize[p]')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 374,
+                            "startColumn": 32
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 375,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 376,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 374,
+                            "startColumn": 32
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 375,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 376,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 374,
+                            "startColumn": 32
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 381,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume '<branch condition>')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 382,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 383,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 384,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 373,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "Exit this loop, ('huffsize[p]' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 389,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 390,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 390,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume 'l<=16')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 391,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'htbl->bits[l]')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 395,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 396,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                          },
+                          "region": {
+                            "startLine": 397,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "Invalid read from 'huffcode[-2]', (readable range is 0 to 256)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26453",
+          "message": {
+            "text": "Arithmetic overflow: Left shift of a negative signed number is undefined behavior (io.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                },
+                "region": {
+                  "startLine": 941,
+                  "startColumn": 11,
+                  "endLine": 941,
+                  "endColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "decode_mcu_AC_refine",
+                  "decoratedName": "decode_mcu_AC_refine",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+                },
+                "region": {
+                  "startLine": 1538,
+                  "startColumn": 7,
+                  "endLine": 1538,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "jinit_huff_decoder",
+                  "decoratedName": "jinit_huff_decoder",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.33.31629.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/projects/pj2/pj2/3rdparty/DiligentTools/ThirdParty/libjpeg-9a/jdhuff.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "eea0319944aa4d16c2fe0689a5f98d977e0a0f4127a2764f1b0b9cf392ec0134"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jinclude.h"
+          },
+          "hashes": {
+            "sha-256": "a41e645742864969b4cac5df68a0ebd54fa34e1988d7d889fb7ce1501cab7285"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jconfig.h"
+          },
+          "hashes": {
+            "sha-256": "02da58b120fd121009fde30f9f2bb34ce6584c4062c5f03570bf3fdadd06310e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jpeglib.h"
+          },
+          "hashes": {
+            "sha-256": "7dfff1e1f499f1d2a72dacb691e6c405c49d3bceec17703b8fc68c802df7ba7e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jmorecfg.h"
+          },
+          "hashes": {
+            "sha-256": "295042cc18628158d7fcaa3eda25f955735b3f435c1a8a2302d521d815b2398e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jpegint.h"
+          },
+          "hashes": {
+            "sha-256": "3a7d02a62b1ed8858d12f868dd9adf10dfdb3f1e5f484030aaee6214d8f4a3e2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/libjpeg-9a/jerror.h"
+          },
+          "hashes": {
+            "sha-256": "ec82aced6ae77feaa2feaf6bc197d51a49f20a7b6d5e32bffaa215046363afca"
+          }
+        }
+      ]
+    }
+  ]
+}

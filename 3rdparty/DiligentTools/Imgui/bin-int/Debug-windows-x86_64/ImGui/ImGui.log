@@ -1,0 +1,16 @@
+﻿cl : command line  warning D9025: overriding '/MTd' with '/MDd'
+cl : command line  warning D9025: overriding '/MTd' with '/MDd'
+  imgui_impl_glfw.cpp
+cl : command line  warning D9025: overriding '/MTd' with '/MDd'
+  imgui.cpp
+cl : command line  warning D9025: overriding '/MTd' with '/MDd'
+  imgui_demo.cpp
+cl : command line  warning D9025: overriding '/MTd' with '/MDd'
+  imgui_draw.cpp
+  imgui_tables.cpp
+  imgui_widgets.cpp
+  ImGuiDiligentRenderer.cpp
+  ImGuiImplDiligent.cpp
+  ImGuiImplWin32.cpp
+  imGuiimpGLFW.cpp
+  ImGui.vcxproj -> E:\repos\crashgame\3rdparty\DiligentTools\imgui\bin\Debug-windows-x86_64\ImGui\ImGui.lib

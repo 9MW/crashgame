@@ -1,0 +1,3 @@
+name,hp,armor,marmor,speed,damage,mdamage,agile,critical,movetime
+warrior,52,1,0,1,2,0,0,10,0
+hunter,50,0,0,1.25,2,0,10,10,1

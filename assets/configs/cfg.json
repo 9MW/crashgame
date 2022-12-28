@@ -1,0 +1,28 @@
+{
+  "units": [
+    {
+      "name": "warrior",
+      "hp": "52",
+      "armor": "1",
+      "marmor": "0",
+      "speed": "1",
+      "damage": "2",
+      "mdamage": "0",
+      "agile": "0",
+      "critical": "5",
+      "attackdis": "melee"
+    },
+    {
+      "name": "hunter",
+      "hp": "50",
+      "armor": "0",
+      "marmor": "0",
+      "speed": "1.25",
+      "damage": "2",
+      "mdamage": "0",
+      "agile": "10",
+      "critical": "10",
+      "attackdis": "melee"
+    }
+  ]
+}

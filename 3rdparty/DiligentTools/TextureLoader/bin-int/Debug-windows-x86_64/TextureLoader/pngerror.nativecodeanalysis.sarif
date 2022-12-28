@@ -1,0 +1,107 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.33.31629.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/lpng-1.6.17/pngerror.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "742c5bd95a383a2317eacb03115921baff86110d17cbb56e8510d52156c0ca46"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/lpng-1.6.17/pngpriv.h"
+          },
+          "hashes": {
+            "sha-256": "4c21766b318479d7738350e6153597954e3f60832448760a31ef6f302e17bbb1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/lpng-1.6.17/pnglibconf.h"
+          },
+          "hashes": {
+            "sha-256": "67ec0dcf5f8c70dc7b49c7486561520ef37cf7a719d84b430a0b5c717f2e099d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/lpng-1.6.17/png.h"
+          },
+          "hashes": {
+            "sha-256": "c0a36274eb03d73c6d23ab04b78c34608e304dac037f9589c7e1804ab05c7651"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/lpng-1.6.17/pngconf.h"
+          },
+          "hashes": {
+            "sha-256": "da2f1aaa38a9dad166492d3c67ffdb800931444f3b148a249accadf72b2b620c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/lpng-1.6.17/pngstruct.h"
+          },
+          "hashes": {
+            "sha-256": "3cd7e2412a099156d3445e7a778c3ed13a99b3d67a6a788c4f3a165dcba9a26f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/zlib-1.2.8/zlib.h"
+          },
+          "hashes": {
+            "sha-256": "730562db847f07242943019760733ac65e01d2885143399f67f48c42a1730d65"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/zlib-1.2.8/zconf.h"
+          },
+          "hashes": {
+            "sha-256": "5327366dd8be4bc12108997ad8bef658d54f32507b2ffcdf2613c07fd9b44507"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/lpng-1.6.17/pnginfo.h"
+          },
+          "hashes": {
+            "sha-256": "76fe9dde89ba9301a4135670fb94916aad0fa79bb78e6afe46349d1574b0fa9d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/lpng-1.6.17/pngdebug.h"
+          },
+          "hashes": {
+            "sha-256": "65215d5d933f3ee1bb8991b719cc6505bd4a13b907af670624e5e37aace33173"
+          }
+        }
+      ]
+    }
+  ]
+}

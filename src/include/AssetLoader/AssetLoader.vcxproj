@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dist|x64">
+      <Configuration>Dist</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3CDE4DBD-A893-C6B2-3188-C0899D3CBDB6}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>AssetLoader</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>bin\Debug-windows-x86_64\AssetLoader\</OutDir>
+    <IntDir>bin-int\Debug-windows-x86_64\AssetLoader\</IntDir>
+    <TargetName>AssetLoader</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>bin\Release-windows-x86_64\AssetLoader\</OutDir>
+    <IntDir>bin-int\Release-windows-x86_64\AssetLoader\</IntDir>
+    <TargetName>AssetLoader</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <OutDir>bin\Dist-windows-x86_64\AssetLoader\</OutDir>
+    <IntDir>bin-int\Dist-windows-x86_64\AssetLoader\</IntDir>
+    <TargetName>AssetLoader</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>PLATFORM_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\3rdparty;..\..\3rdparty\DiligentTools\TextureLoader\interface;D:\CPPLib\DiligentEngine\DiligentCore\Common\interface;D:\CPPLib\DiligentEngine\DiligentCore\Platforms\Win32\interface;D:\CPPLib\DiligentEngine\DiligentCore\Platforms\Basic\interface;D:\CPPLib\DiligentEngine\DiligentCore\Primitives\interface;D:\CPPLib\DiligentEngine\DiligentCore\Platforms\interface;D:\CPPLib\DiligentEngine\DiligentCore\Graphics\GraphicsEngine\interface;D:\CPPLib\DiligentEngine\DiligentCore\Graphics\GraphicsAccessories\interface;D:\CPPLib\DiligentEngine\DiligentCore\Graphics\GraphicsTools\interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>PLATFORM_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\3rdparty;..\..\3rdparty\DiligentTools\TextureLoader\interface;D:\CPPLib\DiligentEngine\DiligentCore\Common\interface;D:\CPPLib\DiligentEngine\DiligentCore\Platforms\Win32\interface;D:\CPPLib\DiligentEngine\DiligentCore\Platforms\Basic\interface;D:\CPPLib\DiligentEngine\DiligentCore\Primitives\interface;D:\CPPLib\DiligentEngine\DiligentCore\Platforms\interface;D:\CPPLib\DiligentEngine\DiligentCore\Graphics\GraphicsEngine\interface;D:\CPPLib\DiligentEngine\DiligentCore\Graphics\GraphicsAccessories\interface;D:\CPPLib\DiligentEngine\DiligentCore\Graphics\GraphicsTools\interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>PLATFORM_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\3rdparty;..\..\3rdparty\DiligentTools\TextureLoader\interface;D:\CPPLib\DiligentEngine\DiligentCore\Common\interface;D:\CPPLib\DiligentEngine\DiligentCore\Platforms\Win32\interface;D:\CPPLib\DiligentEngine\DiligentCore\Platforms\Basic\interface;D:\CPPLib\DiligentEngine\DiligentCore\Primitives\interface;D:\CPPLib\DiligentEngine\DiligentCore\Platforms\interface;D:\CPPLib\DiligentEngine\DiligentCore\Graphics\GraphicsEngine\interface;D:\CPPLib\DiligentEngine\DiligentCore\Graphics\GraphicsAccessories\interface;D:\CPPLib\DiligentEngine\DiligentCore\Graphics\GraphicsTools\interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="RenderStr0.h" />
+    <ClInclude Include="ThirdParty\GLTFLoader.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ThirdParty\GLTFLoader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AssetLoader.vcxproj" />
+    <None Include="AssetLoader.vcxproj.filters" />
+    <None Include="AssetLoader.vcxproj.user" />
+    <None Include="GFloader.ixx" />
+    <None Include="GLTFDer.ixx" />
+    <None Include="Makefile" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.Build.CppClean.log" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.lib.recipe" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.log" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.tlog\AssetLoader.lastbuildstate" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.tlog\CL.command.1.tlog" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.tlog\CL.read.1.tlog" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.tlog\CL.write.1.tlog" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.tlog\Lib-link.read.1.tlog" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.tlog\Lib-link.write.1.tlog" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.tlog\Lib.command.1.tlog" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader.vcxproj.FileListAbsolute.txt" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader_MD.tlog\CL.command.1.tlog" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader_MD.tlog\Microsoft.Build.CPPTasks.CL.read.1.tlog" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\AssetLoader_MD.tlog\Microsoft.Build.CPPTasks.CL.write.1.tlog" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\CodeAnalysisResultManifest.txt" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GFloader.ixx.ifc" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GFloader.ixx.ifc.d.json" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GFloader.ixx.ifc.dt" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GFloader.ixx.ifc.dt.command" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GFloader.ixx.ifc.dt.d.json" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GFloader.ixx.ifc.dt.md.json" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GFloader.ixx.ifc.dt.md.json.command" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GFloader.ixx.obj" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFDer.ixx.ifc" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFDer.ixx.ifc.d.json" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFDer.ixx.ifc.dt" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFDer.ixx.ifc.dt.command" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFDer.ixx.ifc.dt.d.json" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFDer.ixx.ifc.dt.md.json" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFDer.ixx.ifc.dt.md.json.command" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFDer.ixx.obj" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFLoader.hpp.ifc.dt" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFLoader.hpp.ifc.dt.command" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFLoader.hpp.ifc.dt.d.json" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFLoader.hpp.ifc.dt.md.json" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFLoader.hpp.ifc.dt.md.json.command" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFLoader.hpp_Z5BYDQO459SN0CM7.module.json" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFLoader.nativecodeanalysis.sarif" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\GLTFLoader.obj" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\gfloader.ixx.module.json" />
+    <None Include="bin-int\Debug-windows-x86_64\AssetLoader\gltfder.ixx.module.json" />
+    <None Include="bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.Build.CppClean.log" />
+    <None Include="bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.lib.recipe" />
+    <None Include="bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.log" />
+    <None Include="bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.tlog\AssetLoader.lastbuildstate" />
+    <None Include="bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.tlog\CL.command.1.tlog" />
+    <None Include="bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.tlog\CL.read.1.tlog" />
+    <None Include="bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.tlog\CL.write.1.tlog" />
+    <None Include="bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.tlog\Lib-link.read.1.tlog" />
+    <None Include="bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.tlog\Lib-link.write.1.tlog" />
+    <None Include="bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.tlog\Lib.command.1.tlog" />
+    <None Include="bin-int\Release-windows-x86_64\AssetLoader\AssetLoader.vcxproj.FileListAbsolute.txt" />
+    <None Include="bin-int\Release-windows-x86_64\AssetLoader\CodeAnalysisResultManifest.txt" />
+    <None Include="bin-int\Release-windows-x86_64\AssetLoader\GLTFLoader.nativecodeanalysis.sarif" />
+    <None Include="bin-int\Release-windows-x86_64\AssetLoader\GLTFLoader.obj" />
+    <None Include="bin\Debug-windows-x86_64\AssetLoader\AssetLoader.lib" />
+    <None Include="bin\Debug-windows-x86_64\AssetLoader\AssetLoader.pdb" />
+    <None Include="bin\Release-windows-x86_64\AssetLoader\AssetLoader.lib" />
+    <None Include="bin\Release-windows-x86_64\AssetLoader\AssetLoader.pdb" />
+    <None Include="premake5.lua" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

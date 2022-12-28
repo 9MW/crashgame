@@ -1,0 +1,195 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.33.31629.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/imgui/src/imguiimplwin32.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "881792f97f8aa8dd526e077ff4ffcfefbe0bb64531f59856d9109c20682d8e1e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/cpplib/diligentengine/diligentcore/graphics/graphicsengine/interface/graphicstypes.h"
+          },
+          "hashes": {
+            "sha-256": "6dd77d4896aa3284bcd0b8a046507eab45158b31798e24870c9510475d22f4a3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/cpplib/diligentengine/diligentcore/primitives/interface/basictypes.h"
+          },
+          "hashes": {
+            "sha-256": "1c348ca4e7972139fe81af2cf00f29dfc860882c9f75a4e361dc8efd25444f07"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/cpplib/diligentengine/diligentcore/primitives/interface/commondefinitions.h"
+          },
+          "hashes": {
+            "sha-256": "34127c5b07441bc40101ba506a7f9e3d9eb1f2ad5cc8041136d1a707b90420db"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/cpplib/diligentengine/diligentcore/primitives/interface/debugoutput.h"
+          },
+          "hashes": {
+            "sha-256": "4daac2cbe369c21ba423e21ef6c6409d86a5d4304a6369fff5adb6a7b7be36bd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/cpplib/diligentengine/diligentcore/primitives/interface/flagenum.h"
+          },
+          "hashes": {
+            "sha-256": "e99fab7fd1ed9db6a5752771054fb734c7ed720a225cacc8e55ab5c73c47e265"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/cpplib/diligentengine/diligentcore/platforms/interface/nativewindow.h"
+          },
+          "hashes": {
+            "sha-256": "ee98fbb158dc3deed810a317025cddefb54bf6f07c040418d7d9786ea4067b30"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/cpplib/diligentengine/diligentcore/platforms/interface/platformdefinitions.h"
+          },
+          "hashes": {
+            "sha-256": "95562f6ba033d46f24942480bf320193fce48094f3a23f2d1496856862f51d12"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/cpplib/diligentengine/diligentcore/platforms/win32/interface/win32platformdefinitions.h"
+          },
+          "hashes": {
+            "sha-256": "6aa132d1995b58a271de15195c1be939d53d9fee07901b54d12f64cfdcd7ff8b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/cpplib/diligentengine/diligentcore/platforms/win32/interface/win32nativewindow.h"
+          },
+          "hashes": {
+            "sha-256": "4fa8d829dc7263423a3b9f2d06702fc6a42946e232066a7905232a247aedaa05"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/cpplib/diligentengine/diligentcore/graphics/graphicsengine/interface/apiinfo.h"
+          },
+          "hashes": {
+            "sha-256": "8e3b2c370af6f372ea2d14f5281a0ee6d185e3c206a3bd72c74605e9f376ba69"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/cpplib/diligentengine/diligentcore/graphics/graphicsengine/interface/constants.h"
+          },
+          "hashes": {
+            "sha-256": "4ef51873b766e16569dc37673a6053a64a04a81a71f79e79ceee1342c62651de"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/imgui/imgui.h"
+          },
+          "hashes": {
+            "sha-256": "8e32ec9166d906cd53c57a6961ebba88dff0e5e464afed91feea71c8aa5b2059"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/imgui/imconfig.h"
+          },
+          "hashes": {
+            "sha-256": "3de00daa35087bdf39e7d917b5ffa7affec457cfa961d09a175064f67e64a810"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/imgui/interface/imguiimplwin32.hpp"
+          },
+          "hashes": {
+            "sha-256": "6f88cb9b19448a65f792f9ba175a8efc864b05683ebd8c9255689cc08029c3c9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/imgui/interface/imguiimpldiligent.hpp"
+          },
+          "hashes": {
+            "sha-256": "b64cb1bffdbc38aed45f945a8dc29c33456a07b8b1a0ddf341fc1af7182e1dbc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/pj2/pj2/3rdparty/diligenttools/thirdparty/imgui/backends/imgui_impl_win32.h"
+          },
+          "hashes": {
+            "sha-256": "efd73337b527cf0593b36f65f36a1d828665a2368c6d500d88a2fc3bd574a7b7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/cpplib/diligentengine/diligentcore/platforms/basic/interface/debugutilities.hpp"
+          },
+          "hashes": {
+            "sha-256": "a3f88b1261b6302a07a11b6710455125b949e11653719a64a23545842f4c6b5c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/cpplib/diligentengine/diligentcore/primitives/interface/formatstring.hpp"
+          },
+          "hashes": {
+            "sha-256": "a9c3df2746a138dca3f261477ce37b57d96df5745dbbfdc6fe969b164d42e23f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/cpplib/diligentengine/diligentcore/primitives/interface/errors.hpp"
+          },
+          "hashes": {
+            "sha-256": "11c16a982344a029f97545d20bd7e5de50db6fab6ebd1689693b1ddac6606346"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/cpplib/diligentengine/diligentcore/platforms/basic/interface/basicplatformdebug.hpp"
+          },
+          "hashes": {
+            "sha-256": "3a40d68fe3952561ac976168696b3d1f685e7c1e176510c916eeffbd76d2a04f"
+          }
+        }
+      ]
+    }
+  ]
+}

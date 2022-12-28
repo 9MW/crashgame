@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ThirdParty">
+      <UniqueIdentifier>{107145F9-FC28-8746-6530-60A251072237}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\imgui">
+      <UniqueIdentifier>{7A0AC6D2-6603-E524-8F35-CAA97B8DC430}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\imgui\backends">
+      <UniqueIdentifier>{E4EDCF95-50B0-0320-9960-92AC0562DCFD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{0098A80F-6CAC-D0C0-352E-7420A101CDF1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui\interface">
+      <UniqueIdentifier>{0020D0AB-6CAB-3D70-75BC-C064E1C69970}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui\src">
+      <UniqueIdentifier>{17565062-83C0-04D9-CCFE-B57E38A8E22D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="3rdparty\DiligentTools\imgui\interface\ImGuiDiligentRenderer.hpp">
+      <Filter>imgui\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="3rdparty\DiligentTools\imgui\interface\ImGuiImplDiligent.hpp">
+      <Filter>imgui\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="3rdparty\DiligentTools\imgui\interface\ImGuiImplWin32.hpp">
+      <Filter>imgui\interface</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\imgui\backends\imgui_impl_glfw.cpp">
+      <Filter>ThirdParty\imgui\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\imgui\imgui.cpp">
+      <Filter>ThirdParty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\imgui\imgui_demo.cpp">
+      <Filter>ThirdParty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\imgui\imgui_draw.cpp">
+      <Filter>ThirdParty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\imgui\imgui_tables.cpp">
+      <Filter>ThirdParty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdparty\DiligentTools\ThirdParty\imgui\imgui_widgets.cpp">
+      <Filter>ThirdParty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdparty\DiligentTools\imgui\src\ImGuiDiligentRenderer.cpp">
+      <Filter>imgui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdparty\DiligentTools\imgui\src\ImGuiImplDiligent.cpp">
+      <Filter>imgui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdparty\DiligentTools\imgui\src\ImGuiImplWin32.cpp">
+      <Filter>imgui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdparty\DiligentTools\imgui\src\imGuiimpGLFW.cpp">
+      <Filter>imgui\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
