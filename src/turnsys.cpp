@@ -34,7 +34,7 @@ namespace cage {
 			}
 			auto idealrotation = prop0->transform.rotation * math::Quaternionf::FromTwoVectors(forward, targetdir.head<3>());
 			auto adis = idealrotation.angularDistance(prop0->transform.rotation);
-			prop0->transform.rotation = prop0->transform.rotation.slerp(context::convertime(1), idealrotation);
+			prop0->transform.rotation = prop0->transform.rotation.slerp(context::convertime(3), idealrotation);
 			auto adis2 = idealrotation.angularDistance(prop0->transform.rotation);
 			return false;
 		};
@@ -142,7 +142,7 @@ namespace cage {
 			posfactor = 1;
 			if (cyclenum >= 1)//only play once
 			{
-				attack(getopponent(i));
+				attack(i);
 				float& speed = ip.get<PropId::speed>();
 				speed -= 1;
 				execmd();
@@ -181,7 +181,6 @@ namespace cage {
 		tg.get<PropId::shield>() = std::max(0.0f, -dmg.normal);
 		tg.get<PropId::hp>() -= dmg.real;
 		tg.get<PropId::hp>() -= dmg.normal;
-		context::main().maincontext->Text("-" + std::to_string(dmg.normal + dmg.real),i);
 	}
 	inline void warsys::turnbeg(size_t i) {
 		{
@@ -215,9 +214,8 @@ namespace cage {
 	void warsys::attack(size_t i) {
 
 		auto& ip = *proppaie[i];
-		auto& tp = *transpair[i];
 		{
-			float agile = ip.get<PropId::agile>();
+			int idop = getopponent(i);
 			Dmg dmg; float df = 1;
 			dmg.normal = ip.get<PropId::damage>();
 			dmg.real = ip.get<PropId::realdamage>();
@@ -231,18 +229,21 @@ namespace cage {
 				df = 1.5;
 			}
 			if (!dmg.Zero()) {
-				auto& iop = *proppaie[getopponent(i)]; \
-					int sk = triggerskill<turnstate::underattack>(getopponent(i));
+				auto& iop = *proppaie[idop];
+					int sk = triggerskill<turnstate::underattack>(idop);
 				if (trigger(iop.get<PropId::agile>())) {
 					context::Text("miss", i);
 					return;
 				}
 				dmg *= df;
 				triggerskill<turnstate::attack>(i);
+				string dmginfo;
 				if (df > 1) {
-					context::Text("Critical", i);
+					dmginfo=("Critical\n");
 				}
 				applydmg(dmg, i);
+				dmginfo += std::to_string(-(std::max(dmg.normal, 0.0f) + dmg.real));
+				context::Text(dmginfo, idop);
 			}
 		}
 	}
@@ -354,7 +355,7 @@ namespace cage {
 				}
 				{
 					auto& sk = skills.emplace_back();
-					sk.name = "solider skill";
+					sk.name = "hunter skill";
 					sk.trigger = turnstate::underattack;
 					sk.weight = 2;
 					sk.probability = 15;
@@ -367,7 +368,7 @@ namespace cage {
 				}
 				{
 					auto& sk = skills.emplace_back();
-					sk.name = "hunter skill";;
+					sk.name = "warrior skill";;
 					sk.trigger = turnstate::afterattack;
 					sk.weight = 2;
 					sk.probability = 18;

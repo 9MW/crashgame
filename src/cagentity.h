@@ -129,7 +129,7 @@ namespace cage {
 		static float convertime(int i) {
 			return i * 0.016;//assume 60 frame per second
 		}
-		int turn,playerid=-1;
+		int turn,playerid=-1,minequpskill=2;
 		float tmove=2;
 		std::vector<std::tuple<string, array<int, 4>>> textppool;
 		static inline context* maincontext;
@@ -142,6 +142,18 @@ namespace cage {
 			std::memset(&id,0,sizeof(id));
 			text = msg;
 			id[0] = i;
+		}
+	};
+	struct UIEvent
+	{
+		using pevfunc = void(*)(void*);
+		pevfunc pf=NULL;
+		UIEvent& operator=(pevfunc p){
+			pf = p;
+			return *this;
+		}
+		void operator()(void*para) {
+			pf(para);
 		}
 	};
 	template<class T>

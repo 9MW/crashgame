@@ -11,7 +11,7 @@ namespace cage {
 	warsys wsys;
 	using t_rd = sStruct::inscmb;
 	using t_unit = ECS::CompPackage<playerprop, t_rd>;
-	t_unit units, archunits;
+	t_unit units;
 	UI0 uihandeler;
 	using pj2::ResManager;
 	using pj2::loader;
@@ -25,15 +25,14 @@ namespace cage {
 	int unitcsv(std::vector<playerprop>& prc) {
 		string fnm = "unitcfg.csv";
 		std::ifstream infile(loader::Get(Paths::configs) / fnm);
-		/*std::unordered_map<string, int> m_sk;
-
+		std::unordered_map<string, int> m_sk;
 		for (size_t i = 0; i < getContext().skills.size(); i++)
 		{
 			auto& sk = getContext().skills[i];
 			auto& input = sk.name;
 			std::string firstWord = input.substr(0, input.find(" "));
-			m_sk[input] = i;
-		}*/
+			m_sk[firstWord] = i;
+		}
 		std::vector<string> cfg, cfgele;
 		string line;
 		std::getline(infile, line);//discard first line 
@@ -47,14 +46,20 @@ namespace cage {
 			n++;
 			auto& pi = prc.back();
 			pi.name = cfgele[0];
+			pi.skillnum = 0;
 			size_t i = 0;
 			for (; i < 8; i++)
 			{
 				prc.back().get((PropId)(i)) = std::atof(cfgele[i + 1].c_str());
 			}
-			i ++;
-			pi.get<PropId::attackrange>() = std::atof(cfgele[i++].c_str())>0?0:1;
-
+			i++;
+			pi.get<PropId::attackrange>() = std::atof(cfgele[i++].c_str()) > 0 ? 0 : 1;
+			if (std::atof(cfgele[i++].c_str()) > 0) //has intrinsick skill
+			{
+				auto skilmr = m_sk.find(pi.name);
+				if (skilmr != m_sk.end())
+					pi.skillequpaed[pi.skillnum++].id = skilmr->second;
+			}
 		}
 
 		return n;
@@ -111,14 +116,17 @@ hunter,50,0,0,1.25,2,0,10,10,melee
 		using namespace pj2::n_Render;
 		auto modelid = _mmodeld[prc.name];
 		auto& mdin = skr_._meshtable[modelid];
+		
 		thread_local std::unordered_map<string, AnimationClip> _manim;
 		_manim.clear();
 		size_t i = mdin.propadss[modeloffset::anim];
+		size_t iEND = (1 + modelid) == skr_._meshtable.size() ? skr_._AniReco.size() :
+			((&mdin)+1)->propadss[modeloffset::anim]- i;
 		auto& anim0 = skr_._AniReco[i];
 		prc.renderinfo.bonenum = anim0.bonenum;
 		prc.renderinfo.modelid = modelid;
 		//assum parse last model's animation
-		for (; i < skr_._AniReco.size(); i++)
+		for (; i < iEND; i++)
 		{
 			auto& anim = skr_._AniReco[i];
 			auto& aclip = _manim[anim.name];
@@ -140,13 +148,34 @@ hunter,50,0,0,1.25,2,0,10,10,melee
 		setanim("move", agentstate::move);
 		setanim("idel", agentstate::idel);
 	}
+	void eventbegain(void* p) {
+		units.swap(0, getContext().playerid);
+	}
 	void App0::SetData(void* d) {}
-	void App0::init(pj2::Imp::RenderContext& rt_) {
-		float dissqp = 2;
-		rct = rt_;
+	void configunit(App0&ap, pj2::Imp::RenderContext& rt_)
+	{
+		units = decltype(units)();
+		_mmodeld.clear();
+		auto& skr_ = ap.Renders.get<n_Render::SkinRender>();
 		mtransform::v2 facor(0, 2);
 		int iu = unitcsv(units.get<playerprop>());
 		units.resize(iu);
+		auto& rm = ResManager::Get();
+		auto& rds = units.get<t_rd>();
+		for (size_t i = 0; i < units.size(); i++)
+		{
+			auto&& [prc, plg] = units.get< playerprop, t_rd>(i);
+			prc.defaulttrans.pos4.head<2>() = facor;
+			plg.transform.pos4 = prc.defaulttrans.pos4;
+			facor = -facor;
+			_mmodeld[prc.name] = skr_.LoadModel(rt_, rm._modelpool[prc.name + ".glb"]);
+			configAnimation(skr_, prc);
+			prc.state.SetState(cage::agentstate::idel);
+		}
+	}
+	void App0::init(pj2::Imp::RenderContext& rt_) {
+		float dissqp = 2;
+		rct = rt_;
 		load();
 		auto& Bxr_ = Renders.get<n_Render::FixRender>();
 		auto& skr_ = Renders.get<n_Render::SkinRender>();
@@ -174,50 +203,9 @@ hunter,50,0,0,1.25,2,0,10,10,melee
 		}
 		skr_.init(rt_, 30);
 		lir_.init(rt_);
-		{
-			auto& rm = ResManager::Get();
-			auto& rds = units.get<t_rd>();
-			for (size_t i = 0; i < units.size(); i++)
-			{
-				auto&& [prc, plg] = units.get< playerprop, t_rd>(i);
-				prc.defaulttrans.pos4.head<2>() = facor;
-				plg.transform.pos4 = prc.defaulttrans.pos4;
-				facor = -facor;
-				_mmodeld[prc.name] = skr_.LoadModel(rt_, rm._modelpool[prc.name + ".glb"]);
-				configAnimation(skr_, prc);
-			}
-			archunits = units;
-		}
-		{
-			context::main();
-			wsys.ctx = &context::main();
-			auto equipskill = [&](skilldesc& sd, int archid) {
-				auto& archskill = wsys.ctx->skills[archid];
-				sd.id = archid;
-				sd.effect = archskill.effect;
-				sd.effnum = archskill.effnum;
-				sd.probability = archskill.probability;
-				sd.weight = archskill.weight;
-				sd.trigger = archskill.trigger;
-			};
-			auto& pps = units.get<playerprop>();
-			for (size_t i = 0; i < pps.size(); i++)
-			{
-				auto& ppsi = pps[i];
-				ppsi.state.SetState(agentstate::idel);
-				for (size_t i2 = 0; i2 < 4; i2++)
-				{
-					equipskill(ppsi.skillequpaed[i2 + 1], i2);
-				}
-			}
-			//warrior
-			int i2 = 5;
-			equipskill(pps[0].skillequpaed[0], i2);
-			//hunter
-			i2++;
-			equipskill(pps[1].skillequpaed[0], i2);
-		}
+		configunit(*this, rt_);
 		getContext().gstate.running = false;
+		wsys.ctx = &context::main();
 	}
 
 	void App0::loadcfg()
@@ -229,19 +217,19 @@ hunter,50,0,0,1.25,2,0,10,10,melee
 	void App0::render() {
 		auto& io = ImGui::GetIO();
 		auto& playerprops = units.get<playerprop>();
+		SetWindowCenter(ImVec2(io.DisplaySize.x * 0.5f, io.DisplaySize.y * 0.5f));
 		if (ImGui::BeginPopup("result", ImGuiWindowFlags_NoTitleBar & ImGuiWindowFlags_NoDecoration)) {
 			ImGui::Text(playerprops[0].state == agentstate::died ? "you lost" : "you win");
 			if (ImGui::Button("restart")) {
 				//load unit data
 				ImGui::CloseCurrentPopup();
-				units = archunits;
+				configunit(*this, this->rct);
 
 			}
 			ImGui::EndPopup();
 			return;
 		}
 		if (wsys.activer < 0) {
-			SetWindowCenter(ImVec2(io.DisplaySize.x * 0.5f, io.DisplaySize.y * 0.5f));
 			ImGui::OpenPopup("result");
 			getContext().gstate.running = false;
 			reset(wsys);
@@ -258,6 +246,7 @@ hunter,50,0,0,1.25,2,0,10,10,melee
 			}
 		else
 		{
+			uihandeler.events[0]= eventbegain;
 			using namespace ImGui;
 			SetNextWindowPos(ImVec2(io.DisplaySize.x * 0.5f, io.DisplaySize.y * 0.5f), ImGuiCond_Always, ImVec2(0.5f, 0.5f));
 			uihandeler.update(0, nullptr);
@@ -266,6 +255,7 @@ hunter,50,0,0,1.25,2,0,10,10,melee
 		bool op = 0;
 		ImGui::SetNextWindowBgAlpha(0);
 		ImGui::SetNextWindowCollapsed(op);
+		ImGui::Text("saa\n jojo");
 		ImGui::Begin("anim", &op, ImGuiWindowFlags_NoDecoration);
 		static int select = 0, animid = 0;
 		static bool lock = 0;

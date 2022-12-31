@@ -1,6 +1,5 @@
 #include "UI0.h"
 #include"imgui.h"
-#include"cagentity.h"
 #include<bitset>
 #include<Common/FirstPersonCamera.hpp>
 namespace cage {
@@ -108,9 +107,8 @@ namespace cage {
 		equipskill(skills, p);
 	}
 	void SetSkill(std::vector<bskill>& skills, playerprop& p) {
-		bool skillselects[64];
-
-		std::memset(skillselects, 0, sizeof(skillselects));
+		std::array<bool, 64> skillselects;
+		std::memset(&skillselects, 0, sizeof(skillselects));
 		for (size_t i = 1; i < p.skillnum; i++)
 		{
 			skillselects[p.skillequpaed[i].id] = 1;
@@ -129,7 +127,7 @@ namespace cage {
 
 			if (disenable)
 				ImGui::BeginDisabled();
-			if (ImGui::Checkbox(("skill : " + skills[i].name).c_str(), skillselects + i)) {
+			if (ImGui::Checkbox(("skill : " + skills[i].name).c_str(), skillselects.data() + i)) {
 				skchanged = 1;
 				//weight += (skillselects[i] ? 1 : -1)*skills[i].weight;
 				if (skillselects[i]) {
@@ -177,24 +175,26 @@ namespace cage {
 		UI(p);
 		ImGui::End();
 	}
-	void UI(context& ct, std::vector<playerprop>& ps) {
+	int sle = 0;
+	template<class F>
+	void UISele(context& ct, std::vector<playerprop>& ps, F begfunc) {
 		bool op = 0;
-		static int sle = 0;
 		ImGui::Begin("player select", &op, ImGuiWindowFlags_NoDecoration);
 		ComboUI("unit type", sle, ps, [](playerprop& prop) {return prop.name.c_str(); });
 		SetSkill(ct.skills, ps[sle]);
 		UI(ps[sle]);
 		if (ImGui::Button("start game")) {
-			if (ps[sle].skillnum < 1) {
+			if (ps[sle].skillnum < ct.minequpskill) {
 				(ImGui::OpenPopup("sneed"));
 			}
 			else
 			{
-				std::swap(ps[sle], ps[0]);//player first
+				ct.playerid = sle;
 				for (auto& pp : ps)
 				{
 					equipskill(ct.skills, pp);
 				}
+				begfunc();
 				ct.gstate.running = 1;
 			}
 		}
@@ -210,6 +210,7 @@ namespace cage {
 	void UI(context& txreal, std::span<playerprop> playersprops, Camera& cam) {
 		auto& texs = txreal.textppool;
 		mtransform::v4 pos;
+		ImVec2 lastpos(-1,0);
 		bool op = 0;
 		ImGui::Begin("ui cfg");
 		ImGui::DragFloat("sepf", &uif);
@@ -222,9 +223,24 @@ namespace cage {
 			return;
 		auto& [meg, ids] = txreal.textppool[0];
 		const float& w = cam.m_ProjAttribs.Width, & h = cam.m_ProjAttribs.Height;
+		auto& dynamictext = txreal.textppool;
+
+		auto hight = ImGui::GetItemRectSize().y;
+		//for (int64_t i = dynamictext.size()-1; i >0 ; i--)
+		//{
+		//	auto& [mesg, ida] = txreal.textppool[i];
+		//	auto& [meg, idb] = txreal.textppool[i-1];
+		//	auto dis =math::square(ida[0] - idb[0])*10000+ (ida[1] - idb[1]);
+		//	//elevate if overlap
+		//	if (dis ==0) {
+		//		ida[2] = hight;
+		//	}
+		//}
+
 		for (int i = txreal.textppool.size() - 1; i >= 0; i--)
 		{
-			auto& [meg, ids] = txreal.textppool[i];
+			auto& [msg, ids] = txreal.textppool[i];
+			auto& meg = msg;
 			auto& trans = playersprops[ids[0]].defaulttrans;
 			std::memcpy(&pos, &trans.pos, sizeof(pos));
 			pos.w() = 1;
@@ -232,16 +248,19 @@ namespace cage {
 			pos = mul(cam.CameraViewProj, pos);
 			ImVec2 screenpos;
 			covertcoord(pos, screenpos, w, h);
-			auto hight=ImGui::GetItemRectSize().y;
+			////equal return 0
+			//if (!std::memcmp(&lastpos ,&screenpos,sizeof(lastpos))) {
+			//	
+			//}
 			float arpha = ids[2] / (hight * 8);
-			if (arpha>=1) {
+			if (arpha >= 1) {
 				txreal.textppool.erase(txreal.textppool.begin());
 				break;
 			}
 			screenpos.y -= ids[2];
 			SetWindowCenter(screenpos);
 			ImGui::Begin("dmg", &op, ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoBackground);
-			ImGui::TextColored(ImVec4(1, 0, 0, 1- arpha), meg.c_str());
+			ImGui::TextColored(ImVec4(1, 0, 0, 1 - arpha), meg.c_str());
 			ids[2]++;
 			ImGui::End();
 		}
@@ -265,16 +284,19 @@ namespace cage {
 	}
 	void UI0::update(int i, std::any p)
 	{
-		auto& ctx = context::main();
+		auto& ctx = *(context*)_pdata[0];
 		if (ctx.gstate.running) {
 			_pdata[2] = &Camera::Main();
 		}
-		auto vprop = static_cast<std::vector<cage::playerprop>*>(_pdata[0]);
+		auto vprop = static_cast<std::vector<cage::playerprop>*>(_pdata[1]);
 		void** px = _pdata.data();
+		auto startgame = [&]() {
+			events[0](this);
+		};
 		switch (i)
 		{
 		case 0:
-			Draw<context, std::vector<cage::playerprop>>(px);
+			UISele(ctx,*vprop,startgame);
 			break;
 		case 1:
 			Draw<context, std::vector<cage::playerprop>, Camera>(px);//draw player property
