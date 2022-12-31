@@ -67,16 +67,7 @@ namespace cage {
 				std::swap(ip.buffs[ib], ip.buffs[ip.buffnum--]);
 			}
 		}
-		void applydmg(Dmg& dmg, int i) {
-			auto& tg = *proppaie[getopponent(i)];
-			dmg.normal -= tg.get<PropId::shield>();
-			tg.get<PropId::shield>() = std::max(0.0f, -dmg.normal);
-			tg.get<PropId::hp>() -= dmg.real;
-			tg.get<PropId::hp>() -= dmg.normal;
-			if (tg.get<PropId::hp>() <= 0) {
-				tg.state.SetState(agentstate::died);
-			}
-		}
+		void applydmg(Dmg& dmg, int i);
 		void applyffect(playerprop& pdata, buff& ef) {
 			ef.tim--;
 			if (!trigger(ef.probability))
@@ -140,26 +131,7 @@ namespace cage {
 				}
 			}
 		}
-		void turnbeg(size_t i) {
-			{
-				auto& ip = *proppaie[i];
-				auto& tp = *transpair[i];
-				for (size_t i1 = 0; i1 < ip.skillnum; i1++)
-				{
-					auto& skil = ip.skillequpaed[i1];
-					skil.action += skil.actionaccum;
-				}
-				if (triggerskill<turnstate::start>(i) >= 0) {
-				}
-				integrateffect(i);
-
-				for (size_t i1 = 0; i1 < ip.skillnum; i1++)
-				{
-					auto& skil = ip.skillequpaed[i1];
-					skil.action += skil.actionaccum;
-				}
-			}
-		}
+		void turnbeg(size_t i);
 		int getopponent(int i) {
 			return (i + 1) % 2;
 		}

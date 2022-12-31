@@ -7,20 +7,33 @@
 #include"UI0.h"
 namespace cage {
 	using json = nlohmann::json;
-	context turnctx;
+
 	warsys wsys;
 	using t_rd = sStruct::inscmb;
 	using t_unit = ECS::CompPackage<playerprop, t_rd>;
-	t_unit units;
+	t_unit units, archunits;
+	UI0 uihandeler;
 	using pj2::ResManager;
 	using pj2::loader;
 	using pj2::Paths;
 	void convert(const json& j, float& f) {
 		f = std::atof(j.get<string>().c_str());
 	}
+	context& getContext() {
+		return context::main();
+	}
 	int unitcsv(std::vector<playerprop>& prc) {
 		string fnm = "unitcfg.csv";
 		std::ifstream infile(loader::Get(Paths::configs) / fnm);
+		/*std::unordered_map<string, int> m_sk;
+
+		for (size_t i = 0; i < getContext().skills.size(); i++)
+		{
+			auto& sk = getContext().skills[i];
+			auto& input = sk.name;
+			std::string firstWord = input.substr(0, input.find(" "));
+			m_sk[input] = i;
+		}*/
 		std::vector<string> cfg, cfgele;
 		string line;
 		std::getline(infile, line);//discard first line 
@@ -39,8 +52,9 @@ namespace cage {
 			{
 				prc.back().get((PropId)(i)) = std::atof(cfgele[i + 1].c_str());
 			}
-			i+=2;
-			pi.get<PropId::attackrange>() = std::atof(cfgele[i++].c_str());
+			i ++;
+			pi.get<PropId::attackrange>() = std::atof(cfgele[i++].c_str())>0?0:1;
+
 		}
 
 		return n;
@@ -119,7 +133,7 @@ hunter,50,0,0,1.25,2,0,10,10,melee
 				prc.anims[i] = kv->second;
 			else
 			{
-				prc.anims[i].beg= anim0.base;
+				prc.anims[i].beg = anim0.base;
 			}
 		};
 		setanim("attack", agentstate::attack);
@@ -172,6 +186,7 @@ hunter,50,0,0,1.25,2,0,10,10,melee
 				_mmodeld[prc.name] = skr_.LoadModel(rt_, rm._modelpool[prc.name + ".glb"]);
 				configAnimation(skr_, prc);
 			}
+			archunits = units;
 		}
 		{
 			context::main();
@@ -202,6 +217,7 @@ hunter,50,0,0,1.25,2,0,10,10,melee
 			i2++;
 			equipskill(pps[1].skillequpaed[0], i2);
 		}
+		getContext().gstate.running = false;
 	}
 
 	void App0::loadcfg()
@@ -211,12 +227,42 @@ hunter,50,0,0,1.25,2,0,10,10,melee
 	//filter to result vbuffer store result with previous offset
 
 	void App0::render() {
-		auto& skr_ = Renders.get<n_Render::SkinRender>();
-		for (size_t i = 0; i < units.size(); i++) {
-			auto&& [prc, plg] = units.get< playerprop, t_rd>(i);
-			std::array<UINT32, 4> drawarg = { (UINT32)_mmodeld[prc.name],(UINT32)1,i,(UINT32)i };
-			skr_.push(drawarg);
+		auto& io = ImGui::GetIO();
+		auto& playerprops = units.get<playerprop>();
+		if (ImGui::BeginPopup("result", ImGuiWindowFlags_NoTitleBar & ImGuiWindowFlags_NoDecoration)) {
+			ImGui::Text(playerprops[0].state == agentstate::died ? "you lost" : "you win");
+			if (ImGui::Button("restart")) {
+				//load unit data
+				ImGui::CloseCurrentPopup();
+				units = archunits;
+
+			}
+			ImGui::EndPopup();
+			return;
 		}
+		if (wsys.activer < 0) {
+			SetWindowCenter(ImVec2(io.DisplaySize.x * 0.5f, io.DisplaySize.y * 0.5f));
+			ImGui::OpenPopup("result");
+			getContext().gstate.running = false;
+			reset(wsys);
+			wsys.ctx = &context::main();
+		}
+		uihandeler._pdata[0] = &getContext();
+		uihandeler._pdata[1] = &playerprops;
+		auto& skr_ = Renders.get<n_Render::SkinRender>();
+		if (getContext().gstate.running)
+			for (size_t i = 0; i < units.size(); i++) {
+				auto&& [prc, plg] = units.get< playerprop, t_rd>(i);
+				std::array<UINT32, 4> drawarg = { (UINT32)_mmodeld[prc.name],(UINT32)1,i,(UINT32)i };
+				skr_.push(drawarg);
+			}
+		else
+		{
+			using namespace ImGui;
+			SetNextWindowPos(ImVec2(io.DisplaySize.x * 0.5f, io.DisplaySize.y * 0.5f), ImGuiCond_Always, ImVec2(0.5f, 0.5f));
+			uihandeler.update(0, nullptr);
+		}
+#ifdef DEBUG
 		bool op = 0;
 		ImGui::SetNextWindowBgAlpha(0);
 		ImGui::SetNextWindowCollapsed(op);
@@ -231,54 +277,41 @@ hunter,50,0,0,1.25,2,0,10,10,melee
 		auto framaddrss = stani.size > 0 ? ((int)(ip.state.tick * stani.speed) % totalframe) : 0;
 		float pratio = std::clamp((framaddrss / (float)totalframe), 0.0f, 0.9999f);
 		ImGui::SliderFloat("progress", &pratio, 0, 0.9999);
-		if (ImGui::Checkbox("lock animation",&lock))
+		if (ImGui::Checkbox("lock animation", &lock))
 		{
 			ip.state.tick = pratio * totalframe;
 			plg.insd.frameIndex = stani.beg + (int)(pratio * totalframe) * ip.renderinfo.bonenum;
 		}
+#endif // DEBUG
+
 
 		ImGui::End();
 
-
-		ImGui::Begin("logout", &op, ImGuiWindowFlags_NoTitleBar & ImGuiWindowFlags_NoBackground);
-		auto& playerprops = units.get<playerprop>();
-		for (auto& [text, ids] : wsys.ctx->textppool)
-		{
-			ImGui::Text((playerprops[ids[0]].name + " : " + text).c_str());
-		}
-		ImGui::End();
 		Renders.get<n_Render::SkinRender>().Render();
 	}
 
 	void App0::Update() {
 		using namespace Diligent;
 		using namespace pj2::n_Render;
-		auto& skr_ = Renders.get<n_Render::SkinRender>();
-		static int framecounter = 0;
-		Diligent::MapHelper<t_rd> sout(rct.m_pImmediateContext
-			, skr_._instbuf, MAP_WRITE, MAP_FLAG_DISCARD);
-		auto& randinfo = units.get<t_rd>();
-		auto& playerprops = units.get<playerprop>();
-		memcpy(sout, randinfo.data(), randinfo.size() * sizeof(t_rd));
+		if (!getContext().gstate.running)
+		{
+			return;
+		}
+		uihandeler.update(1, nullptr);
+		{
+			//write render data
+			auto& skr_ = Renders.get<n_Render::SkinRender>();
+			Diligent::MapHelper<t_rd> sout(rct.m_pImmediateContext
+				, skr_._instbuf, MAP_WRITE, MAP_FLAG_DISCARD);
+			auto& randinfo = units.get<t_rd>();
+			memcpy(sout, randinfo.data(), randinfo.size() * sizeof(t_rd));
+		}
 		for (size_t i = 0; i < units.size(); i++) {
 			auto&& [prc, plg] = units.get< playerprop, t_rd>(i);
 			wsys.proppaie[i] = &prc;
 			wsys.transpair[i] = &plg;
-			continue;
-			static int redi = 100;
-			////model id get from loadmodel,instance count,FirstInstanceLocation,
-			std::array<UINT32, 4> drawarg = { (UINT32)_mmodeld[prc.name],(UINT32)1,i,(UINT32)i };
-			auto& mdin = skr_._meshtable[drawarg[0]];
-			auto& anim = skr_._AniReco[mdin.propadss[modeloffset::anim]];
-			static int module = 120;
-			plg.insd.frameIndex = anim.base + anim.bonenum * (framecounter % module);
-			plg.insd.base = anim.base;
-			skr_.push(drawarg);
 		}
-		static int x = 0;
-		if (x == 0)
-			for (size_t i = 0; i < units.size(); i++)
-				wsys.update(i);
-		framecounter++;
+		for (size_t i = 0; i < units.size(); i++)
+			wsys.update(i);
 	}
 }

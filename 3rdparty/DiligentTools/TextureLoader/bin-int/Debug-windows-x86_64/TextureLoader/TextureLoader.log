@@ -2,8 +2,8 @@
 cl : command line  warning D9025: overriding '/MTd' with '/MDd'
   DDSLoader.cpp
 cl : command line  warning D9025: overriding '/MTd' with '/MDd'
-cl : command line  warning D9025: overriding '/MTd' with '/MDd'
   Image.cpp
+cl : command line  warning D9025: overriding '/MTd' with '/MDd'
   KTXLoader.cpp
 cl : command line  warning D9025: overriding '/MTd' with '/MDd'
   TextureLoader.cpp
@@ -13,12 +13,12 @@ E:\repos\crashgame\3rdparty\DiligentTools\TextureLoader\src\TextureLoader.cpp(23
   tif_stream.cxx
 cl : command line  warning D9025: overriding '/MTd' with '/MDd'
 cl : command line  warning D9025: overriding '/MTd' with '/MDd'
-cl : command line  warning D9025: overriding '/MTd' with '/MDd'
   JPEGCodec.c
+cl : command line  warning D9025: overriding '/MTd' with '/MDd'
+cl : command line  warning D9025: overriding '/MTd' with '/MDd'
   PNGCodec.c
 cl : command line  warning D9025: overriding '/MTd' with '/MDd'
   jaricom.c
-cl : command line  warning D9025: overriding '/MTd' with '/MDd'
   jcapimin.c
   jcapistd.c
   jcarith.c
@@ -56,18 +56,18 @@ E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jdmarker.c(655,5
   jdtrans.c
   jerror.c
   jfdctflt.c
-E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jerror.c(194,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jerror.c(196,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   jfdctfst.c
   jfdctint.c
+E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jerror.c(194,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jerror.c(196,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   jidctflt.c
   jidctfst.c
   jidctint.c
   jmemmgr.c
   jmemnobs.c
+  jquant1.c
 E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jmemmgr.c(1107,19): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jmemmgr.c(1110,11): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  jquant1.c
   jquant2.c
   jutils.c
   tif_aux.c
@@ -117,17 +117,17 @@ E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\libjpeg-9a\jmemmgr.c(1110,1
   pngread.c
   pngrio.c
   pngrtran.c
-  pngrutil.c
 E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\pngread.c(1480,21): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\pngread.c(1496,43): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  pngrutil.c
   pngset.c
   pngtrans.c
   pngwio.c
   pngwrite.c
   pngwtran.c
   pngwutil.c
-E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\pngwrite.c(474,11): warning C4996: 'gmtime': This function or variable may be unsafe. Consider using gmtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   adler32.c
+E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\pngwrite.c(474,11): warning C4996: 'gmtime': This function or variable may be unsafe. Consider using gmtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\pngwrite.c(2401,21): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\pngwrite.c(2429,46): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\pngwrite.c(2442,43): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
@@ -136,6 +136,7 @@ E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\lpng-1.6.17\pngwrite.c(2442
   deflate.c
   gzclose.c
   gzlib.c
+  gzread.c
 E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzlib.c(193,15): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzlib.c(208,13): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzlib.c(214,9): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
@@ -143,19 +144,18 @@ E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzlib.c(243,20):
 E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzlib.c(245,9): warning C4996: 'open': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _open. See online help for details.
 E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzlib.c(294,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzlib.c(607,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  gzread.c
   gzwrite.c
+E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzread.c(30,15): warning C4996: 'read': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _read. See online help for details.
+E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzread.c(36,34): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzread.c(591,11): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
   infback.c
+  inffast.c
+  inflate.c
 E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzwrite.c(84,15): warning C4996: 'write': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _write. See online help for details.
 E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzwrite.c(86,38): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzwrite.c(101,33): warning C4996: 'write': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _write. See online help for details.
 E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzwrite.c(103,42): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzread.c(30,15): warning C4996: 'read': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _read. See online help for details.
-E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzread.c(36,34): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzwrite.c(573,9): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
-E:\repos\crashgame\3rdparty\DiligentTools\ThirdParty\zlib-1.2.8\gzread.c(591,11): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
-  inffast.c
-  inflate.c
   inftrees.c
   trees.c
   uncompr.c

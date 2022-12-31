@@ -120,9 +120,6 @@ namespace pj2 {
 				mouseinfo.key &= ~cvr;
 				mouseinfo.state &= ~cvr;
 			}
-
-			const auto& mp = ImGui::GetMousePos();
-			//Camera::Main().getRay({ mp.x,mp.y }, v1, v2);
 		}
 	}
 	void inputmanager::CursorPosCallback(const f2& pos) {

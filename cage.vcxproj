@@ -145,6 +145,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\App0.h" />
+    <ClInclude Include="src\cagentity.h" />
     <ClInclude Include="src\include\AI\Config.h" />
     <ClInclude Include="src\include\AI\EvulatAction.h" />
     <ClInclude Include="src\include\AI\Flocking.h" />
@@ -237,6 +239,8 @@
     <ClInclude Include="src\include\shaders\csSort.h" />
     <ClInclude Include="src\include\shaders\cvstructs.h" />
     <ClInclude Include="src\include\shpso.h" />
+    <ClInclude Include="src\turnsys.h" />
+    <ClInclude Include="src\UI0.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3rdparty\ImGuizmo\ImGuizmo.cpp" />
@@ -283,8 +287,10 @@
     <ClCompile Include="src\include\shpso.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\turnsys.cpp" />
+    <ClCompile Include="src\UI0.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="src\configdata.json" />
     <None Include="src\include\Consol.cpp0" />
   </ItemGroup>
   <ItemGroup>

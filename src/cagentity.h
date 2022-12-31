@@ -62,7 +62,7 @@ namespace cage {
 		inline bool Zero() { return (real + normal) == 0; }
 	};
 	struct skilldesc {
-		int id, action, actionaccum = 1, effnum;
+		int id=-1, action, actionaccum = 1, effnum;
 		float probability, weight;
 		turnstate trigger;
 		array<buff, 4> effect;
@@ -79,7 +79,7 @@ namespace cage {
 		agentstate state;
 		RenderData renderinfo;
 		//array<array<UCHAR, 4>, turnstate::count> ActiveSkills;
-		int skillnum = 1, buffnum,maxskill=4,maxskillweight=5;
+		int skillnum = 1, buffnum, maxskill = 4, maxskillweight = 5, turn = 0;
 		template<PropId P>
 		float& get() {
 			return props[(int)P];
@@ -120,24 +120,32 @@ namespace cage {
 		}
 	};
 	using std::string;
+	struct GameState
+	{
+		int running = 0;
+	};
 	struct context
 	{
 		static float convertime(int i) {
 			return i * 0.016;//assume 60 frame per second
 		}
-		int turn;
+		int turn,playerid=-1;
 		float tmove=2;
 		std::vector<std::tuple<string, array<int, 4>>> textppool;
 		static inline context* maincontext;
-		std::vector<bskill> skills;
+		std::vector<bskill> skills; 
+		GameState gstate;
 		static context& main();
 		static void Text(string msg, int i) {
 			auto& textppool = maincontext->textppool;
 			auto& [text, id] = textppool.emplace_back();
+			std::memset(&id,0,sizeof(id));
 			text = msg;
 			id[0] = i;
-			id[1] = maincontext->turn;
 		}
 	};
-
+	template<class T>
+	void reset(T& t) {
+		t = T();
+	}
 }

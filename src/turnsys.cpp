@@ -21,8 +21,9 @@ namespace cage {
 		auto attackgoalpos = [&]() {
 			float& v = ip.get<PropId::animActionrange>();
 			auto vgoal3 = (transpair[iop]->transform.pos4 - prop0->transform.pos4).head<3>();
-			//assume both model radius = 0.5
-			return prop0->transform.pos4.head<3>() + vgoal3.normalized() * (vgoal3.norm() - (1 + v));
+			//assume both model radius = 0.7
+			constexpr float radius = 0.7;
+			return prop0->transform.pos4.head<3>() + vgoal3.normalized() * (vgoal3.norm() - (radius*2 + v));
 		};
 		auto LookAt = [&]() {
 			auto forward = prop0->transform.froward();
@@ -40,7 +41,8 @@ namespace cage {
 		auto writecommand = [&]() {
 			decltype(cmdbuffer) empty;
 			std::swap(cmdbuffer, empty);
-			if (ip.get<PropId::attackrange>() > 0) {
+			auto& ar = ip.get<PropId::attackrange>();
+			if ( ar> 0) {
 				auto& [action, acpos] = cmdbuffer.emplace();
 				action = agentstate::attack;
 				acpos = tg.defaulttrans.pos;
@@ -83,12 +85,19 @@ namespace cage {
 				nextturn();
 			}
 		};
-		if (ip.state.tick == 0) {
+		if (ip.state.tick == 1) {
 			ip.renderinfo.clip = ip.anims[ip.state];
+		}
+		if (ip.get<PropId::hp>() <= 0) {
+			tg.state.SetState(agentstate::died);
 		}
 		float& speed = ip.get<PropId::speed>();
 		float posfactor = 0;
 		bool lk = LookAt();
+		if (ip.get<PropId::hp>() <= 0) {
+			ip.state.SetState(agentstate::died);
+			activer = -1;
+		}
 		switch (ip.state)
 		{
 		case agentstate::move:
@@ -134,15 +143,13 @@ namespace cage {
 			if (cyclenum >= 1)//only play once
 			{
 				attack(getopponent(i));
-				if (tg.get< PropId::hp>() <= 0) {
-					tg.state.SetState(agentstate::died);
-				}
 				float& speed = ip.get<PropId::speed>();
 				speed -= 1;
 				execmd();
 			}
 			break;
 		case agentstate::died:
+
 			break;
 		case agentstate::idel:
 			if (i == activer) {
@@ -167,13 +174,51 @@ namespace cage {
 		if (!equal(posfactor, 1))
 			prop0->transform.pos4 += targetvec * posfactor;
 	}
+	void warsys::applydmg(Dmg& dmg, int i) {
+		int iop = getopponent(i);
+		auto& tg = *proppaie[iop];
+		dmg.normal -= tg.get<PropId::shield>();
+		tg.get<PropId::shield>() = std::max(0.0f, -dmg.normal);
+		tg.get<PropId::hp>() -= dmg.real;
+		tg.get<PropId::hp>() -= dmg.normal;
+		context::main().maincontext->Text("-" + std::to_string(dmg.normal + dmg.real),i);
+	}
+	inline void warsys::turnbeg(size_t i) {
+		{
+			auto& ip = *proppaie[i];
+			auto& tp = *transpair[i];
+			for (size_t i1 = 0; i1 < ip.skillnum; i1++)
+			{
+				auto& skil = ip.skillequpaed[i1];
+				skil.action = skil.actionaccum;
+			}for (size_t i1 = 0; i1 < ip.buffnum; i1++)
+			{
+				auto& buff = ip.buffs[i1];
+				buff.tim--;
+				assert(buff.tim >= 0);
+				//if time limite reached
+				if (buff.tim == 0)
+					std::swap(ip.buffs[i1], ip.buffs[--ip.buffnum]);
+			}
+			if (triggerskill<turnstate::start>(i) >= 0) {
+			}
+			integrateffect(i);
+
+			for (size_t i1 = 0; i1 < ip.skillnum; i1++)
+			{
+				auto& skil = ip.skillequpaed[i1];
+				skil.action += skil.actionaccum;
+			}
+			ip.turn++;
+		}
+	}
 	void warsys::attack(size_t i) {
 
 		auto& ip = *proppaie[i];
 		auto& tp = *transpair[i];
 		{
 			float agile = ip.get<PropId::agile>();
-			Dmg dmg;
+			Dmg dmg; float df = 1;
 			dmg.normal = ip.get<PropId::damage>();
 			dmg.real = ip.get<PropId::realdamage>();
 			auto& buff = ip.getbuff<PropId::damage>();
@@ -183,7 +228,7 @@ namespace cage {
 			}
 			if (trigger(ip.get<PropId::Critical>()))
 			{
-				dmg *= 1.5;
+				df = 1.5;
 			}
 			if (!dmg.Zero()) {
 				auto& iop = *proppaie[getopponent(i)]; \
@@ -192,8 +237,11 @@ namespace cage {
 					context::Text("miss", i);
 					return;
 				}
+				dmg *= df;
 				triggerskill<turnstate::attack>(i);
-				context::Text(fmt::format("-{0}" , dmg.normal), i);
+				if (df > 1) {
+					context::Text("Critical", i);
+				}
 				applydmg(dmg, i);
 			}
 		}

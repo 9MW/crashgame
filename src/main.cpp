@@ -138,7 +138,7 @@ template<std::size_t>
 struct comp {
 	int x;
 };
-
+constexpr bool debug = 0;
 struct timer final {
 	timer() : start{ std::chrono::system_clock::now() } {}
 
@@ -463,13 +463,14 @@ namespace cage {
 			CreateUniformBuffer(m_pDevice, 256 * 2, "Camera attribs buffer", &m_CameraAttribsCB);
 
 			//{
-			m_Camera.SetPos(Diligent::float3(30, -30, 70));
+			m_Camera.SetPos(Diligent::float3(15, 0, 20));
 			m_Camera.m_fYawAngle = 4;
 			m_Camera.m_fPitchAngle = -1;
 			//m_Camera.SetRotation(PI_F / 2.f, 0);
 			m_Camera.SetRotationSpeed(0.005f);
 			m_Camera.SetMoveSpeed(5.f);
 			m_Camera.SetSpeedUpScales(5.f, 10.f);
+			m_Camera.SetLookAt({ 0,0,0 });
 			// Create window-size offscreen render target
 			TextureDesc RTColorDesc;
 			RTColorDesc.Name = "Offscreen render target";
@@ -781,7 +782,7 @@ namespace cage {
 					m_NumFramesRendered = 0;
 					m_LastFPSTime = CurrTime;
 				}
-
+				if(debug)
 				{
 
 					static ImGuizmo::OPERATION mCurrentGizmoOperation(ImGuizmo::TRANSLATE);

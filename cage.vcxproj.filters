@@ -354,6 +354,18 @@
     <ClInclude Include="src\include\shpso.h">
       <Filter>src\include</Filter>
     </ClInclude>
+    <ClInclude Include="src\App0.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cagentity.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\turnsys.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI0.h">
+      <Filter>src</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3rdparty\ImGuizmo\ImGuizmo.cpp">
@@ -482,10 +494,16 @@
     <ClCompile Include="src\turnsys.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\UI0.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="src\include\Consol.cpp0">
       <Filter>src\include</Filter>
+    </None>
+    <None Include="src\configdata.json">
+      <Filter>src</Filter>
     </None>
   </ItemGroup>
 </Project>

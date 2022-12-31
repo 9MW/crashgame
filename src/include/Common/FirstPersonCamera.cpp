@@ -103,7 +103,6 @@ namespace pj2
 
 		auto PosDelta = MoveDirection * ElapsedTime;
 		const auto& mouseState = Controller.GetMouseState();
-		new (&m_LastMouseState)MST(mouseState);
 		if (IsSpeedUpScale)
 		{
 			f2 mousedelta;
@@ -129,7 +128,7 @@ namespace pj2
 				m_fPitchAngle = std::min(m_fPitchAngle, +PI_F / 2.f);
 			}
 		}
-
+		new (&m_LastMouseState)MST(mouseState);
 		auto ReferenceRotation = GetReferenceRotiation();
 
 		///m4f CameraRotation=m4f::Identity();
@@ -253,12 +252,12 @@ namespace pj2
 	{
 		math::Efloat3 ViewDir = LookAt - m_Pos;
 
-		ViewDir = GetReferenceRotiation() * ViewDir;
+		ViewDir = GetReferenceRotiation()* ViewDir.normalized();
 
 		m_fYawAngle = atan2f(ViewDir[0], ViewDir[2]);
 
 		float fXZLen = sqrtf(ViewDir[2] * ViewDir[2] + ViewDir[0] * ViewDir[0]);
-		m_fPitchAngle = -atan2f(ViewDir[1], fXZLen);
+		m_fPitchAngle = atan2f(ViewDir[1], fXZLen);
 	}
 
 	void Camera::SetRotation(float Yaw, float Pitch)
