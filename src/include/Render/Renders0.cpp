@@ -762,22 +762,21 @@ namespace pj2 {
 			}
 			else
 			{
-				if (m_pObject) {
+				{
 					cap = (sz + _size) * expandfactor;
 					VBDesc.Size = cap;
 					VBDesc.Usage = USAGE_DEFAULT;
 					IBuffer* pn = NULL;
 					pDevice->CreateBuffer(VBDesc, NULL, &pn);
-					rt.m_pImmediateContext->CopyBuffer(m_pObject, 0, RESOURCE_STATE_TRANSITION_MODE_TRANSITION,
-						pn, 0, _size, RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
-					m_pObject->Release();
+					if (m_pObject)
+					{
+						rt.m_pImmediateContext->CopyBuffer(m_pObject, 0, RESOURCE_STATE_TRANSITION_MODE_TRANSITION,
+							pn, 0, _size, RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
+						m_pObject->Release();
+					}
 					m_pObject = pn;
 					rt.m_pImmediateContext->CopyBuffer(vdatain, 0, RESOURCE_STATE_TRANSITION_MODE_TRANSITION,
 						m_pObject, _size, sz, RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
-				}
-				else {
-					m_pObject = vdatain;
-					cap = sz;
 				}
 			}
 			_size += sz;

@@ -415,7 +415,9 @@ namespace pj2 {
 				new(this)dyvbf();
 			}
 			void  Release() {
-				m_pObject->Release();
+				if (m_pObject) {
+					m_pObject->Release();
+				}
 				std::memset(this, 0, sizeof(*this));
 			}
 			~dyvbf() {

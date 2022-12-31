@@ -252,6 +252,7 @@ namespace cage {
 		}
 		~App()
 		{
+			if(pTabTex)
 			pTabTex->Release();
 			glfwSetWindowShouldClose(m_Window, GLFW_TRUE);
 			//m_pImmediateContext->Flush();
@@ -431,9 +432,6 @@ namespace cage {
 
 				break;
 			}
-			auto windowresize = [&](GLFWwindow* window, int width, int height) {
-				this->WindowResize(width, height);
-			};
 			EngineVkCreateInfo EngineCI;
 			EngineCI.DynamicHeapSize = 8 << 22;
 			glfwSetWindowUserPointer(m_Window, this);
@@ -442,7 +440,7 @@ namespace cage {
 			glfwSetMouseButtonCallback(m_Window, &GLFW_MouseButtonCallback);
 			glfwSetCursorPosCallback(m_Window, &GLFW_CursorPosCallback);
 			//glfwSetScrollCallback(m_Window, &GLFW_MouseWheelCallback);
-			//glfwSetWindowSizeCallback(m_Window, &windowresize);
+			glfwSetWindowCloseCallback(m_Window, &GLFW_Close);
 			glfwSetWindowSizeLimits(m_Window, 320, 240, GLFW_DONT_CARE, GLFW_DONT_CARE);
 			
 			const auto PI_F = math::PI_F;
@@ -898,6 +896,12 @@ namespace cage {
 			pSelf->_imgr.MouseButtonCallback(button,state,mdf);
 		}
 
+		static void GLFW_Close(GLFWwindow* wnd) {
+			auto* pSelf = static_cast<App*>(glfwGetWindowUserPointer(wnd));
+			glfwDestroyWindow(wnd);
+			glfwTerminate();
+			std::exit(0);
+		}
 		static void GLFW_CursorPosCallback(GLFWwindow* wnd, double xpos, double ypos)
 		{
 			float xscale = 1;
@@ -1027,10 +1031,10 @@ int   CALLBACK WinMain(HINSTANCE instance, HINSTANCE, LPSTR, int cmdShow)
 			auto ElapsedTime = CurrTime - PrevTime;
 			PrevTime = CurrTime;
 
-			glfwPollEvents();
 			g_pTheApp->Update(CurrTime, ElapsedTime);
 			g_pTheApp->Render();
 			g_pTheApp->Present();
+			glfwPollEvents();
 			fk++;
 		}
 	}
