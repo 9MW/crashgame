@@ -1,17 +1,17 @@
 #pragma once
 #pragma once
 #include <string>
-#include<Math1.h>
+#include<Common/Math1.h>
 namespace cage {
-	using pj2::mtransform;
+	using mtransform=math::mtransform;
 	enum turnstate
 	{
-		underattack, attack, start, afterattack
+		underattack, attack, start, afterattack,count
 	};
 	struct agentstate
 	{
 		enum state {
-			move, attack, idel, reset, died
+			move, attack, idel, reset, died,count
 		};
 		state st;
 		int tick;
@@ -26,7 +26,7 @@ namespace cage {
 		operator state& () { return st; }
 	};
 	enum class PropId :int {
-		hp, Armor, marmor,speedaccum,damage, mdamage,agile, Critical,animActionrange,  energy, shield, visiableRange, speed,  attackrangesq,  realdamage,   count, nan
+		hp, Armor, marmor,speedaccum,damage, mdamage,agile, Critical,animActionrange,  energy, shield, visiableRange, speed,  attackrange,  realdamage,   count, nan
 	};
 
 	template<class T, int I>
@@ -54,11 +54,12 @@ namespace cage {
 	{
 		float real = 0, normal = 0;
 
-		Dmg& operator*=(float f) {
+		inline Dmg& operator*=(float f) {
 			real *= f;
 			normal *= f;
+			return *this;
 		}
-		bool Zero() { return (real + normal) == 0; }
+		inline bool Zero() { return (real + normal) == 0; }
 	};
 	struct skilldesc {
 		int id, action, actionaccum = 1, effnum;
@@ -68,7 +69,7 @@ namespace cage {
 	};
 	struct playerprop
 	{
-		string name;
+		std::string name;
 		std::vector<AnimationClip> anims;
 		array16<float> props, currentprop;
 		array16<buff> buffs;
@@ -77,8 +78,8 @@ namespace cage {
 		mtransform defaulttrans;
 		agentstate state;
 		RenderData renderinfo;
-		
-		int skillnum = 1, buffnum;
+		//array<array<UCHAR, 4>, turnstate::count> ActiveSkills;
+		int skillnum = 1, buffnum,maxskill=4,maxskillweight=5;
 		template<PropId P>
 		float& get() {
 			return props[(int)P];
@@ -118,4 +119,25 @@ namespace cage {
 			self.props[(int)PropId::speed] = 0;
 		}
 	};
+	using std::string;
+	struct context
+	{
+		static float convertime(int i) {
+			return i * 0.016;//assume 60 frame per second
+		}
+		int turn;
+		float tmove=2;
+		std::vector<std::tuple<string, array<int, 4>>> textppool;
+		static inline context* maincontext;
+		std::vector<bskill> skills;
+		static context& main();
+		static void Text(string msg, int i) {
+			auto& textppool = maincontext->textppool;
+			auto& [text, id] = textppool.emplace_back();
+			text = msg;
+			id[0] = i;
+			id[1] = maincontext->turn;
+		}
+	};
+
 }
