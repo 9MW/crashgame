@@ -431,7 +431,9 @@ namespace cage {
 
 				break;
 			}
-
+			auto windowresize = [&](GLFWwindow* window, int width, int height) {
+				this->WindowResize(width, height);
+			};
 			EngineVkCreateInfo EngineCI;
 			EngineCI.DynamicHeapSize = 8 << 22;
 			glfwSetWindowUserPointer(m_Window, this);
@@ -440,7 +442,7 @@ namespace cage {
 			glfwSetMouseButtonCallback(m_Window, &GLFW_MouseButtonCallback);
 			glfwSetCursorPosCallback(m_Window, &GLFW_CursorPosCallback);
 			//glfwSetScrollCallback(m_Window, &GLFW_MouseWheelCallback);
-
+			//glfwSetWindowSizeCallback(m_Window, &windowresize);
 			glfwSetWindowSizeLimits(m_Window, 320, 240, GLFW_DONT_CARE, GLFW_DONT_CARE);
 			
 			const auto PI_F = math::PI_F;
@@ -510,6 +512,9 @@ namespace cage {
 
 			return true;
 		}
+		void glresize(GLFWwindow* window, int width, int height) {
+			this->WindowResize(width, height);
+		};
 		Eigen::Matrix4f efpj, efca;
 		void loadshader(const char* shadername, RefCntAutoPtr<IShader>& pVS, RefCntAutoPtr<IShader>& pPS) {
 			ShaderCreateInfo                               ShaderCI;
@@ -878,8 +883,7 @@ namespace cage {
 		static void GLFW_ResizeCallback(GLFWwindow* wnd, int w, int h)
 		{
 			auto* pSelf = static_cast<App*>(glfwGetWindowUserPointer(wnd));
-			if (pSelf->m_pSwapChain != nullptr)
-				pSelf->m_pSwapChain->Resize(static_cast<Uint32>(w), static_cast<Uint32>(h));
+			pSelf->WindowResize(w,h);
 		}
 
 		static void GLFW_KeyCallback(GLFWwindow* wnd, int key, int scan, int state, int modf)

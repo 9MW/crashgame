@@ -212,9 +212,6 @@ namespace cage {
 		mtransform::v4 pos;
 		ImVec2 lastpos(-1,0);
 		bool op = 0;
-		ImGui::Begin("ui cfg");
-		ImGui::DragFloat("sepf", &uif);
-		ImGui::End();
 		for (size_t i = 0; i < playersprops.size(); i++)
 		{
 			DrawProps(playersprops[i], cam);

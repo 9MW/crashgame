@@ -1,5 +1,4 @@
 #pragma once
-
 #include "App0.h"
 #include"turnsys.h"
 #include"Common/ecs.hpp"
@@ -251,31 +250,6 @@ hunter,50,0,0,1.25,2,0,10,10,melee
 			SetNextWindowPos(ImVec2(io.DisplaySize.x * 0.5f, io.DisplaySize.y * 0.5f), ImGuiCond_Always, ImVec2(0.5f, 0.5f));
 			uihandeler.update(0, nullptr);
 		}
-#ifdef DEBUG
-		bool op = 0;
-		ImGui::SetNextWindowBgAlpha(0);
-		ImGui::SetNextWindowCollapsed(op);
-		ImGui::Text("saa\n jojo");
-		ImGui::Begin("anim", &op, ImGuiWindowFlags_NoDecoration);
-		static int select = 0, animid = 0;
-		static bool lock = 0;
-		auto&& [ip, plg] = units.get< playerprop, t_rd>(select);
-		std::vector<const char*> items = { "move","attack","idel" };
-		ComboUI(animid, items);
-		auto& stani = ip.anims[animid];
-		int totalframe = stani.size / ip.renderinfo.bonenum;
-		auto framaddrss = stani.size > 0 ? ((int)(ip.state.tick * stani.speed) % totalframe) : 0;
-		float pratio = std::clamp((framaddrss / (float)totalframe), 0.0f, 0.9999f);
-		ImGui::SliderFloat("progress", &pratio, 0, 0.9999);
-		if (ImGui::Checkbox("lock animation", &lock))
-		{
-			ip.state.tick = pratio * totalframe;
-			plg.insd.frameIndex = stani.beg + (int)(pratio * totalframe) * ip.renderinfo.bonenum;
-		}
-#endif // DEBUG
-
-
-		ImGui::End();
 
 		Renders.get<n_Render::SkinRender>().Render();
 	}
