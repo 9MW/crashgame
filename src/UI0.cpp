@@ -178,14 +178,14 @@ namespace cage {
 	int sle = 0;
 	template<class F>
 	void UISele(context& ct, std::vector<playerprop>& ps, F begfunc) {
-		bool op = 0;
+		bool op = 0,popup=0;
 		ImGui::Begin("player select", &op, ImGuiWindowFlags_NoDecoration);
 		ComboUI("unit type", sle, ps, [](playerprop& prop) {return prop.name.c_str(); });
 		SetSkill(ct.skills, ps[sle]);
 		UI(ps[sle]);
 		if (ImGui::Button("start game")) {
 			if (ps[sle].skillnum < ct.minequpskill) {
-				(ImGui::OpenPopup("sneed"));
+				popup = 1;
 			}
 			else
 			{
@@ -199,7 +199,10 @@ namespace cage {
 			}
 		}
 		ImGui::End();
-		if (ImGui::BeginPopup("sneed", ImGuiWindowFlags_NoTitleBar & ImGuiWindowFlags_NoDecoration)) {
+		if(popup){
+			(ImGui::OpenPopup("nselectskill"));
+		}
+		if (ImGui::BeginPopup("nselectskill", ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoDecoration)) {
 			TextCentered("need select more skill");
 			if (ImGui::Button("yes")) {
 				ImGui::CloseCurrentPopup();

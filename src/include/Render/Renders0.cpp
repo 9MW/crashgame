@@ -101,7 +101,7 @@ namespace pj2 {
 
 			for (i = 0; i < mod.Textures.size(); i++)
 			{
-				int texid = propsize[modeloffset::etexture];
+				int texid = propsize[modeloffset::etexture]+i;
 				RefCntAutoPtr<ITexture>& tx = mod.Textures[i];
 				Diligent::ITextureView* vp = tx->GetDefaultView(TEXTURE_VIEW_SHADER_RESOURCE);
 				_txvs[texid] = (vp);
@@ -165,7 +165,7 @@ namespace pj2 {
 				Material& tsrc = mod.Materials[modprim.material];
 				gPrimitive& mtdata = gCb[i];
 				const auto gettexid = [&](RefCntAutoPtr<ITexture>& const tex)
-				{return tex ? timap[tex->GetUniqueID()] + propsize[modeloffset::etexture] : defid; };
+				{return tex ? timap[tex->GetUniqueID()] : defid; };
 				std::memcpy(&mtdata.NodeMatrix, &mes->Transforms.matrix, sizeof(Eigen::Matrix4f));
 				mtdata.texid = gettexid(tsrc.pBaseColorTexture);
 				mtdata.normaltexid = gettexid(tsrc.pNormalTexture);
