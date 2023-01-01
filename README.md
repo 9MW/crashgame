@@ -3,12 +3,22 @@ project explain:
 input:  
 assets/configs/unitcfg.csv for unit data configuration  
 
-unit property:  
+unit property: stored in "playerprop" struct at cagentity.h  
 hp, Armor, marmor,speed,damage, mdamage,agile, Critical  
 agile used for percentage miss rate while under attack  
 speed will accumulate until reach to 1 then gain extra action 
 normal damage=normal damage*(if trigger Critical 1.5 else be 1.0)-Armor  
-damage=real damage+normal damage; 
+damage=real damage+normal damage;  
+weight determin how meny skill could used by player,currently it's equal 5  
+state used for apply buff caused by sill.
+
+skill: 
+skill defined within context struct in cagentity.h  
+it's loaded in context.skills insied main function if context struct;
+it's member trigger define trigger stage.when it reach trigger stage the it's member
+probaility decide how likely it get triggered successfully.
+weight define how many cost to equipped by player.
+
 
 files   
 src/main.cpp : window & IO setup. UI Graphic initializaton  
