@@ -47,3 +47,5 @@ Main logic begin at src/App0.cpp,it contain unit data parse & Render initializat
 
 How to start game?   
 run cage.exe under current folder  
+
+![Alt text](turnCapture.PNG?raw=true "Title")
