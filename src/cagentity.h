@@ -71,7 +71,7 @@ namespace cage {
 	{
 		std::string name;
 		std::vector<AnimationClip> anims;
-		array16<float> props, currentprop;
+		array16<float> props;
 		array16<buff> buffs;
 		array<skilldesc, 8> skillequpaed;
 		mtransform::v4 goalpos;

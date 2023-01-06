@@ -21,6 +21,9 @@ namespace cage {
 	context& getContext() {
 		return context::main();
 	}
+
+	//load unit data from csv file
+	//input output: container to store unit info parsed from file
 	int unitcsv(std::vector<playerprop>& prc) {
 		string fnm = "unitcfg.csv";
 		std::ifstream infile(loader::Get(Paths::configs) / fnm);
@@ -111,6 +114,9 @@ hunter,50,0,0,1.25,2,0,10,10,melee
 		auto& rm = ResManager::Get();
 	}
 	std::unordered_map<string, int> _mmodeld;
+	//load unit data from csv file
+	//input :skr_
+    //output: animation info stored in skr_
 	void configAnimation(n_Render::SkinRender& skr_, playerprop& prc) {
 		using namespace pj2::n_Render;
 		auto modelid = _mmodeld[prc.name];
@@ -147,10 +153,12 @@ hunter,50,0,0,1.25,2,0,10,10,melee
 		setanim("move", agentstate::move);
 		setanim("idel", agentstate::idel);
 	}
+	//event processor called when game beginning.swap player location to 0 for player first action
 	void eventbegain(void* p) {
 		units.swap(0, getContext().playerid);
 	}
 	void App0::SetData(void* d) {}
+	//config unit data based on csv file
 	void configunit(App0&ap, pj2::Imp::RenderContext& rt_)
 	{
 		units = decltype(units)();
@@ -210,9 +218,7 @@ hunter,50,0,0,1.25,2,0,10,10,melee
 	void App0::loadcfg()
 	{
 	}
-	//input big instance buffer with offset table to info  type corresponding position size
-	//filter to result vbuffer store result with previous offset
-
+	//render UI and scene
 	void App0::render() {
 		auto& io = ImGui::GetIO();
 		auto& playerprops = units.get<playerprop>();
@@ -254,6 +260,7 @@ hunter,50,0,0,1.25,2,0,10,10,melee
 		Renders.get<n_Render::SkinRender>().Render();
 	}
 
+	//update turn logic
 	void App0::Update() {
 		using namespace Diligent;
 		using namespace pj2::n_Render;

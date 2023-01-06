@@ -7,6 +7,12 @@ namespace cage {
 		return !((a - b) * 1000);
 	}
 	std::queue<std::tuple<agentstate::state, mtransform::v3>> cmdbuffer;
+	/**
+	 * @brief 
+	 * agent main logic
+	 * @param i 
+	 * agent id
+	*/
 	void cage::warsys::update(int i) {
 		auto iop = getopponent(i);
 		auto& ip = *proppaie[i];
@@ -115,27 +121,6 @@ namespace cage {
 				else {
 					execmd();
 				}
-				//if (attack)
-				//{
-				//	ip.goalpos.head<3>() = attackgoalpos();
-				//}
-				////reached
-				//if (zero(ip.goalpos.head<3>().norm() - ip.defaulttrans.pos.norm())) {
-				//	if (speed >= 1) {
-				//		speed -= 1;
-				//		turnbeg(activer);
-				//		ip.state.SetState(agentstate::move);
-				//	}
-				//	else
-				//	{
-				//		ip.state.SetState(agentstate::idel);
-				//		activer++;
-				//	}
-				//}
-				//else
-				//{
-				//	ip.state.SetState(agentstate::attack);
-				//}
 			}
 			break;
 		case agentstate::attack:
@@ -182,24 +167,24 @@ namespace cage {
 		tg.get<PropId::hp>() -= dmg.real;
 		tg.get<PropId::hp>() -= dmg.normal;
 	}
+	/**
+	 * @brief 
+	 * called while agent turns begain
+	 * @param i 
+	 * current active agent id
+	*/
 	inline void warsys::turnbeg(size_t i) {
 		{
 			auto& ip = *proppaie[i];
 			auto& tp = *transpair[i];
-			for (size_t i1 = 0; i1 < ip.skillnum; i1++)
-			{
-				auto& skil = ip.skillequpaed[i1];
-				skil.action = skil.actionaccum;
-			}for (size_t i1 = 0; i1 < ip.buffnum; i1++)
+			for (size_t i1 = 0; i1 < ip.buffnum; i1++)
 			{
 				auto& buff = ip.buffs[i1];
 				buff.tim--;
 				assert(buff.tim >= 0);
-				//if time limite reached
+				//if time limit reached
 				if (buff.tim == 0)
 					std::swap(ip.buffs[i1], ip.buffs[--ip.buffnum]);
-			}
-			if (triggerskill<turnstate::start>(i) >= 0) {
 			}
 			integrateffect(i);
 
@@ -211,6 +196,7 @@ namespace cage {
 			ip.turn++;
 		}
 	}
+	//input:active player id
 	void warsys::attack(size_t i) {
 
 		auto& ip = *proppaie[i];
@@ -247,11 +233,17 @@ namespace cage {
 			}
 		}
 	}
+	/**
+	 * @brief 
+	 * @return 
+	 * static instance
+	*/
 	cage::context& cage::context::main() {
 		static context m;
 		if (!context::maincontext) {
 			context::maincontext = &m;
 			auto& skills = m.skills;
+			//load default skill config
 			if (m.skills.size() == 0)
 			{
 				{
