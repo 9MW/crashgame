@@ -1,15 +1,13 @@
 #pragma once
 #include "App0.h"
-#include"turnsys.h"
 #include"Common/ecs.hpp"
 #include"json.h"
-#include"UI0.h"
 namespace cage {
 	using json = nlohmann::json;
-
-	warsys wsys;
 	using t_rd = sStruct::inscmb;
 	using t_unit = ECS::CompPackage<playerprop, t_rd>;
+
+	warsys wsys;
 	t_unit units;
 	UI0 uihandeler;
 	using pj2::ResManager;
@@ -188,6 +186,7 @@ hunter,50,0,0,1.25,2,0,10,10,melee
 		auto& skr_ = Renders.get<n_Render::SkinRender>();
 		auto& olr_ = Renders.get<n_Render::OlskRender>();
 		auto& lir_ = Renders.get<n_Render::LineRender>();
+		//build vram for render
 		{
 			using namespace Diligent;
 			BufferDesc BuffDesc;
@@ -243,6 +242,7 @@ hunter,50,0,0,1.25,2,0,10,10,melee
 		uihandeler._pdata[0] = &getContext();
 		uihandeler._pdata[1] = &playerprops;
 		auto& skr_ = Renders.get<n_Render::SkinRender>();
+		//write draw args
 		if (getContext().gstate.running)
 			for (size_t i = 0; i < units.size(); i++) {
 				auto&& [prc, plg] = units.get< playerprop, t_rd>(i);

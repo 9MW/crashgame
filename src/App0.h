@@ -14,6 +14,8 @@
 #include"Render/Renders0.h"
 #include<imgui.h>
 #include"Gameprops0.h"
+#include"turnsys.h"
+#include"UI0.h"
 namespace cage {
 	using InputKeys = Diligent::InputKeys;
 	using MouseState = Diligent::MouseState;
@@ -27,25 +29,13 @@ namespace cage {
 	{
 		using t_renders = Utility::MyTuple< n_Render::SkinRender, n_Render::FixRender, n_Render::OlskRender,
 			n_Render::LineRender>;
-		int activeGroupId = -1;
 		using IBuffer = Diligent::IBuffer;
 		math::Matrix4f* guizmo;
-		n_Render::SkinRender _skinr;
-		math::vec4<int> _controlmode;
 		RenderContext rct;
 	public:
 		t_renders Renders;
 		using vt_prop = sStruct::inscmb;
-		pIbuffer                cSelect;
 		pIbuffer                cbCameraAttribs;
-		pIbuffer                V_Props;
-		pIbuffer                _tinfo;
-		pIbuffer                sele_out;
-		std::vector<std::vector<ECS::Entity>> _cmdGroups;
-		inline std::vector<ECS::Entity>& ActiveCGP() {
-			//if(activeGroupId!=-1)
-			return (_cmdGroups.back());
-		}
 		int objnum = 0;
 		//double delta_time;
 		using t_clock = std::chrono::high_resolution_clock;
@@ -53,19 +43,7 @@ namespace cage {
 		void SetData(void* d);
 		void init(pj2::Imp::RenderContext& rt);
 		void loadcfg();
-		//input big instance buffer with offset table to info  type corresponding position size
-		//filter to result vbuffer store result with previous offset
 		void render();
-		using t_map = sStruct::seleout;
-		void drawwire(Utility::span<t_map> dri) {
-
-			for (size_t i = 0; i < dri.size(); i++) {
-				auto& ed = dri[i];
-				auto* ttid = reinterpret_cast<int16*> (&ed.itid);// >> 16, id = ed.itid & (1 << 16);
-
-			}
-		}
-		//inline void FixUpdate() {}
 		void Update();
 	};
 

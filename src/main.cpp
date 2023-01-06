@@ -24,7 +24,7 @@
  *  all other commercial damages or losses), even if such Contributor has been advised
  *  of the possibility of such damages.
  */
-//#pragma comment(lib, "windowscodecs.lib")
+ //#pragma comment(lib, "windowscodecs.lib")
 
 #pragma once
 #ifndef NOMINMAX
@@ -232,7 +232,7 @@ namespace cage {
 	{
 		EditTransform(camera.GetViewMatrix().data(), camera.m_ProjMatrix.data(), matrix.Data(), true);
 	}
-	void EditTransform(const Camera& camera,float* matrix)
+	void EditTransform(const Camera& camera, float* matrix)
 	{
 		EditTransform(camera.GetViewMatrix().data(), camera.m_ProjMatrix.data(), matrix, true);
 	}
@@ -242,7 +242,7 @@ namespace cage {
 		inline math::Matrix4f f4m4derf(Diligent::float4x4 d4) {
 			return  math::Map<math::Matrix4f>(d4.Data());
 		}
-		GLFWwindow* m_Window=NULL;
+		GLFWwindow* m_Window = NULL;
 
 	public:
 		App()
@@ -252,8 +252,8 @@ namespace cage {
 		}
 		~App()
 		{
-			if(pTabTex)
-			pTabTex->Release();
+			if (pTabTex)
+				pTabTex->Release();
 			glfwSetWindowShouldClose(m_Window, GLFW_TRUE);
 			//m_pImmediateContext->Flush();
 		}
@@ -292,7 +292,7 @@ namespace cage {
 		}
 		bool InitializeDiligentEngine(void* hWnd)
 		{
-			m_Window =(GLFWwindow*) hWnd;
+			m_Window = (GLFWwindow*)hWnd;
 #if PLATFORM_WIN32
 			Win32NativeWindow Window{ glfwGetWin32Window(m_Window) };
 #endif
@@ -360,7 +360,7 @@ namespace cage {
 				//EngineCI.EnableDebugLayer = true;
 #endif
 				auto* pFactoryD3D12 = GetEngineFactoryD3D12();
-				IDeviceContext** dc =m_pImmediateContext.RawDblPtr();
+				IDeviceContext** dc = m_pImmediateContext.RawDblPtr();
 				pFactoryD3D12->CreateDeviceAndContextsD3D12(EngineCI, &m_pDevice, dc);
 
 				m_pEngineFactory = pFactoryD3D12;
@@ -398,7 +398,7 @@ namespace cage {
 				auto GetEngineFactoryVk = LoadGraphicsEngineVk();
 #endif
 				EngineVkCreateInfo EngineCI;
-				EngineCI.DynamicHeapSize = 1<<27;//128 MB memory
+				EngineCI.DynamicHeapSize = 1 << 27;//128 MB memory
 				EngineCI.NumDeferredContexts = std::max(std::thread::hardware_concurrency() - 1, 2u);
 				EngineCI.Features = DeviceFeatures{ DEVICE_FEATURE_STATE_OPTIONAL };
 #ifdef DILIGENT_DEBUG
@@ -442,7 +442,7 @@ namespace cage {
 			//glfwSetScrollCallback(m_Window, &GLFW_MouseWheelCallback);
 			glfwSetWindowCloseCallback(m_Window, &GLFW_Close);
 			glfwSetWindowSizeLimits(m_Window, 320, 240, GLFW_DONT_CARE, GLFW_DONT_CARE);
-			
+
 			const auto PI_F = math::PI_F;
 			m_pImGui.reset(new ImGuiimpGLFW(m_Window, m_pDevice, m_pSwapChain->GetDesc().ColorBufferFormat, m_pSwapChain->GetDesc().DepthBufferFormat));
 			//m_pDevice->CreatePipelineState(m_pImGui->)
@@ -478,7 +478,7 @@ namespace cage {
 			RTColorDesc.Width = m_pSwapChain->GetDesc().Width;
 			RTColorDesc.Height = m_pSwapChain->GetDesc().Height;
 			RTColorDesc.MipLevels = 1;
-			RTColorDesc.Format =m_pSwapChain->GetDesc().ColorBufferFormat;
+			RTColorDesc.Format = m_pSwapChain->GetDesc().ColorBufferFormat;
 
 			// The render target can be bound as a shader resource and as a render target
 			RTColorDesc.BindFlags = BIND_SHADER_RESOURCE | BIND_RENDER_TARGET;
@@ -601,7 +601,7 @@ namespace cage {
 					std::cerr << "Unknown device type. Only the following types are supported: D3D11, D3D12, GL, VK";
 					return false;
 				}
-				}
+			}
 			else
 			{
 #if D3D12_SUPPORTED
@@ -615,7 +615,7 @@ namespace cage {
 #endif
 			}
 			return true;
-			}
+		}
 
 		struct CameraAttribs
 		{
@@ -647,7 +647,7 @@ namespace cage {
 
 			float4 f4ExtraData[5]; // Any appliation-specific data
 			// Sizeof(CameraAttribs) == 256*2
-	};
+		};
 		struct instData
 		{
 			using float4 = Diligent::float4;
@@ -699,7 +699,7 @@ namespace cage {
 			RefCntAutoPtr<IShaderSourceInputStreamFactory> pShaderSourceFactory;
 			auto shaderpath = loader::Get(shader);
 			m_pEngineFactory->CreateDefaultShaderSourceStreamFactory(shaderpath.string().c_str(), &pShaderSourceFactory);
-			
+
 			debugDraw.reset(new DbgRender(m_pDevice, m_pImmediateContext,
 				RenderTargetFormat, m_pSwapChain->GetDesc().DepthBufferFormat,
 				m_CameraAttribsCB, pShaderSourceFactory, pTabTex));
@@ -753,7 +753,7 @@ namespace cage {
 				CamAttribs->f4Position[3] = 1;
 				f2 wh = { (float)pattr.Width,(float)pattr.Height };
 				CamAttribs->f4ViewportSize.head<2>() = wh;
-				CamAttribs->f4ViewportSize.tail<2>() = 1/wh.array();
+				CamAttribs->f4ViewportSize.tail<2>() = 1 / wh.array();
 			}
 			m_CurrentTime = CurrTime;
 			static int posmapsize = 0;
@@ -785,7 +785,7 @@ namespace cage {
 					m_NumFramesRendered = 0;
 					m_LastFPSTime = CurrTime;
 				}
-				if(debug)
+				if (debug)
 				{
 
 					static ImGuizmo::OPERATION mCurrentGizmoOperation(ImGuizmo::TRANSLATE);
@@ -815,11 +815,11 @@ namespace cage {
 					{
 						ImGui::DragFloat4(("m" + std::to_string(i)).c_str(), tst.col(i).data());
 					}
-					if(m_ShowDemoWindow)
-					EditTransform(m_Camera, tst.data());
+					if (m_ShowDemoWindow)
+						EditTransform(m_Camera, tst.data());
 					ImGui::End();
-		}
-}
+				}
+			}
 		}
 		ITexture* pTabTex = NULL;
 		bool m_PlayAnimation = false;
@@ -849,7 +849,7 @@ namespace cage {
 			debugDraw->Render();
 			app0.render();
 			{
-				(*m_pImGui).Render(m_pImmediateContext); 
+				(*m_pImGui).Render(m_pImmediateContext);
 			}
 		}
 
@@ -881,19 +881,19 @@ namespace cage {
 		static void GLFW_ResizeCallback(GLFWwindow* wnd, int w, int h)
 		{
 			auto* pSelf = static_cast<App*>(glfwGetWindowUserPointer(wnd));
-			pSelf->WindowResize(w,h);
+			pSelf->WindowResize(w, h);
 		}
 
 		static void GLFW_KeyCallback(GLFWwindow* wnd, int key, int scan, int state, int modf)
 		{
 			auto* pSelf = static_cast<App*>(glfwGetWindowUserPointer(wnd));
-			pSelf->_imgr.KeyCallback(key,scan,state,modf);
+			pSelf->_imgr.KeyCallback(key, scan, state, modf);
 		}
 
 		static void GLFW_MouseButtonCallback(GLFWwindow* wnd, int button, int state, int mdf)
 		{
 			auto* pSelf = static_cast<App*>(glfwGetWindowUserPointer(wnd));
-			pSelf->_imgr.MouseButtonCallback(button,state,mdf);
+			pSelf->_imgr.MouseButtonCallback(button, state, mdf);
 		}
 
 		static void GLFW_Close(GLFWwindow* wnd) {
@@ -987,21 +987,6 @@ int   CALLBACK WinMain(HINSTANCE instance, HINSTANCE, LPSTR, int cmdShow)
 	LONG WindowWidth = 1280;
 	LONG WindowHeight = 1024;
 	m_Window = glfwCreateWindow(WindowWidth, WindowHeight, utf8_encode(Title).c_str(), nullptr, nullptr);
-	/*RECT rc = { 0, 0, WindowWidth, WindowHeight };
-	AdjustWindowRect(&rc, WS_OVERLAPPEDWINDOW, FALSE);
-	HWND wnd = CreateWindow(L"SampleApp", Title.c_str(),
-		WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT,
-		rc.right - rc.left, rc.bottom - rc.top, NULL, NULL, instance, NULL);
-	if (!wnd)
-	{
-		MessageBox(NULL, L"Cannot create window", L"Error", MB_OK | MB_ICONERROR);
-		return 0;
-	}
-	ShowWindow(wnd, cmdShow);
-
-
-	UpdateWindow(wnd);*/
-
 	if (!g_pTheApp->InitializeDiligentEngine(m_Window))
 		return -1;
 

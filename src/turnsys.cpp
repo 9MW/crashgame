@@ -31,7 +31,7 @@ namespace cage {
 			constexpr float radius = 0.7;
 			return prop0->transform.pos4.head<3>() + vgoal3.normalized() * (vgoal3.norm() - (radius*2 + v));
 		};
-		auto LookAt = [&]() {
+		auto LmLookAt = [&]() {
 			auto forward = prop0->transform.froward();
 			mtransform::v4 targetdir = tg.defaulttrans.pos4 - prop0->transform.pos4;
 			auto radcos = (math::dot(targetdir.head<2>().normalized(), forward.head<2>()));
@@ -44,7 +44,7 @@ namespace cage {
 			auto adis2 = idealrotation.angularDistance(prop0->transform.rotation);
 			return false;
 		};
-		auto writecommand = [&]() {
+		auto Lmwritecommand = [&]() {
 			decltype(cmdbuffer) empty;
 			std::swap(cmdbuffer, empty);
 			auto& ar = ip.get<PropId::attackrange>();
@@ -73,11 +73,11 @@ namespace cage {
 			}
 
 		};
-		auto nextturn = [&]() {
+		auto Lmnextturn = [&]() {
 			activer++;
 			activer %= totalplayer;
 		};
-		auto execmd = [&]() {
+		auto Lmexecmd = [&]() {
 			if (cmdbuffer.size() > 0)
 			{
 				auto& [action, acpos] = cmdbuffer.front();
@@ -88,7 +88,7 @@ namespace cage {
 			}
 			else {
 				ip.state.SetState(agentstate::idel);
-				nextturn();
+				Lmnextturn();
 			}
 		};
 		if (ip.state.tick == 1) {
@@ -99,7 +99,7 @@ namespace cage {
 		}
 		float& speed = ip.get<PropId::speed>();
 		float posfactor = 0;
-		bool lk = LookAt();
+		bool lk = LmLookAt();
 		if (ip.get<PropId::hp>() <= 0) {
 			ip.state.SetState(agentstate::died);
 			activer = -1;
@@ -111,15 +111,15 @@ namespace cage {
 			posfactor = context::convertime(ip.state.tick) / ctx->tmove;
 			if (posfactor >= 1) {
 				if (cmdbuffer.size() > 0)
-					execmd();
+					Lmexecmd();
 				else if (speed >= 1)
 				{
 					turnbeg(activer);
-					writecommand();
-					execmd();
+					Lmwritecommand();
+					Lmexecmd();
 				}
 				else {
-					execmd();
+					Lmexecmd();
 				}
 			}
 			break;
@@ -130,7 +130,7 @@ namespace cage {
 				attack(i);
 				float& speed = ip.get<PropId::speed>();
 				speed -= 1;
-				execmd();
+				Lmexecmd();
 			}
 			break;
 		case agentstate::died:
@@ -142,10 +142,10 @@ namespace cage {
 				speed += ip.get<PropId::speedaccum>();
 				if (speed >= 1) {
 					turnbeg(activer);
-					writecommand();
-					execmd();
+					Lmwritecommand();
+					Lmexecmd();
 				}
-				else { nextturn(); }
+				else { Lmnextturn(); }
 			}
 			break;
 		case agentstate::reset:
