@@ -9,7 +9,7 @@ namespace cage {
 	std::queue<std::tuple<agentstate::state, mtransform::v3>> cmdbuffer;
 	/**
 	 * @brief 
-	 * agent main logic
+	 * agent main logic include update animation and AI
 	 * @param i 
 	 * agent id
 	*/
